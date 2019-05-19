@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble script</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble script and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble script and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble script" name="twitter:title">
+    <meta content="Unscramble script" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble script</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters script. To unscramble script we can search against each letter in script and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling script means that
+
+a written version of a play or other dramatic composition; used in preparing for a performance,
+
+something written by hand,
+
+a particular orthography or writing system,
+
+write a script for,
+
+.
+</p>
+
+
+
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from script</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> script </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from script</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> spirt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sprit </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> stirp </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> strip </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trips </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> crits </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> crisp </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> scrip </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from script</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> stir </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pits </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> spit </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tips </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trip </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rips </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cist </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tics </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> crit </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cris </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pics </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> spic </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from script</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pst </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> its </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sit </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tis </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sir </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sri </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pit </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tip </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pis </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> psi </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sip </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rip </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cis </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pic </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from script</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> it </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ti </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> is </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> si </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pi </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in script like script scritp scrpit scrpti scrtip scrtpi scirpt scirtp sciprt sciptr scitrp scitpr scprit scprti scpirt scpitr scptri scptir sctrip sctrpi sctirp sctipr sctpri sctpir srcipt srcitp srcpit srcpti srctip srctpi sricpt srictp sripct sriptc sritcp sritpc srpcit srpcti srpict srpitc srptci srptic srtcip srtcpi srticp srtipc srtpci srtpic sicrpt sicrtp sicprt sicptr sictrp sictpr sircpt sirctp sirpct sirptc sirtcp sirtpc sipcrt sipctr siprct siprtc siptcr siptrc sitcrp sitcpr sitrcp sitrpc sitpcr sitprc spcrit spcrti spcirt spcitr spctri spctir sprcit sprcti sprict spritc sprtci sprtic spicrt spictr spirct spirtc spitcr spitrc sptcri sptcir sptrci sptric spticr sptirc stcrip stcrpi stcirp stcipr stcpri stcpir strcip strcpi stricp stripc strpci strpic sticrp sticpr stircp stirpc stipcr stiprc stpcri stpcir stprci stpric stpicr stpirc csript csritp csrpit csrpti csrtip csrtpi csirpt csirtp csiprt csiptr csitrp csitpr csprit csprti cspirt cspitr csptri csptir cstrip cstrpi cstirp cstipr cstpri cstpir crsipt crsitp crspit crspti crstip crstpi crispt cristp cripst cripts critsp critps crpsit crpsti crpist crpits crptsi crptis crtsip crtspi crtisp crtips crtpsi crtpis cisrpt cisrtp cisprt cisptr cistrp cistpr cirspt cirstp cirpst cirpts cirtsp cirtps cipsrt cipstr ciprst ciprts ciptsr ciptrs citsrp citspr citrsp citrps citpsr citprs cpsrit cpsrti cpsirt cpsitr cpstri cpstir cprsit cprsti cprist cprits cprtsi cprtis cpisrt cpistr cpirst cpirts cpitsr cpitrs cptsri cptsir cptrsi cptris cptisr cptirs ctsrip ctsrpi ctsirp ctsipr ctspri ctspir ctrsip ctrspi ctrisp ctrips ctrpsi ctrpis ctisrp ctispr ctirsp ctirps ctipsr ctiprs ctpsri ctpsir ctprsi ctpris ctpisr ctpirs rscipt rscitp rscpit rscpti rsctip rsctpi rsicpt rsictp rsipct rsiptc rsitcp rsitpc rspcit rspcti rspict rspitc rsptci rsptic rstcip rstcpi rsticp rstipc rstpci rstpic rcsipt rcsitp rcspit rcspti rcstip rcstpi rcispt rcistp rcipst rcipts rcitsp rcitps rcpsit rcpsti rcpist rcpits rcptsi rcptis rctsip rctspi rctisp rctips rctpsi rctpis riscpt risctp rispct risptc ristcp ristpc ricspt ricstp ricpst ricpts rictsp rictps ripsct ripstc ripcst ripcts riptsc riptcs ritscp ritspc ritcsp ritcps ritpsc ritpcs rpscit rpscti rpsict rpsitc rpstci rpstic rpcsit rpcsti rpcist rpcits rpctsi rpctis rpisct rpistc rpicst rpicts rpitsc rpitcs rptsci rptsic rptcsi rptcis rptisc rptics rtscip rtscpi rtsicp rtsipc rtspci rtspic rtcsip rtcspi rtcisp rtcips rtcpsi rtcpis rtiscp rtispc rticsp rticps rtipsc rtipcs rtpsci rtpsic rtpcsi rtpcis rtpisc rtpics iscrpt iscrtp iscprt iscptr isctrp isctpr isrcpt isrctp isrpct isrptc isrtcp isrtpc ispcrt ispctr isprct isprtc isptcr isptrc istcrp istcpr istrcp istrpc istpcr istprc icsrpt icsrtp icsprt icsptr icstrp icstpr icrspt icrstp icrpst icrpts icrtsp icrtps icpsrt icpstr icprst icprts icptsr icptrs ictsrp ictspr ictrsp ictrps ictpsr ictprs irscpt irsctp irspct irsptc irstcp irstpc ircspt ircstp ircpst ircpts irctsp irctps irpsct irpstc irpcst irpcts irptsc irptcs irtscp irtspc irtcsp irtcps irtpsc irtpcs ipscrt ipsctr ipsrct ipsrtc ipstcr ipstrc ipcsrt ipcstr ipcrst ipcrts ipctsr ipctrs iprsct iprstc iprcst iprcts iprtsc iprtcs iptscr iptsrc iptcsr iptcrs iptrsc iptrcs itscrp itscpr itsrcp itsrpc itspcr itsprc itcsrp itcspr itcrsp itcrps itcpsr itcprs itrscp itrspc itrcsp itrcps itrpsc itrpcs itpscr itpsrc itpcsr itpcrs itprsc itprcs pscrit pscrti pscirt pscitr psctri psctir psrcit psrcti psrict psritc psrtci psrtic psicrt psictr psirct psirtc psitcr psitrc pstcri pstcir pstrci pstric psticr pstirc pcsrit pcsrti pcsirt pcsitr pcstri pcstir pcrsit pcrsti pcrist pcrits pcrtsi pcrtis pcisrt pcistr pcirst pcirts pcitsr pcitrs pctsri pctsir pctrsi pctris pctisr pctirs prscit prscti prsict prsitc prstci prstic prcsit prcsti prcist prcits prctsi prctis prisct pristc pricst pricts pritsc pritcs prtsci prtsic prtcsi prtcis prtisc prtics piscrt pisctr pisrct pisrtc pistcr pistrc picsrt picstr picrst picrts pictsr pictrs pirsct pirstc pircst pircts pirtsc pirtcs pitscr pitsrc pitcsr pitcrs pitrsc pitrcs ptscri ptscir ptsrci ptsric ptsicr ptsirc ptcsri ptcsir ptcrsi ptcris ptcisr ptcirs ptrsci ptrsic ptrcsi ptrcis ptrisc ptrics ptiscr ptisrc pticsr pticrs ptirsc ptircs tscrip tscrpi tscirp tscipr tscpri tscpir tsrcip tsrcpi tsricp tsripc tsrpci tsrpic tsicrp tsicpr tsircp tsirpc tsipcr tsiprc tspcri tspcir tsprci tspric tspicr tspirc tcsrip tcsrpi tcsirp tcsipr tcspri tcspir tcrsip tcrspi tcrisp tcrips tcrpsi tcrpis tcisrp tcispr tcirsp tcirps tcipsr tciprs tcpsri tcpsir tcprsi tcpris tcpisr tcpirs trscip trscpi trsicp trsipc trspci trspic trcsip trcspi trcisp trcips trcpsi trcpis triscp trispc tricsp tricps tripsc tripcs trpsci trpsic trpcsi trpcis trpisc trpics tiscrp tiscpr tisrcp tisrpc tispcr tisprc ticsrp ticspr ticrsp ticrps ticpsr ticprs tirscp tirspc tircsp tircps tirpsc tirpcs tipscr tipsrc tipcsr tipcrs tiprsc tiprcs tpscri tpscir tpsrci tpsric tpsicr tpsirc tpcsri tpcsir tpcrsi tpcris tpcisr tpcirs tprsci tprsic tprcsi tprcis tprisc tprics tpiscr tpisrc tpicsr tpicrs tpirsc tpircs.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
