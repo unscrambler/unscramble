@@ -4,7 +4,7 @@ date=`date +%Y-%m-%d`
 echo '<?xml version="1.0" encoding="UTF-8"?>'
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 
-for i in `ls docs/unscramble_*.html docs/index.html|xargs basename`;
+for i in `find docs/unscramble_* -print0 | xargs -0 -n1 basename`;
 do echo "
  <url>
     <loc>$1/$i</loc>
