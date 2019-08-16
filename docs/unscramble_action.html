@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble action</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble action and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble action and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble action" name="twitter:title">
+    <meta content="Unscramble action" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble action</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters action. To unscramble action we can search against each letter in action and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+<div id="amzn-assoc-ad-f6d519ef-5468-4fb9-84b4-08a9b3b42174"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=f6d519ef-5468-4fb9-84b4-08a9b3b42174"></script>
+
+<p>
+The word found after unscrambling action means that
+
+something done (usually as opposed to something said),
+
+the state of being active,
+
+a military engagement,
+
+a process existing in or produced by nature (rather than by the intent of human beings),
+
+the series of events that form a plot,
+
+the trait of being active and energetic and forceful,
+
+the operating part that transmits power to a mechanism,
+
+a judicial proceeding brought by one party against another; one party prosecutes another for a wrong done or for protection of a right or for prevention of a wrong,
+
+an act by a government body or supranational organization,
+
+the most important or interesting work or activity in a specific area or field,
+
+institute legal proceedings against; file a suit against,
+
+put in effect,
+
+.
+</p>
+
+
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble action with word unscrambler" src="images/unscramble_action.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from action</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> action </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> atonic </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cation </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from action</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ontic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tonic </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> canto </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cotan </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> octan </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> coati </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> actin </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> antic </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from action</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> into </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> otic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cion </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> coin </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> coni </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> icon </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nota </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> iota </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> anti </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tain </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> naoi </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> coat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> taco </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cant </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ciao </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cain </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from action</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> not </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ton </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nit </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tin </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ion </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cot </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> con </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tao </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ant </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tan </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ait </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ain </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ani </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> act </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oca </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> can </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from action</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> to </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> no </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> on </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> it </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ti </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oi </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> in </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> at </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ta </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> an </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> na </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ai </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in action like action actino actoin actoni actnio actnoi aciton acitno aciotn aciont acinto acinot acotin acotni acoitn acoint aconti aconit acntio acntoi acnito acniot acnoti acnoit atcion atcino atcoin atconi atcnio atcnoi aticon aticno atiocn ationc atinco atinoc atocin atocni atoicn atoinc atonci atonic atncio atncoi atnico atnioc atnoci atnoic aicton aictno aicotn aicont aicnto aicnot aitcon aitcno aitocn aitonc aitnco aitnoc aioctn aiocnt aiotcn aiotnc aionct aiontc aincto aincot aintco aintoc ainoct ainotc aoctin aoctni aocitn aocint aocnti aocnit aotcin aotcni aoticn aotinc aotnci aotnic aoictn aoicnt aoitcn aoitnc aoinct aointc aoncti aoncit aontci aontic aonict aonitc anctio anctoi ancito anciot ancoti ancoit antcio antcoi antico antioc antoci antoic anicto anicot anitco anitoc anioct aniotc anocti anocit anotci anotic anoict anoitc cation catino catoin catoni catnio catnoi caiton caitno caiotn caiont cainto cainot caotin caotni caoitn caoint caonti caonit cantio cantoi canito caniot canoti canoit ctaion ctaino ctaoin ctaoni ctanio ctanoi ctiaon ctiano ctioan ctiona ctinao ctinoa ctoain ctoani ctoian ctoina ctonai ctonia ctnaio ctnaoi ctniao ctnioa ctnoai ctnoia ciaton ciatno ciaotn ciaont cianto cianot citaon citano citoan citona citnao citnoa cioatn cioant ciotan ciotna cionat cionta cinato cinaot cintao cintoa cinoat cinota coatin coatni coaitn coaint coanti coanit cotain cotani cotian cotina cotnai cotnia coiatn coiant coitan coitna coinat cointa conati conait contai contia coniat conita cnatio cnatoi cnaito cnaiot cnaoti cnaoit cntaio cntaoi cntiao cntioa cntoai cntoia cniato cniaot cnitao cnitoa cnioat cniota cnoati cnoait cnotai cnotia cnoiat cnoita tacion tacino tacoin taconi tacnio tacnoi taicon taicno taiocn taionc tainco tainoc taocin taocni taoicn taoinc taonci taonic tancio tancoi tanico tanioc tanoci tanoic tcaion tcaino tcaoin tcaoni tcanio tcanoi tciaon tciano tcioan tciona tcinao tcinoa tcoain tcoani tcoian tcoina tconai tconia tcnaio tcnaoi tcniao tcnioa tcnoai tcnoia tiacon tiacno tiaocn tiaonc tianco tianoc ticaon ticano ticoan ticona ticnao ticnoa tioacn tioanc tiocan tiocna tionac tionca tinaco tinaoc tincao tincoa tinoac tinoca toacin toacni toaicn toainc toanci toanic tocain tocani tocian tocina tocnai tocnia toiacn toianc toican toicna toinac toinca tonaci tonaic toncai toncia toniac tonica tnacio tnacoi tnaico tnaioc tnaoci tnaoic tncaio tncaoi tnciao tncioa tncoai tncoia tniaco tniaoc tnicao tnicoa tnioac tnioca tnoaci tnoaic tnocai tnocia tnoiac tnoica iacton iactno iacotn iacont iacnto iacnot iatcon iatcno iatocn iatonc iatnco iatnoc iaoctn iaocnt iaotcn iaotnc iaonct iaontc iancto iancot iantco iantoc ianoct ianotc icaton icatno icaotn icaont icanto icanot ictaon ictano ictoan ictona ictnao ictnoa icoatn icoant icotan icotna iconat iconta icnato icnaot icntao icntoa icnoat icnota itacon itacno itaocn itaonc itanco itanoc itcaon itcano itcoan itcona itcnao itcnoa itoacn itoanc itocan itocna itonac itonca itnaco itnaoc itncao itncoa itnoac itnoca ioactn ioacnt ioatcn ioatnc ioanct ioantc iocatn iocant ioctan ioctna iocnat iocnta iotacn iotanc iotcan iotcna iotnac iotnca ionact ionatc ioncat ioncta iontac iontca inacto inacot inatco inatoc inaoct inaotc incato incaot inctao inctoa incoat incota intaco intaoc intcao intcoa intoac intoca inoact inoatc inocat inocta inotac inotca oactin oactni oacitn oacint oacnti oacnit oatcin oatcni oaticn oatinc oatnci oatnic oaictn oaicnt oaitcn oaitnc oainct oaintc oancti oancit oantci oantic oanict oanitc ocatin ocatni ocaitn ocaint ocanti ocanit octain octani octian octina octnai octnia ociatn ociant ocitan ocitna ocinat ocinta ocnati ocnait ocntai ocntia ocniat ocnita otacin otacni otaicn otainc otanci otanic otcain otcani otcian otcina otcnai otcnia otiacn otianc otican oticna otinac otinca otnaci otnaic otncai otncia otniac otnica oiactn oiacnt oiatcn oiatnc oianct oiantc oicatn oicant oictan oictna oicnat oicnta oitacn oitanc oitcan oitcna oitnac oitnca oinact oinatc oincat oincta ointac ointca onacti onacit onatci onatic onaict onaitc oncati oncait onctai onctia onciat oncita ontaci ontaic ontcai ontcia ontiac ontica oniact oniatc onicat onicta onitac onitca nactio nactoi nacito naciot nacoti nacoit natcio natcoi natico natioc natoci natoic naicto naicot naitco naitoc naioct naiotc naocti naocit naotci naotic naoict naoitc ncatio ncatoi ncaito ncaiot ncaoti ncaoit nctaio nctaoi nctiao nctioa nctoai nctoia nciato nciaot ncitao ncitoa ncioat nciota ncoati ncoait ncotai ncotia ncoiat ncoita ntacio ntacoi ntaico ntaioc ntaoci ntaoic ntcaio ntcaoi ntciao ntcioa ntcoai ntcoia ntiaco ntiaoc nticao nticoa ntioac ntioca ntoaci ntoaic ntocai ntocia ntoiac ntoica niacto niacot niatco niatoc niaoct niaotc nicato nicaot nictao nictoa nicoat nicota nitaco nitaoc nitcao nitcoa nitoac nitoca nioact nioatc niocat niocta niotac niotca noacti noacit noatci noatic noaict noaitc nocati nocait noctai noctia nociat nocita notaci notaic notcai notcia notiac notica noiact noiatc noicat noicta noitac noitca.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
