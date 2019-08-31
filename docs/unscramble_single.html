@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble single</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble single and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble single and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble single" name="twitter:title">
+    <meta content="Unscramble single" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble single</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters single. To unscramble single we can search against each letter in single and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+<div id="amzn-assoc-ad-f6d519ef-5468-4fb9-84b4-08a9b3b42174"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=f6d519ef-5468-4fb9-84b4-08a9b3b42174"></script>
+
+
+
+
+
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from single</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ingles </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> single </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from single</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lings </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sling </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lenis </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> liens </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lines </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> glens </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> segni </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sengi </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> singe </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ingle </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from single</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lins </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nils </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gins </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sign </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sing </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ling </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lens </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sine </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> isle </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leis </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lies </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lien </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> line </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> engs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gens </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> negs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gels </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> legs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> glen </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> egis </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gies </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gien </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from single</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ins </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sin </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lis </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lin </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nil </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gin </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ens </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sen </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> els </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> les </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sel </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sei </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lei </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lie </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> seg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eng </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gen </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> neg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gel </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gie </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from single</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> is </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> si </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> in </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> li </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> es </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> en </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ne </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> el </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in single like single singel sinlge sinleg sinegl sinelg signle signel siglne siglen sigenl sigeln silnge silneg silgne silgen sileng silegn siengl sienlg siegnl siegln sielng sielgn snigle snigel snilge snileg sniegl snielg sngile sngiel snglie snglei sngeil sngeli snlige snlieg snlgie snlgei snleig snlegi sneigl sneilg snegil snegli snelig snelgi sginle sginel sgilne sgilen sgienl sgieln sgnile sgniel sgnlie sgnlei sgneil sgneli sgline sglien sglnie sglnei sglein sgleni sgeinl sgeiln sgenil sgenli sgelin sgelni slinge slineg sligne sligen slieng sliegn slnige slnieg slngie slngei slneig slnegi slgine slgien slgnie slgnei slgein slgeni sleing sleign slenig slengi slegin slegni seingl seinlg seignl seigln seilng seilgn senigl senilg sengil sengli senlig senlgi seginl segiln segnil segnli seglin seglni seling selign selnig selngi selgin selgni isngle isngel isnlge isnleg isnegl isnelg isgnle isgnel isglne isglen isgenl isgeln islnge islneg islgne islgen isleng islegn isengl isenlg isegnl isegln iselng iselgn insgle insgel inslge insleg insegl inselg ingsle ingsel inglse ingles ingesl ingels inlsge inlseg inlgse inlges inlesg inlegs inesgl ineslg inegsl inegls inelsg inelgs igsnle igsnel igslne igslen igsenl igseln ignsle ignsel ignlse ignles ignesl ignels iglsne iglsen iglnse iglnes iglesn iglens igesnl igesln igensl igenls igelsn igelns ilsnge ilsneg ilsgne ilsgen ilseng ilsegn ilnsge ilnseg ilngse ilnges ilnesg ilnegs ilgsne ilgsen ilgnse ilgnes ilgesn ilgens ilesng ilesgn ilensg ilengs ilegsn ilegns iesngl iesnlg iesgnl iesgln ieslng ieslgn iensgl ienslg iengsl iengls ienlsg ienlgs iegsnl iegsln iegnsl iegnls ieglsn ieglns ielsng ielsgn ielnsg ielngs ielgsn ielgns nsigle nsigel nsilge nsileg nsiegl nsielg nsgile nsgiel nsglie nsglei nsgeil nsgeli nslige nslieg nslgie nslgei nsleig nslegi nseigl nseilg nsegil nsegli nselig nselgi nisgle nisgel nislge nisleg nisegl niselg nigsle nigsel niglse nigles nigesl nigels nilsge nilseg nilgse nilges nilesg nilegs niesgl nieslg niegsl niegls nielsg nielgs ngsile ngsiel ngslie ngslei ngseil ngseli ngisle ngisel ngilse ngiles ngiesl ngiels nglsie nglsei nglise nglies nglesi ngleis ngesil ngesli ngeisl ngeils ngelsi ngelis nlsige nlsieg nlsgie nlsgei nlseig nlsegi nlisge nliseg nligse nliges nliesg nliegs nlgsie nlgsei nlgise nlgies nlgesi nlgeis nlesig nlesgi nleisg nleigs nlegsi nlegis nesigl nesilg nesgil nesgli neslig neslgi neisgl neislg neigsl neigls neilsg neilgs negsil negsli negisl negils neglsi neglis nelsig nelsgi nelisg neligs nelgsi nelgis gsinle gsinel gsilne gsilen gsienl gsieln gsnile gsniel gsnlie gsnlei gsneil gsneli gsline gslien gslnie gslnei gslein gsleni gseinl gseiln gsenil gsenli gselin gselni gisnle gisnel gislne gislen gisenl giseln ginsle ginsel ginlse ginles ginesl ginels gilsne gilsen gilnse gilnes gilesn gilens giesnl giesln giensl gienls gielsn gielns gnsile gnsiel gnslie gnslei gnseil gnseli gnisle gnisel gnilse gniles gniesl gniels gnlsie gnlsei gnlise gnlies gnlesi gnleis gnesil gnesli gneisl gneils gnelsi gnelis glsine glsien glsnie glsnei glsein glseni glisne glisen glinse glines gliesn gliens glnsie glnsei glnise glnies glnesi glneis glesin glesni gleisn gleins glensi glenis gesinl gesiln gesnil gesnli geslin geslni geisnl geisln geinsl geinls geilsn geilns gensil gensli genisl genils genlsi genlis gelsin gelsni gelisn gelins gelnsi gelnis lsinge lsineg lsigne lsigen lsieng lsiegn lsnige lsnieg lsngie lsngei lsneig lsnegi lsgine lsgien lsgnie lsgnei lsgein lsgeni lseing lseign lsenig lsengi lsegin lsegni lisnge lisneg lisgne lisgen liseng lisegn linsge linseg lingse linges linesg linegs ligsne ligsen lignse lignes ligesn ligens liesng liesgn liensg liengs liegsn liegns lnsige lnsieg lnsgie lnsgei lnseig lnsegi lnisge lniseg lnigse lniges lniesg lniegs lngsie lngsei lngise lngies lngesi lngeis lnesig lnesgi lneisg lneigs lnegsi lnegis lgsine lgsien lgsnie lgsnei lgsein lgseni lgisne lgisen lginse lgines lgiesn lgiens lgnsie lgnsei lgnise lgnies lgnesi lgneis lgesin lgesni lgeisn lgeins lgensi lgenis lesing lesign lesnig lesngi lesgin lesgni leisng leisgn leinsg leings leigsn leigns lensig lensgi lenisg lenigs lengsi lengis legsin legsni legisn legins legnsi legnis esingl esinlg esignl esigln esilng esilgn esnigl esnilg esngil esngli esnlig esnlgi esginl esgiln esgnil esgnli esglin esglni esling eslign eslnig eslngi eslgin eslgni eisngl eisnlg eisgnl eisgln eislng eislgn einsgl einslg eingsl eingls einlsg einlgs eigsnl eigsln eignsl eignls eiglsn eiglns eilsng eilsgn eilnsg eilngs eilgsn eilgns ensigl ensilg ensgil ensgli enslig enslgi enisgl enislg enigsl enigls enilsg enilgs engsil engsli engisl engils englsi englis enlsig enlsgi enlisg enligs enlgsi enlgis egsinl egsiln egsnil egsnli egslin egslni egisnl egisln eginsl eginls egilsn egilns egnsil egnsli egnisl egnils egnlsi egnlis eglsin eglsni eglisn eglins eglnsi eglnis elsing elsign elsnig elsngi elsgin elsgni elisng elisgn elinsg elings eligsn eligns elnsig elnsgi elnisg elnigs elngsi elngis elgsin elgsni elgisn elgins elgnsi elgnis.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
