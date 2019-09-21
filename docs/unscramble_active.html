@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble active</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble active and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble active and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble active" name="twitter:title">
+    <meta content="Unscramble active" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble active</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters active. To unscramble active we can search against each letter in active and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+<div id="amzn-assoc-ad-f6d519ef-5468-4fb9-84b4-08a9b3b42174"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=f6d519ef-5468-4fb9-84b4-08a9b3b42174"></script>
+
+<p>
+The word found after unscrambling active means that
+
+chemical agent capable of activity,
+
+the voice used to indicate that the grammatical subject of the verb is performing the action or causing the happening denoted by the verb,
+
+a person who is a participating member of an organization,
+
+tending to become more severe or wider in scope,
+
+engaged in or ready for military or naval operations,
+
+disposed to take action or effectuate change,
+
+taking part in an activity,
+
+characterized by energetic activity,
+
+exerting influence or producing a change or effect,
+
+full of activity or engaged in continuous activity,
+
+in operation,
+
+(of the sun) characterized by an increased occurrence of sunspots and flares and radio emissions,
+
+expressing that the subject of the sentence has the semantic function of actor: &#34;Hemingway favors active constructions&#34;,
+
+(used of verbs (e.g. `to run&#39;) and participial adjectives (e.g. `running&#39; in `running water&#39;)) expressing action rather than a state of being,
+
+(of e.g. volcanos) capable of erupting,
+
+(of e.g. volcanos) erupting or liable to erupt,
+
+engaged in full-time work,
+
+.
+</p>
+
+
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble active with word unscrambler" src="images/unscramble_active.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from active</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> active </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from active</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> civet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> evict </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vitae </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vatic </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cavie </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from active</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vice </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cite </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> etic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vita </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cave </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cate </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tace </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from active</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vie </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tie </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ice </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tav </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> via </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ait </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ave </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ate </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eta </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tae </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tea </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> vac </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> act </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ace </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from active</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> it </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ti </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> et </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> at </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ta </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ai </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ae </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in active like active actiev actvie actvei acteiv actevi acitve acitev acivte acivet acietv acievt acvtie acvtei acvite acviet acveti acveit acetiv acetvi aceitv aceivt acevti acevit atcive atciev atcvie atcvei atceiv atcevi aticve aticev ativce ativec atiecv atievc atvcie atvcei atvice atviec atveci atveic ateciv atecvi ateicv ateivc atevci atevic aictve aictev aicvte aicvet aicetv aicevt aitcve aitcev aitvce aitvec aitecv aitevc aivcte aivcet aivtce aivtec aivect aivetc aiectv aiecvt aietcv aietvc aievct aievtc avctie avctei avcite avciet avceti avceit avtcie avtcei avtice avtiec avteci avteic avicte avicet avitce avitec aviect avietc avecti avecit avetci avetic aveict aveitc aectiv aectvi aecitv aecivt aecvti aecvit aetciv aetcvi aeticv aetivc aetvci aetvic aeictv aeicvt aeitcv aeitvc aeivct aeivtc aevcti aevcit aevtci aevtic aevict aevitc cative catiev catvie catvei cateiv catevi caitve caitev caivte caivet caietv caievt cavtie cavtei cavite caviet caveti caveit caetiv caetvi caeitv caeivt caevti caevit ctaive ctaiev ctavie ctavei ctaeiv ctaevi ctiave ctiaev ctivae ctivea ctieav ctieva ctvaie ctvaei ctviae ctviea ctveai ctveia cteaiv cteavi cteiav cteiva ctevai ctevia ciatve ciatev ciavte ciavet ciaetv ciaevt citave citaev citvae citvea citeav citeva civate civaet civtae civtea civeat civeta cieatv cieavt cietav cietva cievat cievta cvatie cvatei cvaite cvaiet cvaeti cvaeit cvtaie cvtaei cvtiae cvtiea cvteai cvteia cviate cviaet cvitae cvitea cvieat cvieta cveati cveait cvetai cvetia cveiat cveita ceativ ceatvi ceaitv ceaivt ceavti ceavit cetaiv cetavi cetiav cetiva cetvai cetvia ceiatv ceiavt ceitav ceitva ceivat ceivta cevati cevait cevtai cevtia ceviat cevita tacive taciev tacvie tacvei taceiv tacevi taicve taicev taivce taivec taiecv taievc tavcie tavcei tavice taviec taveci taveic taeciv taecvi taeicv taeivc taevci taevic tcaive tcaiev tcavie tcavei tcaeiv tcaevi tciave tciaev tcivae tcivea tcieav tcieva tcvaie tcvaei tcviae tcviea tcveai tcveia tceaiv tceavi tceiav tceiva tcevai tcevia tiacve tiacev tiavce tiavec tiaecv tiaevc ticave ticaev ticvae ticvea ticeav ticeva tivace tivaec tivcae tivcea tiveac tiveca tieacv tieavc tiecav tiecva tievac tievca tvacie tvacei tvaice tvaiec tvaeci tvaeic tvcaie tvcaei tvciae tvciea tvceai tvceia tviace tviaec tvicae tvicea tvieac tvieca tveaci tveaic tvecai tvecia tveiac tveica teaciv teacvi teaicv teaivc teavci teavic tecaiv tecavi teciav teciva tecvai tecvia teiacv teiavc teicav teicva teivac teivca tevaci tevaic tevcai tevcia teviac tevica iactve iactev iacvte iacvet iacetv iacevt iatcve iatcev iatvce iatvec iatecv iatevc iavcte iavcet iavtce iavtec iavect iavetc iaectv iaecvt iaetcv iaetvc iaevct iaevtc icatve icatev icavte icavet icaetv icaevt ictave ictaev ictvae ictvea icteav icteva icvate icvaet icvtae icvtea icveat icveta iceatv iceavt icetav icetva icevat icevta itacve itacev itavce itavec itaecv itaevc itcave itcaev itcvae itcvea itceav itceva itvace itvaec itvcae itvcea itveac itveca iteacv iteavc itecav itecva itevac itevca ivacte ivacet ivatce ivatec ivaect ivaetc ivcate ivcaet ivctae ivctea ivceat ivceta ivtace ivtaec ivtcae ivtcea ivteac ivteca iveact iveatc ivecat ivecta ivetac ivetca ieactv ieacvt ieatcv ieatvc ieavct ieavtc iecatv iecavt iectav iectva iecvat iecvta ietacv ietavc ietcav ietcva ietvac ietvca ievact ievatc ievcat ievcta ievtac ievtca vactie vactei vacite vaciet vaceti vaceit vatcie vatcei vatice vatiec vateci vateic vaicte vaicet vaitce vaitec vaiect vaietc vaecti vaecit vaetci vaetic vaeict vaeitc vcatie vcatei vcaite vcaiet vcaeti vcaeit vctaie vctaei vctiae vctiea vcteai vcteia vciate vciaet vcitae vcitea vcieat vcieta vceati vceait vcetai vcetia vceiat vceita vtacie vtacei vtaice vtaiec vtaeci vtaeic vtcaie vtcaei vtciae vtciea vtceai vtceia vtiace vtiaec vticae vticea vtieac vtieca vteaci vteaic vtecai vtecia vteiac vteica viacte viacet viatce viatec viaect viaetc vicate vicaet victae victea viceat viceta vitace vitaec vitcae vitcea viteac viteca vieact vieatc viecat viecta vietac vietca veacti veacit veatci veatic veaict veaitc vecati vecait vectai vectia veciat vecita vetaci vetaic vetcai vetcia vetiac vetica veiact veiatc veicat veicta veitac veitca eactiv eactvi eacitv eacivt eacvti eacvit eatciv eatcvi eaticv eativc eatvci eatvic eaictv eaicvt eaitcv eaitvc eaivct eaivtc eavcti eavcit eavtci eavtic eavict eavitc ecativ ecatvi ecaitv ecaivt ecavti ecavit ectaiv ectavi ectiav ectiva ectvai ectvia eciatv eciavt ecitav ecitva ecivat ecivta ecvati ecvait ecvtai ecvtia ecviat ecvita etaciv etacvi etaicv etaivc etavci etavic etcaiv etcavi etciav etciva etcvai etcvia etiacv etiavc eticav eticva etivac etivca etvaci etvaic etvcai etvcia etviac etvica eiactv eiacvt eiatcv eiatvc eiavct eiavtc eicatv eicavt eictav eictva eicvat eicvta eitacv eitavc eitcav eitcva eitvac eitvca eivact eivatc eivcat eivcta eivtac eivtca evacti evacit evatci evatic evaict evaitc evcati evcait evctai evctia evciat evcita evtaci evtaic evtcai evtcia evtiac evtica eviact eviatc evicat evicta evitac evitca.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
