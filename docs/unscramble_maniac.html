@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble maniac</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble maniac and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble maniac and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble maniac" name="twitter:title">
+    <meta content="Unscramble maniac" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble maniac</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters maniac. To unscramble maniac we can search against each letter in maniac and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+
+
+<p>
+The word found after unscrambling maniac means that
+
+a semiaquatic reptile of Central and South America that resembles an alligator but has a more heavily armored belly,
+
+.
+</p>
+
+
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble maniac with word unscrambler" src="images/unscramble_maniac.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from maniac</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> caiman </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> maniac </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from maniac</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> amnic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> manic </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> amain </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> amnia </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> anima </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mania </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from maniac</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> amin </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> main </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mina </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cain </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mica </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mana </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> amia </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from maniac</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nim </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mic </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> man </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nam </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ain </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ani </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aim </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ami </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> can </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cam </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mac </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ana </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ama </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from maniac</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> in </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mi </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> an </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> na </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> am </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ma </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ai </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aa </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in maniac like maniac manica manaic manaci mancia mancai mainac mainca maianc maiacn maicna maican maanic maanci maainc maaicn maacni maacin macnia macnai macina macian macani macain mnaiac mnaica mnaaic mnaaci mnacia mnacai mniaac mniaca mniaac mniaca mnicaa mnicaa mnaaic mnaaci mnaiac mnaica mnacai mnacia mncaia mncaai mnciaa mnciaa mncaai mncaia mianac mianca miaanc miaacn miacna miacan minaac minaca minaac minaca mincaa mincaa miaanc miaacn mianac mianca miacan miacna micana micaan micnaa micnaa micaan micana maanic maanci maainc maaicn maacni maacin manaic manaci maniac manica mancai mancia maianc maiacn mainac mainca maican maicna macani macain macnai macnia macian macina mcania mcanai mcaina mcaian mcaani mcaain mcnaia mcnaai mcniaa mcniaa mcnaai mcnaia mciana mciaan mcinaa mcinaa mciaan mciana mcaani mcaain mcanai mcania mcaian mcaina amniac amnica amnaic amnaci amncia amncai aminac aminca amianc amiacn amicna amican amanic amanci amainc amaicn amacni amacin amcnia amcnai amcina amcian amcani amcain anmiac anmica anmaic anmaci anmcia anmcai animac animca aniamc aniacm anicma anicam anamic anamci anaimc anaicm anacmi anacim ancmia ancmai ancima anciam ancami ancaim aimnac aimnca aimanc aimacn aimcna aimcan ainmac ainmca ainamc ainacm aincma aincam aiamnc aiamcn aianmc aiancm aiacmn aiacnm aicmna aicman aicnma aicnam aicamn aicanm aamnic aamnci aaminc aamicn aamcni aamcin aanmic aanmci aanimc aanicm aancmi aancim aaimnc aaimcn aainmc aaincm aaicmn aaicnm aacmni aacmin aacnmi aacnim aacimn aacinm acmnia acmnai acmina acmian acmani acmain acnmia acnmai acnima acniam acnami acnaim acimna aciman acinma acinam aciamn acianm acamni acamin acanmi acanim acaimn acainm nmaiac nmaica nmaaic nmaaci nmacia nmacai nmiaac nmiaca nmiaac nmiaca nmicaa nmicaa nmaaic nmaaci nmaiac nmaica nmacai nmacia nmcaia nmcaai nmciaa nmciaa nmcaai nmcaia namiac namica namaic namaci namcia namcai naimac naimca naiamc naiacm naicma naicam naamic naamci naaimc naaicm naacmi naacim nacmia nacmai nacima naciam nacami nacaim nimaac nimaca nimaac nimaca nimcaa nimcaa niamac niamca niaamc niaacm niacma niacam niamac niamca niaamc niaacm niacma niacam nicmaa nicmaa nicama nicaam nicama nicaam namaic namaci namiac namica namcai namcia naamic naamci naaimc naaicm naacmi naacim naimac naimca naiamc naiacm naicma naicam nacmai nacmia nacami nacaim nacima naciam ncmaia ncmaai ncmiaa ncmiaa ncmaai ncmaia ncamia ncamai ncaima ncaiam ncaami ncaaim ncimaa ncimaa nciama nciaam nciama nciaam ncamai ncamia ncaami ncaaim ncaima ncaiam imanac imanca imaanc imaacn imacna imacan imnaac imnaca imnaac imnaca imncaa imncaa imaanc imaacn imanac imanca imacan imacna imcana imcaan imcnaa imcnaa imcaan imcana iamnac iamnca iamanc iamacn iamcna iamcan ianmac ianmca ianamc ianacm iancma iancam iaamnc iaamcn iaanmc iaancm iaacmn iaacnm iacmna iacman iacnma iacnam iacamn iacanm inmaac inmaca inmaac inmaca inmcaa inmcaa inamac inamca inaamc inaacm inacma inacam inamac inamca inaamc inaacm inacma inacam incmaa incmaa incama incaam incama incaam iamanc iamacn iamnac iamnca iamcan iamcna iaamnc iaamcn iaanmc iaancm iaacmn iaacnm ianmac ianmca ianamc ianacm iancma iancam iacman iacmna iacamn iacanm iacnma iacnam icmana icmaan icmnaa icmnaa icmaan icmana icamna icaman icanma icanam icaamn icaanm icnmaa icnmaa icnama icnaam icnama icnaam icaman icamna icaamn icaanm icanma icanam amanic amanci amainc amaicn amacni amacin amnaic amnaci amniac amnica amncai amncia amianc amiacn aminac aminca amican amicna amcani amcain amcnai amcnia amcian amcina aamnic aamnci aaminc aamicn aamcni aamcin aanmic aanmci aanimc aanicm aancmi aancim aaimnc aaimcn aainmc aaincm aaicmn aaicnm aacmni aacmin aacnmi aacnim aacimn aacinm anmaic anmaci anmiac anmica anmcai anmcia anamic anamci anaimc anaicm anacmi anacim animac animca aniamc aniacm anicma anicam ancmai ancmia ancami ancaim ancima anciam aimanc aimacn aimnac aimnca aimcan aimcna aiamnc aiamcn aianmc aiancm aiacmn aiacnm ainmac ainmca ainamc ainacm aincma aincam aicman aicmna aicamn aicanm aicnma aicnam acmani acmain acmnai acmnia acmian acmina acamni acamin acanmi acanim acaimn acainm acnmai acnmia acnami acnaim acnima acniam aciman acimna aciamn acianm acinma acinam cmania cmanai cmaina cmaian cmaani cmaain cmnaia cmnaai cmniaa cmniaa cmnaai cmnaia cmiana cmiaan cminaa cminaa cmiaan cmiana cmaani cmaain cmanai cmania cmaian cmaina camnia camnai camina camian camani camain canmia canmai canima caniam canami canaim caimna caiman cainma cainam caiamn caianm caamni caamin caanmi caanim caaimn caainm cnmaia cnmaai cnmiaa cnmiaa cnmaai cnmaia cnamia cnamai cnaima cnaiam cnaami cnaaim cnimaa cnimaa cniama cniaam cniama cniaam cnamai cnamia cnaami cnaaim cnaima cnaiam cimana cimaan cimnaa cimnaa cimaan cimana ciamna ciaman cianma cianam ciaamn ciaanm cinmaa cinmaa cinama cinaam cinama cinaam ciaman ciamna ciaamn ciaanm cianma cianam camani camain camnai camnia camian camina caamni caamin caanmi caanim caaimn caainm canmai canmia canami canaim canima caniam caiman caimna caiamn caianm cainma cainam.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
