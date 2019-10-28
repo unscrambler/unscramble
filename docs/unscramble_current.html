@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble current</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble current and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble current and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble current" name="twitter:title">
+    <meta content="Unscramble current" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble current</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters current. To unscramble current we can search against each letter in current and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+
+
+<p>
+The word found after unscrambling current means that
+
+a flow of electricity through a conductor,
+
+a steady flow of a fluid (usually from natural causes),
+
+dominant course (suggestive of running water) of successive events or ideas,
+
+occurring in or belonging to the present time,
+
+.
+</p>
+
+
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble current with word unscrambler" src="images/unscramble_current.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="7-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 7 letter words from current</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> current </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from current</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> return </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> turner </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> curter </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from current</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> truer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tuner </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rerun </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cruet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> curet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cuter </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eruct </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> recut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> truce </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> curer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> recur </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> centu </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from current</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> runt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> turn </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> true </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruer </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tune </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rune </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rent </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tern </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> curt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> curr </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cunt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> curn </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cute </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cure </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ecru </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cent </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from current</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tun </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> run </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> urn </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ute </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ret </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> err </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> net </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ten </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ern </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cru </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cur </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ecu </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rec </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from current</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> nu </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> un </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> et </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> en </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ne </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in current like current curretn currnet currnte currten currtne curernt curertn curenrt curentr curetrn curetnr curnret curnrte curnert curnetr curntre curnter curtren curtrne curtern curtenr curtnre curtner current curretn currnet currnte currten currtne curernt curertn curenrt curentr curetrn curetnr curnret curnrte curnert curnetr curntre curnter curtren curtrne curtern curtenr curtnre curtner cuerrnt cuerrtn cuernrt cuerntr cuertrn cuertnr cuerrnt cuerrtn cuernrt cuerntr cuertrn cuertnr cuenrrt cuenrtr cuenrrt cuenrtr cuentrr cuentrr cuetrrn cuetrnr cuetrrn cuetrnr cuetnrr cuetnrr cunrret cunrrte cunrert cunretr cunrtre cunrter cunrret cunrrte cunrert cunretr cunrtre cunrter cunerrt cunertr cunerrt cunertr cunetrr cunetrr cuntrre cuntrer cuntrre cuntrer cunterr cunterr cutrren cutrrne cutrern cutrenr cutrnre cutrner cutrren cutrrne cutrern cutrenr cutrnre cutrner cuterrn cuternr cuterrn cuternr cutenrr cutenrr cutnrre cutnrer cutnrre cutnrer cutnerr cutnerr crurent cruretn crurnet crurnte crurten crurtne cruernt cruertn cruenrt cruentr cruetrn cruetnr crunret crunrte crunert crunetr cruntre crunter crutren crutrne crutern crutenr crutnre crutner crruent crruetn crrunet crrunte crruten crrutne crreunt crreutn crrenut crrentu crretun crretnu crrnuet crrnute crrneut crrnetu crrntue crrnteu crrtuen crrtune crrteun crrtenu crrtnue crrtneu creurnt creurtn creunrt creuntr creutrn creutnr crerunt crerutn crernut crerntu crertun crertnu crenurt crenutr crenrut crenrtu crentur crentru creturn cretunr cretrun cretrnu cretnur cretnru crnuret crnurte crnuert crnuetr crnutre crnuter crnruet crnrute crnreut crnretu crnrtue crnrteu crneurt crneutr crnerut crnertu crnetur crnetru crnture crntuer crntrue crntreu crnteur crnteru crturen crturne crtuern crtuenr crtunre crtuner crtruen crtrune crtreun crtrenu crtrnue crtrneu crteurn crteunr crterun crternu crtenur crtenru crtnure crtnuer crtnrue crtnreu crtneur crtneru crurent cruretn crurnet crurnte crurten crurtne cruernt cruertn cruenrt cruentr cruetrn cruetnr crunret crunrte crunert crunetr cruntre crunter crutren crutrne crutern crutenr crutnre crutner crruent crruetn crrunet crrunte crruten crrutne crreunt crreutn crrenut crrentu crretun crretnu crrnuet crrnute crrneut crrnetu crrntue crrnteu crrtuen crrtune crrteun crrtenu crrtnue crrtneu creurnt creurtn creunrt creuntr creutrn creutnr crerunt crerutn crernut crerntu crertun crertnu crenurt crenutr crenrut crenrtu crentur crentru creturn cretunr cretrun cretrnu cretnur cretnru crnuret crnurte crnuert crnuetr crnutre crnuter crnruet crnrute crnreut crnretu crnrtue crnrteu crneurt crneutr crnerut crnertu crnetur crnetru crnture crntuer crntrue crntreu crnteur crnteru crturen crturne crtuern crtuenr crtunre crtuner crtruen crtrune crtreun crtrenu crtrnue crtrneu crteurn crteunr crterun crternu crtenur crtenru crtnure crtnuer crtnrue crtnreu crtneur crtneru ceurrnt ceurrtn ceurnrt ceurntr ceurtrn ceurtnr ceurrnt ceurrtn ceurnrt ceurntr ceurtrn ceurtnr ceunrrt ceunrtr ceunrrt ceunrtr ceuntrr ceuntrr ceutrrn ceutrnr ceutrrn ceutrnr ceutnrr ceutnrr cerurnt cerurtn cerunrt ceruntr cerutrn cerutnr cerrunt cerrutn cerrnut cerrntu cerrtun cerrtnu cernurt cernutr cernrut cernrtu cerntur cerntru certurn certunr certrun certrnu certnur certnru cerurnt cerurtn cerunrt ceruntr cerutrn cerutnr cerrunt cerrutn cerrnut cerrntu cerrtun cerrtnu cernurt cernutr cernrut cernrtu cerntur cerntru certurn certunr certrun certrnu certnur certnru cenurrt cenurtr cenurrt cenurtr cenutrr cenutrr cenrurt cenrutr cenrrut cenrrtu cenrtur cenrtru cenrurt cenrutr cenrrut cenrrtu cenrtur cenrtru centurr centurr centrur centrru centrur centrru ceturrn ceturnr ceturrn ceturnr cetunrr cetunrr cetrurn cetrunr cetrrun cetrrnu cetrnur cetrnru cetrurn cetrunr cetrrun cetrrnu cetrnur cetrnru cetnurr cetnurr cetnrur cetnrru cetnrur cetnrru cnurret cnurrte cnurert cnuretr cnurtre cnurter cnurret cnurrte cnurert cnuretr cnurtre cnurter cnuerrt cnuertr cnuerrt cnuertr cnuetrr cnuetrr cnutrre cnutrer cnutrre cnutrer cnuterr cnuterr cnruret cnrurte cnruert cnruetr cnrutre cnruter cnrruet cnrrute cnrreut cnrretu cnrrtue cnrrteu cnreurt cnreutr cnrerut cnrertu cnretur cnretru cnrture cnrtuer cnrtrue cnrtreu cnrteur cnrteru cnruret cnrurte cnruert cnruetr cnrutre cnruter cnrruet cnrrute cnrreut cnrretu cnrrtue cnrrteu cnreurt cnreutr cnrerut cnrertu cnretur cnretru cnrture cnrtuer cnrtrue cnrtreu cnrteur cnrteru cneurrt cneurtr cneurrt cneurtr cneutrr cneutrr cnerurt cnerutr cnerrut cnerrtu cnertur cnertru cnerurt cnerutr cnerrut cnerrtu cnertur cnertru cneturr cneturr cnetrur cnetrru cnetrur cnetrru cnturre cnturer cnturre cnturer cntuerr cntuerr cntrure cntruer cntrrue cntrreu cntreur cntreru cntrure cntruer cntrrue cntrreu cntreur cntreru cnteurr cnteurr cnterur cnterru cnterur cnterru cturren cturrne cturern cturenr cturnre cturner cturren cturrne cturern cturenr cturnre cturner ctuerrn ctuernr ctuerrn ctuernr ctuenrr ctuenrr ctunrre ctunrer ctunrre ctunrer ctunerr ctunerr ctruren ctrurne ctruern ctruenr ctrunre ctruner ctrruen ctrrune ctrreun ctrrenu ctrrnue ctrrneu ctreurn ctreunr ctrerun ctrernu ctrenur ctrenru ctrnure ctrnuer ctrnrue ctrnreu ctrneur ctrneru ctruren ctrurne ctruern ctruenr ctrunre ctruner ctrruen ctrrune ctrreun ctrrenu ctrrnue ctrrneu ctreurn ctreunr ctrerun ctrernu ctrenur ctrenru ctrnure ctrnuer ctrnrue ctrnreu ctrneur ctrneru cteurrn cteurnr cteurrn cteurnr cteunrr cteunrr cterurn cterunr cterrun cterrnu cternur cternru cterurn cterunr cterrun cterrnu cternur cternru ctenurr ctenurr ctenrur ctenrru ctenrur ctenrru ctnurre ctnurer ctnurre ctnurer ctnuerr ctnuerr ctnrure ctnruer ctnrrue ctnrreu ctnreur ctnreru ctnrure ctnruer ctnrrue ctnrreu ctnreur ctnreru ctneurr ctneurr ctnerur ctnerru ctnerur ctnerru ucrrent ucrretn ucrrnet ucrrnte ucrrten ucrrtne ucrernt ucrertn ucrenrt ucrentr ucretrn ucretnr ucrnret ucrnrte ucrnert ucrnetr ucrntre ucrnter ucrtren ucrtrne ucrtern ucrtenr ucrtnre ucrtner ucrrent ucrretn ucrrnet ucrrnte ucrrten ucrrtne ucrernt ucrertn ucrenrt ucrentr ucretrn ucretnr ucrnret ucrnrte ucrnert ucrnetr ucrntre ucrnter ucrtren ucrtrne ucrtern ucrtenr ucrtnre ucrtner ucerrnt ucerrtn ucernrt ucerntr ucertrn ucertnr ucerrnt ucerrtn ucernrt ucerntr ucertrn ucertnr ucenrrt ucenrtr ucenrrt ucenrtr ucentrr ucentrr ucetrrn ucetrnr ucetrrn ucetrnr ucetnrr ucetnrr ucnrret ucnrrte ucnrert ucnretr ucnrtre ucnrter ucnrret ucnrrte ucnrert ucnretr ucnrtre ucnrter ucnerrt ucnertr ucnerrt ucnertr ucnetrr ucnetrr ucntrre ucntrer ucntrre ucntrer ucnterr ucnterr uctrren uctrrne uctrern uctrenr uctrnre uctrner uctrren uctrrne uctrern uctrenr uctrnre uctrner ucterrn ucternr ucterrn ucternr uctenrr uctenrr uctnrre uctnrer uctnrre uctnrer uctnerr uctnerr urcrent urcretn urcrnet urcrnte urcrten urcrtne urcernt urcertn urcenrt urcentr urcetrn urcetnr urcnret urcnrte urcnert urcnetr urcntre urcnter urctren urctrne urctern urctenr urctnre urctner urrcent urrcetn urrcnet urrcnte urrcten urrctne urrecnt urrectn urrenct urrentc urretcn urretnc urrncet urrncte urrnect urrnetc urrntce urrntec urrtcen urrtcne urrtecn urrtenc urrtnce urrtnec urecrnt urecrtn urecnrt urecntr urectrn urectnr urercnt urerctn urernct urerntc urertcn urertnc urencrt urenctr urenrct urenrtc urentcr urentrc uretcrn uretcnr uretrcn uretrnc uretncr uretnrc urncret urncrte urncert urncetr urnctre urncter urnrcet urnrcte urnrect urnretc urnrtce urnrtec urnecrt urnectr urnerct urnertc urnetcr urnetrc urntcre urntcer urntrce urntrec urntecr urnterc urtcren urtcrne urtcern urtcenr urtcnre urtcner urtrcen urtrcne urtrecn urtrenc urtrnce urtrnec urtecrn urtecnr urtercn urternc urtencr urtenrc urtncre urtncer urtnrce urtnrec urtnecr urtnerc urcrent urcretn urcrnet urcrnte urcrten urcrtne urcernt urcertn urcenrt urcentr urcetrn urcetnr urcnret urcnrte urcnert urcnetr urcntre urcnter urctren urctrne urctern urctenr urctnre urctner urrcent urrcetn urrcnet urrcnte urrcten urrctne urrecnt urrectn urrenct urrentc urretcn urretnc urrncet urrncte urrnect urrnetc urrntce urrntec urrtcen urrtcne urrtecn urrtenc urrtnce urrtnec urecrnt urecrtn urecnrt urecntr urectrn urectnr urercnt urerctn urernct urerntc urertcn urertnc urencrt urenctr urenrct urenrtc urentcr urentrc uretcrn uretcnr uretrcn uretrnc uretncr uretnrc urncret urncrte urncert urncetr urnctre urncter urnrcet urnrcte urnrect urnretc urnrtce urnrtec urnecrt urnectr urnerct urnertc urnetcr urnetrc urntcre urntcer urntrce urntrec urntecr urnterc urtcren urtcrne urtcern urtcenr urtcnre urtcner urtrcen urtrcne urtrecn urtrenc urtrnce urtrnec urtecrn urtecnr urtercn urternc urtencr urtenrc urtncre urtncer urtnrce urtnrec urtnecr urtnerc uecrrnt uecrrtn uecrnrt uecrntr uecrtrn uecrtnr uecrrnt uecrrtn uecrnrt uecrntr uecrtrn uecrtnr uecnrrt uecnrtr uecnrrt uecnrtr uecntrr uecntrr uectrrn uectrnr uectrrn uectrnr uectnrr uectnrr uercrnt uercrtn uercnrt uercntr uerctrn uerctnr uerrcnt uerrctn uerrnct uerrntc uerrtcn uerrtnc uerncrt uernctr uernrct uernrtc uerntcr uerntrc uertcrn uertcnr uertrcn uertrnc uertncr uertnrc uercrnt uercrtn uercnrt uercntr uerctrn uerctnr uerrcnt uerrctn uerrnct uerrntc uerrtcn uerrtnc uerncrt uernctr uernrct uernrtc uerntcr uerntrc uertcrn uertcnr uertrcn uertrnc uertncr uertnrc uencrrt uencrtr uencrrt uencrtr uenctrr uenctrr uenrcrt uenrctr uenrrct uenrrtc uenrtcr uenrtrc uenrcrt uenrctr uenrrct uenrrtc uenrtcr uenrtrc uentcrr uentcrr uentrcr uentrrc uentrcr uentrrc uetcrrn uetcrnr uetcrrn uetcrnr uetcnrr uetcnrr uetrcrn uetrcnr uetrrcn uetrrnc uetrncr uetrnrc uetrcrn uetrcnr uetrrcn uetrrnc uetrncr uetrnrc uetncrr uetncrr uetnrcr uetnrrc uetnrcr uetnrrc uncrret uncrrte uncrert uncretr uncrtre uncrter uncrret uncrrte uncrert uncretr uncrtre uncrter uncerrt uncertr uncerrt uncertr uncetrr uncetrr unctrre unctrer unctrre unctrer uncterr uncterr unrcret unrcrte unrcert unrcetr unrctre unrcter unrrcet unrrcte unrrect unrretc unrrtce unrrtec unrecrt unrectr unrerct unrertc unretcr unretrc unrtcre unrtcer unrtrce unrtrec unrtecr unrterc unrcret unrcrte unrcert unrcetr unrctre unrcter unrrcet unrrcte unrrect unrretc unrrtce unrrtec unrecrt unrectr unrerct unrertc unretcr unretrc unrtcre unrtcer unrtrce unrtrec unrtecr unrterc unecrrt unecrtr unecrrt unecrtr unectrr unectrr unercrt unerctr unerrct unerrtc unertcr unertrc unercrt unerctr unerrct unerrtc unertcr unertrc unetcrr unetcrr unetrcr unetrrc unetrcr unetrrc untcrre untcrer untcrre untcrer untcerr untcerr untrcre untrcer untrrce untrrec untrecr untrerc untrcre untrcer untrrce untrrec untrecr untrerc untecrr untecrr untercr unterrc untercr unterrc utcrren utcrrne utcrern utcrenr utcrnre utcrner utcrren utcrrne utcrern utcrenr utcrnre utcrner utcerrn utcernr utcerrn utcernr utcenrr utcenrr utcnrre utcnrer utcnrre utcnrer utcnerr utcnerr utrcren utrcrne utrcern utrcenr utrcnre utrcner utrrcen utrrcne utrrecn utrrenc utrrnce utrrnec utrecrn utrecnr utrercn utrernc utrencr utrenrc utrncre utrncer utrnrce utrnrec utrnecr utrnerc utrcren utrcrne utrcern utrcenr utrcnre utrcner utrrcen utrrcne utrrecn utrrenc utrrnce utrrnec utrecrn utrecnr utrercn utrernc utrencr utrenrc utrncre utrncer utrnrce utrnrec utrnecr utrnerc utecrrn utecrnr utecrrn utecrnr utecnrr utecnrr utercrn utercnr uterrcn uterrnc uterncr uternrc utercrn utercnr uterrcn uterrnc uterncr uternrc utencrr utencrr utenrcr utenrrc utenrcr utenrrc utncrre utncrer utncrre utncrer utncerr utncerr utnrcre utnrcer utnrrce utnrrec utnrecr utnrerc utnrcre utnrcer utnrrce utnrrec utnrecr utnrerc utnecrr utnecrr utnercr utnerrc utnercr utnerrc rcurent rcuretn rcurnet rcurnte rcurten rcurtne rcuernt rcuertn rcuenrt rcuentr rcuetrn rcuetnr rcunret rcunrte rcunert rcunetr rcuntre rcunter rcutren rcutrne rcutern rcutenr rcutnre rcutner rcruent rcruetn rcrunet rcrunte rcruten rcrutne rcreunt rcreutn rcrenut rcrentu rcretun rcretnu rcrnuet rcrnute rcrneut rcrnetu rcrntue rcrnteu rcrtuen rcrtune rcrteun rcrtenu rcrtnue rcrtneu rceurnt rceurtn rceunrt rceuntr rceutrn rceutnr rcerunt rcerutn rcernut rcerntu rcertun rcertnu rcenurt rcenutr rcenrut rcenrtu rcentur rcentru rceturn rcetunr rcetrun rcetrnu rcetnur rcetnru rcnuret rcnurte rcnuert rcnuetr rcnutre rcnuter rcnruet rcnrute rcnreut rcnretu rcnrtue rcnrteu rcneurt rcneutr rcnerut rcnertu rcnetur rcnetru rcnture rcntuer rcntrue rcntreu rcnteur rcnteru rcturen rcturne rctuern rctuenr rctunre rctuner rctruen rctrune rctreun rctrenu rctrnue rctrneu rcteurn rcteunr rcterun rcternu rctenur rctenru rctnure rctnuer rctnrue rctnreu rctneur rctneru rucrent rucretn rucrnet rucrnte rucrten rucrtne rucernt rucertn rucenrt rucentr rucetrn rucetnr rucnret rucnrte rucnert rucnetr rucntre rucnter ructren ructrne ructern ructenr ructnre ructner rurcent rurcetn rurcnet rurcnte rurcten rurctne rurecnt rurectn rurenct rurentc ruretcn ruretnc rurncet rurncte rurnect rurnetc rurntce rurntec rurtcen rurtcne rurtecn rurtenc rurtnce rurtnec ruecrnt ruecrtn ruecnrt ruecntr ruectrn ruectnr ruercnt ruerctn ruernct ruerntc ruertcn ruertnc ruencrt ruenctr ruenrct ruenrtc ruentcr ruentrc ruetcrn ruetcnr ruetrcn ruetrnc ruetncr ruetnrc runcret runcrte runcert runcetr runctre runcter runrcet runrcte runrect runretc runrtce runrtec runecrt runectr runerct runertc runetcr runetrc runtcre runtcer runtrce runtrec runtecr runterc rutcren rutcrne rutcern rutcenr rutcnre rutcner rutrcen rutrcne rutrecn rutrenc rutrnce rutrnec rutecrn rutecnr rutercn ruternc rutencr rutenrc rutncre rutncer rutnrce rutnrec rutnecr rutnerc rrcuent rrcuetn rrcunet rrcunte rrcuten rrcutne rrceunt rrceutn rrcenut rrcentu rrcetun rrcetnu rrcnuet rrcnute rrcneut rrcnetu rrcntue rrcnteu rrctuen rrctune rrcteun rrctenu rrctnue rrctneu rrucent rrucetn rrucnet rrucnte rructen rructne rruecnt rruectn rruenct rruentc rruetcn rruetnc rruncet rruncte rrunect rrunetc rruntce rruntec rrutcen rrutcne rrutecn rrutenc rrutnce rrutnec rrecunt rrecutn rrecnut rrecntu rrectun rrectnu rreucnt rreuctn rreunct rreuntc rreutcn rreutnc rrencut rrenctu rrenuct rrenutc rrentcu rrentuc rretcun rretcnu rretucn rretunc rretncu rretnuc rrncuet rrncute rrnceut rrncetu rrnctue rrncteu rrnucet rrnucte rrnuect rrnuetc rrnutce rrnutec rrnecut rrnectu rrneuct rrneutc rrnetcu rrnetuc rrntcue rrntceu rrntuce rrntuec rrntecu rrnteuc rrtcuen rrtcune rrtceun rrtcenu rrtcnue rrtcneu rrtucen rrtucne rrtuecn rrtuenc rrtunce rrtunec rrtecun rrtecnu rrteucn rrteunc rrtencu rrtenuc rrtncue rrtnceu rrtnuce rrtnuec rrtnecu rrtneuc recurnt recurtn recunrt recuntr recutrn recutnr recrunt recrutn recrnut recrntu recrtun recrtnu recnurt recnutr recnrut recnrtu recntur recntru recturn rectunr rectrun rectrnu rectnur rectnru reucrnt reucrtn reucnrt reucntr reuctrn reuctnr reurcnt reurctn reurnct reurntc reurtcn reurtnc reuncrt reunctr reunrct reunrtc reuntcr reuntrc reutcrn reutcnr reutrcn reutrnc reutncr reutnrc rercunt rercutn rercnut rercntu rerctun rerctnu rerucnt reructn rerunct reruntc rerutcn rerutnc rerncut rernctu rernuct rernutc rerntcu rerntuc rertcun rertcnu rertucn rertunc rertncu rertnuc rencurt rencutr rencrut rencrtu renctur renctru renucrt renuctr renurct renurtc renutcr renutrc renrcut renrctu renruct renrutc renrtcu renrtuc rentcur rentcru rentucr renturc rentrcu rentruc retcurn retcunr retcrun retcrnu retcnur retcnru retucrn retucnr returcn returnc retuncr retunrc retrcun retrcnu retrucn retrunc retrncu retrnuc retncur retncru retnucr retnurc retnrcu retnruc rncuret rncurte rncuert rncuetr rncutre rncuter rncruet rncrute rncreut rncretu rncrtue rncrteu rnceurt rnceutr rncerut rncertu rncetur rncetru rncture rnctuer rnctrue rnctreu rncteur rncteru rnucret rnucrte rnucert rnucetr rnuctre rnucter rnurcet rnurcte rnurect rnuretc rnurtce rnurtec rnuecrt rnuectr rnuerct rnuertc rnuetcr rnuetrc rnutcre rnutcer rnutrce rnutrec rnutecr rnuterc rnrcuet rnrcute rnrceut rnrcetu rnrctue rnrcteu rnrucet rnructe rnruect rnruetc rnrutce rnrutec rnrecut rnrectu rnreuct rnreutc rnretcu rnretuc rnrtcue rnrtceu rnrtuce rnrtuec rnrtecu rnrteuc rnecurt rnecutr rnecrut rnecrtu rnectur rnectru rneucrt rneuctr rneurct rneurtc rneutcr rneutrc rnercut rnerctu rneruct rnerutc rnertcu rnertuc rnetcur rnetcru rnetucr rneturc rnetrcu rnetruc rntcure rntcuer rntcrue rntcreu rntceur rntceru rntucre rntucer rnturce rnturec rntuecr rntuerc rntrcue rntrceu rntruce rntruec rntrecu rntreuc rntecur rntecru rnteucr rnteurc rntercu rnteruc rtcuren rtcurne rtcuern rtcuenr rtcunre rtcuner rtcruen rtcrune rtcreun rtcrenu rtcrnue rtcrneu rtceurn rtceunr rtcerun rtcernu rtcenur rtcenru rtcnure rtcnuer rtcnrue rtcnreu rtcneur rtcneru rtucren rtucrne rtucern rtucenr rtucnre rtucner rturcen rturcne rturecn rturenc rturnce rturnec rtuecrn rtuecnr rtuercn rtuernc rtuencr rtuenrc rtuncre rtuncer rtunrce rtunrec rtunecr rtunerc rtrcuen rtrcune rtrceun rtrcenu rtrcnue rtrcneu rtrucen rtrucne rtruecn rtruenc rtrunce rtrunec rtrecun rtrecnu rtreucn rtreunc rtrencu rtrenuc rtrncue rtrnceu rtrnuce rtrnuec rtrnecu rtrneuc rtecurn rtecunr rtecrun rtecrnu rtecnur rtecnru rteucrn rteucnr rteurcn rteurnc rteuncr rteunrc rtercun rtercnu rterucn rterunc rterncu rternuc rtencur rtencru rtenucr rtenurc rtenrcu rtenruc rtncure rtncuer rtncrue rtncreu rtnceur rtnceru rtnucre rtnucer rtnurce rtnurec rtnuecr rtnuerc rtnrcue rtnrceu rtnruce rtnruec rtnrecu rtnreuc rtnecur rtnecru rtneucr rtneurc rtnercu rtneruc rcurent rcuretn rcurnet rcurnte rcurten rcurtne rcuernt rcuertn rcuenrt rcuentr rcuetrn rcuetnr rcunret rcunrte rcunert rcunetr rcuntre rcunter rcutren rcutrne rcutern rcutenr rcutnre rcutner rcruent rcruetn rcrunet rcrunte rcruten rcrutne rcreunt rcreutn rcrenut rcrentu rcretun rcretnu rcrnuet rcrnute rcrneut rcrnetu rcrntue rcrnteu rcrtuen rcrtune rcrteun rcrtenu rcrtnue rcrtneu rceurnt rceurtn rceunrt rceuntr rceutrn rceutnr rcerunt rcerutn rcernut rcerntu rcertun rcertnu rcenurt rcenutr rcenrut rcenrtu rcentur rcentru rceturn rcetunr rcetrun rcetrnu rcetnur rcetnru rcnuret rcnurte rcnuert rcnuetr rcnutre rcnuter rcnruet rcnrute rcnreut rcnretu rcnrtue rcnrteu rcneurt rcneutr rcnerut rcnertu rcnetur rcnetru rcnture rcntuer rcntrue rcntreu rcnteur rcnteru rcturen rcturne rctuern rctuenr rctunre rctuner rctruen rctrune rctreun rctrenu rctrnue rctrneu rcteurn rcteunr rcterun rcternu rctenur rctenru rctnure rctnuer rctnrue rctnreu rctneur rctneru rucrent rucretn rucrnet rucrnte rucrten rucrtne rucernt rucertn rucenrt rucentr rucetrn rucetnr rucnret rucnrte rucnert rucnetr rucntre rucnter ructren ructrne ructern ructenr ructnre ructner rurcent rurcetn rurcnet rurcnte rurcten rurctne rurecnt rurectn rurenct rurentc ruretcn ruretnc rurncet rurncte rurnect rurnetc rurntce rurntec rurtcen rurtcne rurtecn rurtenc rurtnce rurtnec ruecrnt ruecrtn ruecnrt ruecntr ruectrn ruectnr ruercnt ruerctn ruernct ruerntc ruertcn ruertnc ruencrt ruenctr ruenrct ruenrtc ruentcr ruentrc ruetcrn ruetcnr ruetrcn ruetrnc ruetncr ruetnrc runcret runcrte runcert runcetr runctre runcter runrcet runrcte runrect runretc runrtce runrtec runecrt runectr runerct runertc runetcr runetrc runtcre runtcer runtrce runtrec runtecr runterc rutcren rutcrne rutcern rutcenr rutcnre rutcner rutrcen rutrcne rutrecn rutrenc rutrnce rutrnec rutecrn rutecnr rutercn ruternc rutencr rutenrc rutncre rutncer rutnrce rutnrec rutnecr rutnerc rrcuent rrcuetn rrcunet rrcunte rrcuten rrcutne rrceunt rrceutn rrcenut rrcentu rrcetun rrcetnu rrcnuet rrcnute rrcneut rrcnetu rrcntue rrcnteu rrctuen rrctune rrcteun rrctenu rrctnue rrctneu rrucent rrucetn rrucnet rrucnte rructen rructne rruecnt rruectn rruenct rruentc rruetcn rruetnc rruncet rruncte rrunect rrunetc rruntce rruntec rrutcen rrutcne rrutecn rrutenc rrutnce rrutnec rrecunt rrecutn rrecnut rrecntu rrectun rrectnu rreucnt rreuctn rreunct rreuntc rreutcn rreutnc rrencut rrenctu rrenuct rrenutc rrentcu rrentuc rretcun rretcnu rretucn rretunc rretncu rretnuc rrncuet rrncute rrnceut rrncetu rrnctue rrncteu rrnucet rrnucte rrnuect rrnuetc rrnutce rrnutec rrnecut rrnectu rrneuct rrneutc rrnetcu rrnetuc rrntcue rrntceu rrntuce rrntuec rrntecu rrnteuc rrtcuen rrtcune rrtceun rrtcenu rrtcnue rrtcneu rrtucen rrtucne rrtuecn rrtuenc rrtunce rrtunec rrtecun rrtecnu rrteucn rrteunc rrtencu rrtenuc rrtncue rrtnceu rrtnuce rrtnuec rrtnecu rrtneuc recurnt recurtn recunrt recuntr recutrn recutnr recrunt recrutn recrnut recrntu recrtun recrtnu recnurt recnutr recnrut recnrtu recntur recntru recturn rectunr rectrun rectrnu rectnur rectnru reucrnt reucrtn reucnrt reucntr reuctrn reuctnr reurcnt reurctn reurnct reurntc reurtcn reurtnc reuncrt reunctr reunrct reunrtc reuntcr reuntrc reutcrn reutcnr reutrcn reutrnc reutncr reutnrc rercunt rercutn rercnut rercntu rerctun rerctnu rerucnt reructn rerunct reruntc rerutcn rerutnc rerncut rernctu rernuct rernutc rerntcu rerntuc rertcun rertcnu rertucn rertunc rertncu rertnuc rencurt rencutr rencrut rencrtu renctur renctru renucrt renuctr renurct renurtc renutcr renutrc renrcut renrctu renruct renrutc renrtcu renrtuc rentcur rentcru rentucr renturc rentrcu rentruc retcurn retcunr retcrun retcrnu retcnur retcnru retucrn retucnr returcn returnc retuncr retunrc retrcun retrcnu retrucn retrunc retrncu retrnuc retncur retncru retnucr retnurc retnrcu retnruc rncuret rncurte rncuert rncuetr rncutre rncuter rncruet rncrute rncreut rncretu rncrtue rncrteu rnceurt rnceutr rncerut rncertu rncetur rncetru rncture rnctuer rnctrue rnctreu rncteur rncteru rnucret rnucrte rnucert rnucetr rnuctre rnucter rnurcet rnurcte rnurect rnuretc rnurtce rnurtec rnuecrt rnuectr rnuerct rnuertc rnuetcr rnuetrc rnutcre rnutcer rnutrce rnutrec rnutecr rnuterc rnrcuet rnrcute rnrceut rnrcetu rnrctue rnrcteu rnrucet rnructe rnruect rnruetc rnrutce rnrutec rnrecut rnrectu rnreuct rnreutc rnretcu rnretuc rnrtcue rnrtceu rnrtuce rnrtuec rnrtecu rnrteuc rnecurt rnecutr rnecrut rnecrtu rnectur rnectru rneucrt rneuctr rneurct rneurtc rneutcr rneutrc rnercut rnerctu rneruct rnerutc rnertcu rnertuc rnetcur rnetcru rnetucr rneturc rnetrcu rnetruc rntcure rntcuer rntcrue rntcreu rntceur rntceru rntucre rntucer rnturce rnturec rntuecr rntuerc rntrcue rntrceu rntruce rntruec rntrecu rntreuc rntecur rntecru rnteucr rnteurc rntercu rnteruc rtcuren rtcurne rtcuern rtcuenr rtcunre rtcuner rtcruen rtcrune rtcreun rtcrenu rtcrnue rtcrneu rtceurn rtceunr rtcerun rtcernu rtcenur rtcenru rtcnure rtcnuer rtcnrue rtcnreu rtcneur rtcneru rtucren rtucrne rtucern rtucenr rtucnre rtucner rturcen rturcne rturecn rturenc rturnce rturnec rtuecrn rtuecnr rtuercn rtuernc rtuencr rtuenrc rtuncre rtuncer rtunrce rtunrec rtunecr rtunerc rtrcuen rtrcune rtrceun rtrcenu rtrcnue rtrcneu rtrucen rtrucne rtruecn rtruenc rtrunce rtrunec rtrecun rtrecnu rtreucn rtreunc rtrencu rtrenuc rtrncue rtrnceu rtrnuce rtrnuec rtrnecu rtrneuc rtecurn rtecunr rtecrun rtecrnu rtecnur rtecnru rteucrn rteucnr rteurcn rteurnc rteuncr rteunrc rtercun rtercnu rterucn rterunc rterncu rternuc rtencur rtencru rtenucr rtenurc rtenrcu rtenruc rtncure rtncuer rtncrue rtncreu rtnceur rtnceru rtnucre rtnucer rtnurce rtnurec rtnuecr rtnuerc rtnrcue rtnrceu rtnruce rtnruec rtnrecu rtnreuc rtnecur rtnecru rtneucr rtneurc rtnercu rtneruc ecurrnt ecurrtn ecurnrt ecurntr ecurtrn ecurtnr ecurrnt ecurrtn ecurnrt ecurntr ecurtrn ecurtnr ecunrrt ecunrtr ecunrrt ecunrtr ecuntrr ecuntrr ecutrrn ecutrnr ecutrrn ecutrnr ecutnrr ecutnrr ecrurnt ecrurtn ecrunrt ecruntr ecrutrn ecrutnr ecrrunt ecrrutn ecrrnut ecrrntu ecrrtun ecrrtnu ecrnurt ecrnutr ecrnrut ecrnrtu ecrntur ecrntru ecrturn ecrtunr ecrtrun ecrtrnu ecrtnur ecrtnru ecrurnt ecrurtn ecrunrt ecruntr ecrutrn ecrutnr ecrrunt ecrrutn ecrrnut ecrrntu ecrrtun ecrrtnu ecrnurt ecrnutr ecrnrut ecrnrtu ecrntur ecrntru ecrturn ecrtunr ecrtrun ecrtrnu ecrtnur ecrtnru ecnurrt ecnurtr ecnurrt ecnurtr ecnutrr ecnutrr ecnrurt ecnrutr ecnrrut ecnrrtu ecnrtur ecnrtru ecnrurt ecnrutr ecnrrut ecnrrtu ecnrtur ecnrtru ecnturr ecnturr ecntrur ecntrru ecntrur ecntrru ecturrn ecturnr ecturrn ecturnr ectunrr ectunrr ectrurn ectrunr ectrrun ectrrnu ectrnur ectrnru ectrurn ectrunr ectrrun ectrrnu ectrnur ectrnru ectnurr ectnurr ectnrur ectnrru ectnrur ectnrru eucrrnt eucrrtn eucrnrt eucrntr eucrtrn eucrtnr eucrrnt eucrrtn eucrnrt eucrntr eucrtrn eucrtnr eucnrrt eucnrtr eucnrrt eucnrtr eucntrr eucntrr euctrrn euctrnr euctrrn euctrnr euctnrr euctnrr eurcrnt eurcrtn eurcnrt eurcntr eurctrn eurctnr eurrcnt eurrctn eurrnct eurrntc eurrtcn eurrtnc eurncrt eurnctr eurnrct eurnrtc eurntcr eurntrc eurtcrn eurtcnr eurtrcn eurtrnc eurtncr eurtnrc eurcrnt eurcrtn eurcnrt eurcntr eurctrn eurctnr eurrcnt eurrctn eurrnct eurrntc eurrtcn eurrtnc eurncrt eurnctr eurnrct eurnrtc eurntcr eurntrc eurtcrn eurtcnr eurtrcn eurtrnc eurtncr eurtnrc euncrrt euncrtr euncrrt euncrtr eunctrr eunctrr eunrcrt eunrctr eunrrct eunrrtc eunrtcr eunrtrc eunrcrt eunrctr eunrrct eunrrtc eunrtcr eunrtrc euntcrr euntcrr euntrcr euntrrc euntrcr euntrrc eutcrrn eutcrnr eutcrrn eutcrnr eutcnrr eutcnrr eutrcrn eutrcnr eutrrcn eutrrnc eutrncr eutrnrc eutrcrn eutrcnr eutrrcn eutrrnc eutrncr eutrnrc eutncrr eutncrr eutnrcr eutnrrc eutnrcr eutnrrc ercurnt ercurtn ercunrt ercuntr ercutrn ercutnr ercrunt ercrutn ercrnut ercrntu ercrtun ercrtnu ercnurt ercnutr ercnrut ercnrtu ercntur ercntru ercturn erctunr erctrun erctrnu erctnur erctnru erucrnt erucrtn erucnrt erucntr eructrn eructnr erurcnt erurctn erurnct erurntc erurtcn erurtnc eruncrt erunctr erunrct erunrtc eruntcr eruntrc erutcrn erutcnr erutrcn erutrnc erutncr erutnrc errcunt errcutn errcnut errcntu errctun errctnu errucnt erructn errunct erruntc errutcn errutnc errncut errnctu errnuct errnutc errntcu errntuc errtcun errtcnu errtucn errtunc errtncu errtnuc erncurt erncutr erncrut erncrtu ernctur ernctru ernucrt ernuctr ernurct ernurtc ernutcr ernutrc ernrcut ernrctu ernruct ernrutc ernrtcu ernrtuc erntcur erntcru erntucr ernturc erntrcu erntruc ertcurn ertcunr ertcrun ertcrnu ertcnur ertcnru ertucrn ertucnr erturcn erturnc ertuncr ertunrc ertrcun ertrcnu ertrucn ertrunc ertrncu ertrnuc ertncur ertncru ertnucr ertnurc ertnrcu ertnruc ercurnt ercurtn ercunrt ercuntr ercutrn ercutnr ercrunt ercrutn ercrnut ercrntu ercrtun ercrtnu ercnurt ercnutr ercnrut ercnrtu ercntur ercntru ercturn erctunr erctrun erctrnu erctnur erctnru erucrnt erucrtn erucnrt erucntr eructrn eructnr erurcnt erurctn erurnct erurntc erurtcn erurtnc eruncrt erunctr erunrct erunrtc eruntcr eruntrc erutcrn erutcnr erutrcn erutrnc erutncr erutnrc errcunt errcutn errcnut errcntu errctun errctnu errucnt erructn errunct erruntc errutcn errutnc errncut errnctu errnuct errnutc errntcu errntuc errtcun errtcnu errtucn errtunc errtncu errtnuc erncurt erncutr erncrut erncrtu ernctur ernctru ernucrt ernuctr ernurct ernurtc ernutcr ernutrc ernrcut ernrctu ernruct ernrutc ernrtcu ernrtuc erntcur erntcru erntucr ernturc erntrcu erntruc ertcurn ertcunr ertcrun ertcrnu ertcnur ertcnru ertucrn ertucnr erturcn erturnc ertuncr ertunrc ertrcun ertrcnu ertrucn ertrunc ertrncu ertrnuc ertncur ertncru ertnucr ertnurc ertnrcu ertnruc encurrt encurtr encurrt encurtr encutrr encutrr encrurt encrutr encrrut encrrtu encrtur encrtru encrurt encrutr encrrut encrrtu encrtur encrtru encturr encturr enctrur enctrru enctrur enctrru enucrrt enucrtr enucrrt enucrtr enuctrr enuctrr enurcrt enurctr enurrct enurrtc enurtcr enurtrc enurcrt enurctr enurrct enurrtc enurtcr enurtrc enutcrr enutcrr enutrcr enutrrc enutrcr enutrrc enrcurt enrcutr enrcrut enrcrtu enrctur enrctru enrucrt enructr enrurct enrurtc enrutcr enrutrc enrrcut enrrctu enrruct enrrutc enrrtcu enrrtuc enrtcur enrtcru enrtucr enrturc enrtrcu enrtruc enrcurt enrcutr enrcrut enrcrtu enrctur enrctru enrucrt enructr enrurct enrurtc enrutcr enrutrc enrrcut enrrctu enrruct enrrutc enrrtcu enrrtuc enrtcur enrtcru enrtucr enrturc enrtrcu enrtruc entcurr entcurr entcrur entcrru entcrur entcrru entucrr entucrr enturcr enturrc enturcr enturrc entrcur entrcru entrucr entrurc entrrcu entrruc entrcur entrcru entrucr entrurc entrrcu entrruc etcurrn etcurnr etcurrn etcurnr etcunrr etcunrr etcrurn etcrunr etcrrun etcrrnu etcrnur etcrnru etcrurn etcrunr etcrrun etcrrnu etcrnur etcrnru etcnurr etcnurr etcnrur etcnrru etcnrur etcnrru etucrrn etucrnr etucrrn etucrnr etucnrr etucnrr eturcrn eturcnr eturrcn eturrnc eturncr eturnrc eturcrn eturcnr eturrcn eturrnc eturncr eturnrc etuncrr etuncrr etunrcr etunrrc etunrcr etunrrc etrcurn etrcunr etrcrun etrcrnu etrcnur etrcnru etrucrn etrucnr etrurcn etrurnc etruncr etrunrc etrrcun etrrcnu etrrucn etrrunc etrrncu etrrnuc etrncur etrncru etrnucr etrnurc etrnrcu etrnruc etrcurn etrcunr etrcrun etrcrnu etrcnur etrcnru etrucrn etrucnr etrurcn etrurnc etruncr etrunrc etrrcun etrrcnu etrrucn etrrunc etrrncu etrrnuc etrncur etrncru etrnucr etrnurc etrnrcu etrnruc etncurr etncurr etncrur etncrru etncrur etncrru etnucrr etnucrr etnurcr etnurrc etnurcr etnurrc etnrcur etnrcru etnrucr etnrurc etnrrcu etnrruc etnrcur etnrcru etnrucr etnrurc etnrrcu etnrruc ncurret ncurrte ncurert ncuretr ncurtre ncurter ncurret ncurrte ncurert ncuretr ncurtre ncurter ncuerrt ncuertr ncuerrt ncuertr ncuetrr ncuetrr ncutrre ncutrer ncutrre ncutrer ncuterr ncuterr ncruret ncrurte ncruert ncruetr ncrutre ncruter ncrruet ncrrute ncrreut ncrretu ncrrtue ncrrteu ncreurt ncreutr ncrerut ncrertu ncretur ncretru ncrture ncrtuer ncrtrue ncrtreu ncrteur ncrteru ncruret ncrurte ncruert ncruetr ncrutre ncruter ncrruet ncrrute ncrreut ncrretu ncrrtue ncrrteu ncreurt ncreutr ncrerut ncrertu ncretur ncretru ncrture ncrtuer ncrtrue ncrtreu ncrteur ncrteru nceurrt nceurtr nceurrt nceurtr nceutrr nceutrr ncerurt ncerutr ncerrut ncerrtu ncertur ncertru ncerurt ncerutr ncerrut ncerrtu ncertur ncertru nceturr nceturr ncetrur ncetrru ncetrur ncetrru ncturre ncturer ncturre ncturer nctuerr nctuerr nctrure nctruer nctrrue nctrreu nctreur nctreru nctrure nctruer nctrrue nctrreu nctreur nctreru ncteurr ncteurr ncterur ncterru ncterur ncterru nucrret nucrrte nucrert nucretr nucrtre nucrter nucrret nucrrte nucrert nucretr nucrtre nucrter nucerrt nucertr nucerrt nucertr nucetrr nucetrr nuctrre nuctrer nuctrre nuctrer nucterr nucterr nurcret nurcrte nurcert nurcetr nurctre nurcter nurrcet nurrcte nurrect nurretc nurrtce nurrtec nurecrt nurectr nurerct nurertc nuretcr nuretrc nurtcre nurtcer nurtrce nurtrec nurtecr nurterc nurcret nurcrte nurcert nurcetr nurctre nurcter nurrcet nurrcte nurrect nurretc nurrtce nurrtec nurecrt nurectr nurerct nurertc nuretcr nuretrc nurtcre nurtcer nurtrce nurtrec nurtecr nurterc nuecrrt nuecrtr nuecrrt nuecrtr nuectrr nuectrr nuercrt nuerctr nuerrct nuerrtc nuertcr nuertrc nuercrt nuerctr nuerrct nuerrtc nuertcr nuertrc nuetcrr nuetcrr nuetrcr nuetrrc nuetrcr nuetrrc nutcrre nutcrer nutcrre nutcrer nutcerr nutcerr nutrcre nutrcer nutrrce nutrrec nutrecr nutrerc nutrcre nutrcer nutrrce nutrrec nutrecr nutrerc nutecrr nutecrr nutercr nuterrc nutercr nuterrc nrcuret nrcurte nrcuert nrcuetr nrcutre nrcuter nrcruet nrcrute nrcreut nrcretu nrcrtue nrcrteu nrceurt nrceutr nrcerut nrcertu nrcetur nrcetru nrcture nrctuer nrctrue nrctreu nrcteur nrcteru nrucret nrucrte nrucert nrucetr nructre nructer nrurcet nrurcte nrurect nruretc nrurtce nrurtec nruecrt nruectr nruerct nruertc nruetcr nruetrc nrutcre nrutcer nrutrce nrutrec nrutecr nruterc nrrcuet nrrcute nrrceut nrrcetu nrrctue nrrcteu nrrucet nrructe nrruect nrruetc nrrutce nrrutec nrrecut nrrectu nrreuct nrreutc nrretcu nrretuc nrrtcue nrrtceu nrrtuce nrrtuec nrrtecu nrrteuc nrecurt nrecutr nrecrut nrecrtu nrectur nrectru nreucrt nreuctr nreurct nreurtc nreutcr nreutrc nrercut nrerctu nreruct nrerutc nrertcu nrertuc nretcur nretcru nretucr nreturc nretrcu nretruc nrtcure nrtcuer nrtcrue nrtcreu nrtceur nrtceru nrtucre nrtucer nrturce nrturec nrtuecr nrtuerc nrtrcue nrtrceu nrtruce nrtruec nrtrecu nrtreuc nrtecur nrtecru nrteucr nrteurc nrtercu nrteruc nrcuret nrcurte nrcuert nrcuetr nrcutre nrcuter nrcruet nrcrute nrcreut nrcretu nrcrtue nrcrteu nrceurt nrceutr nrcerut nrcertu nrcetur nrcetru nrcture nrctuer nrctrue nrctreu nrcteur nrcteru nrucret nrucrte nrucert nrucetr nructre nructer nrurcet nrurcte nrurect nruretc nrurtce nrurtec nruecrt nruectr nruerct nruertc nruetcr nruetrc nrutcre nrutcer nrutrce nrutrec nrutecr nruterc nrrcuet nrrcute nrrceut nrrcetu nrrctue nrrcteu nrrucet nrructe nrruect nrruetc nrrutce nrrutec nrrecut nrrectu nrreuct nrreutc nrretcu nrretuc nrrtcue nrrtceu nrrtuce nrrtuec nrrtecu nrrteuc nrecurt nrecutr nrecrut nrecrtu nrectur nrectru nreucrt nreuctr nreurct nreurtc nreutcr nreutrc nrercut nrerctu nreruct nrerutc nrertcu nrertuc nretcur nretcru nretucr nreturc nretrcu nretruc nrtcure nrtcuer nrtcrue nrtcreu nrtceur nrtceru nrtucre nrtucer nrturce nrturec nrtuecr nrtuerc nrtrcue nrtrceu nrtruce nrtruec nrtrecu nrtreuc nrtecur nrtecru nrteucr nrteurc nrtercu nrteruc necurrt necurtr necurrt necurtr necutrr necutrr necrurt necrutr necrrut necrrtu necrtur necrtru necrurt necrutr necrrut necrrtu necrtur necrtru necturr necturr nectrur nectrru nectrur nectrru neucrrt neucrtr neucrrt neucrtr neuctrr neuctrr neurcrt neurctr neurrct neurrtc neurtcr neurtrc neurcrt neurctr neurrct neurrtc neurtcr neurtrc neutcrr neutcrr neutrcr neutrrc neutrcr neutrrc nercurt nercutr nercrut nercrtu nerctur nerctru nerucrt neructr nerurct nerurtc nerutcr nerutrc nerrcut nerrctu nerruct nerrutc nerrtcu nerrtuc nertcur nertcru nertucr nerturc nertrcu nertruc nercurt nercutr nercrut nercrtu nerctur nerctru nerucrt neructr nerurct nerurtc nerutcr nerutrc nerrcut nerrctu nerruct nerrutc nerrtcu nerrtuc nertcur nertcru nertucr nerturc nertrcu nertruc netcurr netcurr netcrur netcrru netcrur netcrru netucrr netucrr neturcr neturrc neturcr neturrc netrcur netrcru netrucr netrurc netrrcu netrruc netrcur netrcru netrucr netrurc netrrcu netrruc ntcurre ntcurer ntcurre ntcurer ntcuerr ntcuerr ntcrure ntcruer ntcrrue ntcrreu ntcreur ntcreru ntcrure ntcruer ntcrrue ntcrreu ntcreur ntcreru ntceurr ntceurr ntcerur ntcerru ntcerur ntcerru ntucrre ntucrer ntucrre ntucrer ntucerr ntucerr nturcre nturcer nturrce nturrec nturecr nturerc nturcre nturcer nturrce nturrec nturecr nturerc ntuecrr ntuecrr ntuercr ntuerrc ntuercr ntuerrc ntrcure ntrcuer ntrcrue ntrcreu ntrceur ntrceru ntrucre ntrucer ntrurce ntrurec ntruecr ntruerc ntrrcue ntrrceu ntrruce ntrruec ntrrecu ntrreuc ntrecur ntrecru ntreucr ntreurc ntrercu ntreruc ntrcure ntrcuer ntrcrue ntrcreu ntrceur ntrceru ntrucre ntrucer ntrurce ntrurec ntruecr ntruerc ntrrcue ntrrceu ntrruce ntrruec ntrrecu ntrreuc ntrecur ntrecru ntreucr ntreurc ntrercu ntreruc ntecurr ntecurr ntecrur ntecrru ntecrur ntecrru nteucrr nteucrr nteurcr nteurrc nteurcr nteurrc ntercur ntercru nterucr nterurc nterrcu nterruc ntercur ntercru nterucr nterurc nterrcu nterruc tcurren tcurrne tcurern tcurenr tcurnre tcurner tcurren tcurrne tcurern tcurenr tcurnre tcurner tcuerrn tcuernr tcuerrn tcuernr tcuenrr tcuenrr tcunrre tcunrer tcunrre tcunrer tcunerr tcunerr tcruren tcrurne tcruern tcruenr tcrunre tcruner tcrruen tcrrune tcrreun tcrrenu tcrrnue tcrrneu tcreurn tcreunr tcrerun tcrernu tcrenur tcrenru tcrnure tcrnuer tcrnrue tcrnreu tcrneur tcrneru tcruren tcrurne tcruern tcruenr tcrunre tcruner tcrruen tcrrune tcrreun tcrrenu tcrrnue tcrrneu tcreurn tcreunr tcrerun tcrernu tcrenur tcrenru tcrnure tcrnuer tcrnrue tcrnreu tcrneur tcrneru tceurrn tceurnr tceurrn tceurnr tceunrr tceunrr tcerurn tcerunr tcerrun tcerrnu tcernur tcernru tcerurn tcerunr tcerrun tcerrnu tcernur tcernru tcenurr tcenurr tcenrur tcenrru tcenrur tcenrru tcnurre tcnurer tcnurre tcnurer tcnuerr tcnuerr tcnrure tcnruer tcnrrue tcnrreu tcnreur tcnreru tcnrure tcnruer tcnrrue tcnrreu tcnreur tcnreru tcneurr tcneurr tcnerur tcnerru tcnerur tcnerru tucrren tucrrne tucrern tucrenr tucrnre tucrner tucrren tucrrne tucrern tucrenr tucrnre tucrner tucerrn tucernr tucerrn tucernr tucenrr tucenrr tucnrre tucnrer tucnrre tucnrer tucnerr tucnerr turcren turcrne turcern turcenr turcnre turcner turrcen turrcne turrecn turrenc turrnce turrnec turecrn turecnr turercn turernc turencr turenrc turncre turncer turnrce turnrec turnecr turnerc turcren turcrne turcern turcenr turcnre turcner turrcen turrcne turrecn turrenc turrnce turrnec turecrn turecnr turercn turernc turencr turenrc turncre turncer turnrce turnrec turnecr turnerc tuecrrn tuecrnr tuecrrn tuecrnr tuecnrr tuecnrr tuercrn tuercnr tuerrcn tuerrnc tuerncr tuernrc tuercrn tuercnr tuerrcn tuerrnc tuerncr tuernrc tuencrr tuencrr tuenrcr tuenrrc tuenrcr tuenrrc tuncrre tuncrer tuncrre tuncrer tuncerr tuncerr tunrcre tunrcer tunrrce tunrrec tunrecr tunrerc tunrcre tunrcer tunrrce tunrrec tunrecr tunrerc tunecrr tunecrr tunercr tunerrc tunercr tunerrc trcuren trcurne trcuern trcuenr trcunre trcuner trcruen trcrune trcreun trcrenu trcrnue trcrneu trceurn trceunr trcerun trcernu trcenur trcenru trcnure trcnuer trcnrue trcnreu trcneur trcneru trucren trucrne trucern trucenr trucnre trucner trurcen trurcne trurecn trurenc trurnce trurnec truecrn truecnr truercn truernc truencr truenrc truncre truncer trunrce trunrec trunecr trunerc trrcuen trrcune trrceun trrcenu trrcnue trrcneu trrucen trrucne trruecn trruenc trrunce trrunec trrecun trrecnu trreucn trreunc trrencu trrenuc trrncue trrnceu trrnuce trrnuec trrnecu trrneuc trecurn trecunr trecrun trecrnu trecnur trecnru treucrn treucnr treurcn treurnc treuncr treunrc trercun trercnu trerucn trerunc trerncu trernuc trencur trencru trenucr trenurc trenrcu trenruc trncure trncuer trncrue trncreu trnceur trnceru trnucre trnucer trnurce trnurec trnuecr trnuerc trnrcue trnrceu trnruce trnruec trnrecu trnreuc trnecur trnecru trneucr trneurc trnercu trneruc trcuren trcurne trcuern trcuenr trcunre trcuner trcruen trcrune trcreun trcrenu trcrnue trcrneu trceurn trceunr trcerun trcernu trcenur trcenru trcnure trcnuer trcnrue trcnreu trcneur trcneru trucren trucrne trucern trucenr trucnre trucner trurcen trurcne trurecn trurenc trurnce trurnec truecrn truecnr truercn truernc truencr truenrc truncre truncer trunrce trunrec trunecr trunerc trrcuen trrcune trrceun trrcenu trrcnue trrcneu trrucen trrucne trruecn trruenc trrunce trrunec trrecun trrecnu trreucn trreunc trrencu trrenuc trrncue trrnceu trrnuce trrnuec trrnecu trrneuc trecurn trecunr trecrun trecrnu trecnur trecnru treucrn treucnr treurcn treurnc treuncr treunrc trercun trercnu trerucn trerunc trerncu trernuc trencur trencru trenucr trenurc trenrcu trenruc trncure trncuer trncrue trncreu trnceur trnceru trnucre trnucer trnurce trnurec trnuecr trnuerc trnrcue trnrceu trnruce trnruec trnrecu trnreuc trnecur trnecru trneucr trneurc trnercu trneruc tecurrn tecurnr tecurrn tecurnr tecunrr tecunrr tecrurn tecrunr tecrrun tecrrnu tecrnur tecrnru tecrurn tecrunr tecrrun tecrrnu tecrnur tecrnru tecnurr tecnurr tecnrur tecnrru tecnrur tecnrru teucrrn teucrnr teucrrn teucrnr teucnrr teucnrr teurcrn teurcnr teurrcn teurrnc teurncr teurnrc teurcrn teurcnr teurrcn teurrnc teurncr teurnrc teuncrr teuncrr teunrcr teunrrc teunrcr teunrrc tercurn tercunr tercrun tercrnu tercnur tercnru terucrn terucnr terurcn terurnc teruncr terunrc terrcun terrcnu terrucn terrunc terrncu terrnuc terncur terncru ternucr ternurc ternrcu ternruc tercurn tercunr tercrun tercrnu tercnur tercnru terucrn terucnr terurcn terurnc teruncr terunrc terrcun terrcnu terrucn terrunc terrncu terrnuc terncur terncru ternucr ternurc ternrcu ternruc tencurr tencurr tencrur tencrru tencrur tencrru tenucrr tenucrr tenurcr tenurrc tenurcr tenurrc tenrcur tenrcru tenrucr tenrurc tenrrcu tenrruc tenrcur tenrcru tenrucr tenrurc tenrrcu tenrruc tncurre tncurer tncurre tncurer tncuerr tncuerr tncrure tncruer tncrrue tncrreu tncreur tncreru tncrure tncruer tncrrue tncrreu tncreur tncreru tnceurr tnceurr tncerur tncerru tncerur tncerru tnucrre tnucrer tnucrre tnucrer tnucerr tnucerr tnurcre tnurcer tnurrce tnurrec tnurecr tnurerc tnurcre tnurcer tnurrce tnurrec tnurecr tnurerc tnuecrr tnuecrr tnuercr tnuerrc tnuercr tnuerrc tnrcure tnrcuer tnrcrue tnrcreu tnrceur tnrceru tnrucre tnrucer tnrurce tnrurec tnruecr tnruerc tnrrcue tnrrceu tnrruce tnrruec tnrrecu tnrreuc tnrecur tnrecru tnreucr tnreurc tnrercu tnreruc tnrcure tnrcuer tnrcrue tnrcreu tnrceur tnrceru tnrucre tnrucer tnrurce tnrurec tnruecr tnruerc tnrrcue tnrrceu tnrruce tnrruec tnrrecu tnrreuc tnrecur tnrecru tnreucr tnreurc tnrercu tnreruc tnecurr tnecurr tnecrur tnecrru tnecrur tnecrru tneucrr tneucrr tneurcr tneurrc tneurcr tneurrc tnercur tnercru tnerucr tnerurc tnerrcu tnerruc tnercur tnercru tnerucr tnerurc tnerrcu tnerruc.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
