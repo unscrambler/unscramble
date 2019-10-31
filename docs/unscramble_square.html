@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble square</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble square and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble square and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble square" name="twitter:title">
+    <meta content="Unscramble square" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble square</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters square. To unscramble square we can search against each letter in square and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+
+
+<p>
+The word found after unscrambling square means that
+
+(geometry) a plane rectangle with four equal sides and four right angles; a four-sided regular polygon,
+
+the product of two equal terms,
+
+an open area at the meeting of two or more streets,
+
+something approximating the shape of a square,
+
+someone who doesn&#39;t understand what is going on,
+
+a formal and conservative person with old-fashioned views,
+
+any artifact having a shape similar to a plane geometric figure with four equal sides and four right angles,
+
+a hand tool consisting of two straight arms at right angles; used to construct or test right angles,
+
+make square,
+
+raise to the second power,
+
+cause to match, as of ideas or acts,
+
+position so as to be square,
+
+be compatible with,
+
+pay someone and settle a debt,
+
+turn the paddle; in canoeing,
+
+turn the oar, while rowing,
+
+having four equal sides and four right angles or forming a right angle,
+
+characterized by honesty and fairness,
+
+providing abundant nourishment,
+
+leaving no balance,
+
+without evasion or compromise,
+
+rigidly conventional or old-fashioned,
+
+in a straight direct way,
+
+in a square shape,
+
+firmly and solidly,
+
+.
+</p>
+
+
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble square with word unscrambler" src="images/unscramble_square.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from square</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> square </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from square</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aures </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> urase </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ureas </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ursae </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> quare </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from square</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sure </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> user </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sura </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ursa </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> urea </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ares </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> arse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ears </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eras </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rase </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sear </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sera </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from square</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suq </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> use </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ers </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> res </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ser </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sau </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ars </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ras </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> qua </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eau </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sae </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sea </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> are </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ear </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> era </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from square</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> us </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> es </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> as </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ar </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ae </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in square like square squaer squrae squrea squear squera sqaure sqauer sqarue sqareu sqaeur sqaeru sqruae sqruea sqraue sqraeu sqreua sqreau sqeuar sqeura sqeaur sqearu sqerua sqerau suqare suqaer suqrae suqrea suqear suqera suaqre suaqer suarqe suareq suaeqr suaerq surqae surqea suraqe suraeq sureqa sureaq sueqar sueqra sueaqr suearq suerqa sueraq saqure saquer saqrue saqreu saqeur saqeru sauqre sauqer saurqe saureq saueqr sauerq sarque sarqeu saruqe sarueq sarequ sareuq saequr saeqru saeuqr saeurq saerqu saeruq srquae srquea srqaue srqaeu srqeua srqeau sruqae sruqea sruaqe sruaeq srueqa srueaq sraque sraqeu srauqe sraueq sraequ sraeuq srequa sreqau sreuqa sreuaq sreaqu sreauq sequar sequra seqaur seqaru seqrua seqrau seuqar seuqra seuaqr seuarq seurqa seuraq seaqur seaqru seauqr seaurq searqu searuq serqua serqau seruqa seruaq seraqu serauq qsuare qsuaer qsurae qsurea qsuear qsuera qsaure qsauer qsarue qsareu qsaeur qsaeru qsruae qsruea qsraue qsraeu qsreua qsreau qseuar qseura qseaur qsearu qserua qserau qusare qusaer qusrae qusrea qusear qusera quasre quaser quarse quares quaesr quaers qursae qursea qurase quraes quresa qureas quesar quesra queasr quears quersa queras qasure qasuer qasrue qasreu qaseur qaseru qausre qauser qaurse qaures qauesr qauers qarsue qarseu qaruse qarues qaresu qareus qaesur qaesru qaeusr qaeurs qaersu qaerus qrsuae qrsuea qrsaue qrsaeu qrseua qrseau qrusae qrusea qruase qruaes qruesa qrueas qrasue qraseu qrause qraues qraesu qraeus qresua qresau qreusa qreuas qreasu qreaus qesuar qesura qesaur qesaru qesrua qesrau qeusar qeusra qeuasr qeuars qeursa qeuras qeasur qeasru qeausr qeaurs qearsu qearus qersua qersau qerusa qeruas qerasu qeraus usqare usqaer usqrae usqrea usqear usqera usaqre usaqer usarqe usareq usaeqr usaerq usrqae usrqea usraqe usraeq usreqa usreaq useqar useqra useaqr usearq userqa useraq uqsare uqsaer uqsrae uqsrea uqsear uqsera uqasre uqaser uqarse uqares uqaesr uqaers uqrsae uqrsea uqrase uqraes uqresa uqreas uqesar uqesra uqeasr uqears uqersa uqeras uasqre uasqer uasrqe uasreq uaseqr uaserq uaqsre uaqser uaqrse uaqres uaqesr uaqers uarsqe uarseq uarqse uarqes uaresq uareqs uaesqr uaesrq uaeqsr uaeqrs uaersq uaerqs ursqae ursqea ursaqe ursaeq urseqa urseaq urqsae urqsea urqase urqaes urqesa urqeas urasqe uraseq uraqse uraqes uraesq uraeqs uresqa uresaq ureqsa ureqas ureasq ureaqs uesqar uesqra uesaqr uesarq uesrqa uesraq ueqsar ueqsra ueqasr ueqars ueqrsa ueqras ueasqr ueasrq ueaqsr ueaqrs uearsq uearqs uersqa uersaq uerqsa uerqas uerasq ueraqs asqure asquer asqrue asqreu asqeur asqeru asuqre asuqer asurqe asureq asueqr asuerq asrque asrqeu asruqe asrueq asrequ asreuq asequr aseqru aseuqr aseurq aserqu aseruq aqsure aqsuer aqsrue aqsreu aqseur aqseru aqusre aquser aqurse aqures aquesr aquers aqrsue aqrseu aqruse aqrues aqresu aqreus aqesur aqesru aqeusr aqeurs aqersu aqerus ausqre ausqer ausrqe ausreq auseqr auserq auqsre auqser auqrse auqres auqesr auqers aursqe aurseq aurqse aurqes auresq aureqs auesqr auesrq aueqsr aueqrs auersq auerqs arsque arsqeu arsuqe arsueq arsequ arseuq arqsue arqseu arquse arques arqesu arqeus arusqe aruseq aruqse aruqes aruesq arueqs aresqu aresuq areqsu arequs areusq areuqs aesqur aesqru aesuqr aesurq aesrqu aesruq aeqsur aeqsru aequsr aequrs aeqrsu aeqrus aeusqr aeusrq aeuqsr aeuqrs aeursq aeurqs aersqu aersuq aerqsu aerqus aerusq aeruqs rsquae rsquea rsqaue rsqaeu rsqeua rsqeau rsuqae rsuqea rsuaqe rsuaeq rsueqa rsueaq rsaque rsaqeu rsauqe rsaueq rsaequ rsaeuq rsequa rseqau rseuqa rseuaq rseaqu rseauq rqsuae rqsuea rqsaue rqsaeu rqseua rqseau rqusae rqusea rquase rquaes rquesa rqueas rqasue rqaseu rqause rqaues rqaesu rqaeus rqesua rqesau rqeusa rqeuas rqeasu rqeaus rusqae rusqea rusaqe rusaeq ruseqa ruseaq ruqsae ruqsea ruqase ruqaes ruqesa ruqeas ruasqe ruaseq ruaqse ruaqes ruaesq ruaeqs ruesqa ruesaq rueqsa rueqas rueasq rueaqs rasque rasqeu rasuqe rasueq rasequ raseuq raqsue raqseu raquse raques raqesu raqeus rausqe rauseq rauqse rauqes rauesq raueqs raesqu raesuq raeqsu raequs raeusq raeuqs resqua resqau resuqa resuaq resaqu resauq reqsua reqsau requsa requas reqasu reqaus reusqa reusaq reuqsa reuqas reuasq reuaqs reasqu reasuq reaqsu reaqus reausq reauqs esquar esqura esqaur esqaru esqrua esqrau esuqar esuqra esuaqr esuarq esurqa esuraq esaqur esaqru esauqr esaurq esarqu esaruq esrqua esrqau esruqa esruaq esraqu esrauq eqsuar eqsura eqsaur eqsaru eqsrua eqsrau equsar equsra equasr equars eqursa equras eqasur eqasru eqausr eqaurs eqarsu eqarus eqrsua eqrsau eqrusa eqruas eqrasu eqraus eusqar eusqra eusaqr eusarq eusrqa eusraq euqsar euqsra euqasr euqars euqrsa euqras euasqr euasrq euaqsr euaqrs euarsq euarqs eursqa eursaq eurqsa eurqas eurasq euraqs easqur easqru easuqr easurq easrqu easruq eaqsur eaqsru eaqusr eaqurs eaqrsu eaqrus eausqr eausrq eauqsr eauqrs eaursq eaurqs earsqu earsuq earqsu earqus earusq earuqs ersqua ersqau ersuqa ersuaq ersaqu ersauq erqsua erqsau erqusa erquas erqasu erqaus erusqa erusaq eruqsa eruqas eruasq eruaqs erasqu erasuq eraqsu eraqus erausq erauqs.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
