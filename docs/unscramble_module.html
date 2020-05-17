@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble module</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble module and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble module and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble module" name="twitter:title">
+    <meta content="Unscramble module" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble module</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters module. To unscramble module we can search against each letter in module and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+    <ins class="adsbygoogle my-3  mx-auto mobile-xs mobile-sm leaderboard-md leaderboard-lg"
+         data-ad-slot="2620175749"
+         style="display: block;" 
+         data-ad-format="auto"></ins>
+
+
+<p>
+The word found after unscrambling module means that
+
+one of the inherent cognitive or perceptual powers of the mind,
+
+detachable compartment of a spacecraft,
+
+computer circuit consisting of an assembly of electronic components (as of computer hardware),
+
+a self-contained component (unit or item) that is used in combination with other components,
+
+.
+</p>
+
+
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble module with word unscrambler" src="images/unscramble_module.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from module</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> module </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from module</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oleum </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mould </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> odeum </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> muled </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> model </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from module</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> meou </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> moue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mule </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mole </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> doum </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> loud </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mold </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> demo </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dome </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mode </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> duel </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leud </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lude </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dole </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lode </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> meld </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from module</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lum </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mol </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> emu </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leu </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ole </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> elm </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mel </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> duo </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oud </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> udo </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mud </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dom </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mod </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dol </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> old </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> due </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> doe </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ode </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> med </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> del </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eld </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> led </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from module</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mu </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> um </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mo </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> om </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lo </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oe </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> em </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> me </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> el </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> do </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> od </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> de </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ed </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in module like module moduel modlue modleu modeul modelu moudle moudel moulde mouled mouedl moueld moldue moldeu molude molued moledu moleud moedul moedlu moeudl moeuld moeldu moelud mdoule mdouel mdolue mdoleu mdoeul mdoelu mduole mduoel mduloe mduleo mdueol mduelo mdloue mdloeu mdluoe mdlueo mdleou mdleuo mdeoul mdeolu mdeuol mdeulo mdelou mdeluo muodle muodel muolde muoled muoedl muoeld mudole mudoel mudloe mudleo mudeol mudelo mulode muloed muldoe muldeo muleod muledo mueodl mueold muedol muedlo muelod mueldo mlodue mlodeu mloude mloued mloedu mloeud mldoue mldoeu mlduoe mldueo mldeou mldeuo mluode mluoed mludoe mludeo mlueod mluedo mleodu mleoud mledou mleduo mleuod mleudo meodul meodlu meoudl meould meoldu meolud medoul medolu meduol medulo medlou medluo meuodl meuold meudol meudlo meulod meuldo melodu meloud meldou melduo meluod meludo omdule omduel omdlue omdleu omdeul omdelu omudle omudel omulde omuled omuedl omueld omldue omldeu omlude omlued omledu omleud omedul omedlu omeudl omeuld omeldu omelud odmule odmuel odmlue odmleu odmeul odmelu odumle odumel odulme odulem odueml oduelm odlmue odlmeu odlume odluem odlemu odleum odemul odemlu odeuml odeulm odelmu odelum oumdle oumdel oumlde oumled oumedl oumeld oudmle oudmel oudlme oudlem oudeml oudelm oulmde oulmed ouldme ouldem oulemd ouledm ouemdl ouemld ouedml ouedlm ouelmd oueldm olmdue olmdeu olmude olmued olmedu olmeud oldmue oldmeu oldume olduem oldemu oldeum olumde olumed oludme oludem oluemd oluedm olemdu olemud oledmu oledum oleumd oleudm oemdul oemdlu oemudl oemuld oemldu oemlud oedmul oedmlu oeduml oedulm oedlmu oedlum oeumdl oeumld oeudml oeudlm oeulmd oeuldm oelmdu oelmud oeldmu oeldum oelumd oeludm dmoule dmouel dmolue dmoleu dmoeul dmoelu dmuole dmuoel dmuloe dmuleo dmueol dmuelo dmloue dmloeu dmluoe dmlueo dmleou dmleuo dmeoul dmeolu dmeuol dmeulo dmelou dmeluo domule domuel domlue domleu domeul domelu doumle doumel doulme doulem doueml douelm dolmue dolmeu dolume doluem dolemu doleum doemul doemlu doeuml doeulm doelmu doelum dumole dumoel dumloe dumleo dumeol dumelo duomle duomel duolme duolem duoeml duoelm dulmoe dulmeo dulome duloem dulemo duleom duemol duemlo dueoml dueolm duelmo duelom dlmoue dlmoeu dlmuoe dlmueo dlmeou dlmeuo dlomue dlomeu dloume dlouem dloemu dloeum dlumoe dlumeo dluome dluoem dluemo dlueom dlemou dlemuo dleomu dleoum dleumo dleuom demoul demolu demuol demulo demlou demluo deomul deomlu deouml deoulm deolmu deolum deumol deumlo deuoml deuolm deulmo deulom delmou delmuo delomu deloum delumo deluom umodle umodel umolde umoled umoedl umoeld umdole umdoel umdloe umdleo umdeol umdelo umlode umloed umldoe umldeo umleod umledo umeodl umeold umedol umedlo umelod umeldo uomdle uomdel uomlde uomled uomedl uomeld uodmle uodmel uodlme uodlem uodeml uodelm uolmde uolmed uoldme uoldem uolemd uoledm uoemdl uoemld uoedml uoedlm uoelmd uoeldm udmole udmoel udmloe udmleo udmeol udmelo udomle udomel udolme udolem udoeml udoelm udlmoe udlmeo udlome udloem udlemo udleom udemol udemlo udeoml udeolm udelmo udelom ulmode ulmoed ulmdoe ulmdeo ulmeod ulmedo ulomde ulomed ulodme ulodem uloemd uloedm uldmoe uldmeo uldome uldoem uldemo uldeom ulemod ulemdo uleomd uleodm uledmo uledom uemodl uemold uemdol uemdlo uemlod uemldo ueomdl ueomld ueodml ueodlm ueolmd ueoldm uedmol uedmlo uedoml uedolm uedlmo uedlom uelmod uelmdo uelomd uelodm ueldmo ueldom lmodue lmodeu lmoude lmoued lmoedu lmoeud lmdoue lmdoeu lmduoe lmdueo lmdeou lmdeuo lmuode lmuoed lmudoe lmudeo lmueod lmuedo lmeodu lmeoud lmedou lmeduo lmeuod lmeudo lomdue lomdeu lomude lomued lomedu lomeud lodmue lodmeu lodume loduem lodemu lodeum loumde loumed loudme loudem louemd louedm loemdu loemud loedmu loedum loeumd loeudm ldmoue ldmoeu ldmuoe ldmueo ldmeou ldmeuo ldomue ldomeu ldoume ldouem ldoemu ldoeum ldumoe ldumeo lduome lduoem lduemo ldueom ldemou ldemuo ldeomu ldeoum ldeumo ldeuom lumode lumoed lumdoe lumdeo lumeod lumedo luomde luomed luodme luodem luoemd luoedm ludmoe ludmeo ludome ludoem ludemo ludeom luemod luemdo lueomd lueodm luedmo luedom lemodu lemoud lemdou lemduo lemuod lemudo leomdu leomud leodmu leodum leoumd leoudm ledmou ledmuo ledomu ledoum ledumo leduom leumod leumdo leuomd leuodm leudmo leudom emodul emodlu emoudl emould emoldu emolud emdoul emdolu emduol emdulo emdlou emdluo emuodl emuold emudol emudlo emulod emuldo emlodu emloud emldou emlduo emluod emludo eomdul eomdlu eomudl eomuld eomldu eomlud eodmul eodmlu eoduml eodulm eodlmu eodlum eoumdl eoumld eoudml eoudlm eoulmd eouldm eolmdu eolmud eoldmu eoldum eolumd eoludm edmoul edmolu edmuol edmulo edmlou edmluo edomul edomlu edouml edoulm edolmu edolum edumol edumlo eduoml eduolm edulmo edulom edlmou edlmuo edlomu edloum edlumo edluom eumodl eumold eumdol eumdlo eumlod eumldo euomdl euomld euodml euodlm euolmd euoldm eudmol eudmlo eudoml eudolm eudlmo eudlom eulmod eulmdo eulomd eulodm euldmo euldom elmodu elmoud elmdou elmduo elmuod elmudo elomdu elomud elodmu elodum eloumd eloudm eldmou eldmuo eldomu eldoum eldumo elduom elumod elumdo eluomd eluodm eludmo eludom.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
