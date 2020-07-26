@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble fractal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble fractal and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble fractal and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble fractal" name="twitter:title">
+    <meta content="Unscramble fractal" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble fractal</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters fractal. To unscramble fractal we can search against each letter in fractal and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling fractal means that
+
+freight car without permanent sides or roof,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble fractal with word unscrambler" src="images/unscramble_fractal.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="7-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 7 letter words from fractal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> flatcar </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fractal </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from fractal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> craft </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> altar </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> artal </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ratal </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> talar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fatal </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> carat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> craal </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from fractal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fart </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> frat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> raft </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> flat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> farl </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cart </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> talc </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> carl </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fact </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> calf </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tala </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> alar </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> afar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> alfa </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> acta </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from fractal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> art </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> alt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aft </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> arf </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> far </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> act </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> arc </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> car </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lac </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aal </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ala </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from fractal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> at </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ta </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> al </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> la </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fa </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aa </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in fractal like fractal fractla fracatl fracalt fraclta fraclat fratcal fratcla fratacl fratalc fratlca fratlac fraactl fraaclt fraatcl fraatlc fraalct fraaltc fralcta fralcat fraltca fraltac fralact fralatc frcatal frcatla frcaatl frcaalt frcalta frcalat frctaal frctala frctaal frctala frctlaa frctlaa frcaatl frcaalt frcatal frcatla frcalat frcalta frclata frclaat frcltaa frcltaa frclaat frclata frtacal frtacla frtaacl frtaalc frtalca frtalac frtcaal frtcala frtcaal frtcala frtclaa frtclaa frtaacl frtaalc frtacal frtacla frtalac frtalca frtlaca frtlaac frtlcaa frtlcaa frtlaac frtlaca fraactl fraaclt fraatcl fraatlc fraalct fraaltc fracatl fracalt fractal fractla fraclat fraclta fratacl fratalc fratcal fratcla fratlac fratlca fralact fralatc fralcat fralcta fraltac fraltca frlacta frlacat frlatca frlatac frlaact frlaatc frlcata frlcaat frlctaa frlctaa frlcaat frlcata frltaca frltaac frltcaa frltcaa frltaac frltaca frlaact frlaatc frlacat frlacta frlatac frlatca farctal farctla farcatl farcalt farclta farclat fartcal fartcla fartacl fartalc fartlca fartlac faractl faraclt faratcl faratlc faralct faraltc farlcta farlcat farltca farltac farlact farlatc facrtal facrtla facratl facralt facrlta facrlat factral factrla factarl factalr factlra factlar facartl facarlt facatrl facatlr facalrt facaltr faclrta faclrat facltra facltar faclart faclatr fatrcal fatrcla fatracl fatralc fatrlca fatrlac fatcral fatcrla fatcarl fatcalr fatclra fatclar fatarcl fatarlc fatacrl fataclr fatalrc fatalcr fatlrca fatlrac fatlcra fatlcar fatlarc fatlacr faarctl faarclt faartcl faartlc faarlct faarltc faacrtl faacrlt faactrl faactlr faaclrt faacltr faatrcl faatrlc faatcrl faatclr faatlrc faatlcr faalrct faalrtc faalcrt faalctr faaltrc faaltcr falrcta falrcat falrtca falrtac falract falratc falcrta falcrat falctra falctar falcart falcatr faltrca faltrac faltcra faltcar faltarc faltacr falarct falartc falacrt falactr falatrc falatcr fcratal fcratla fcraatl fcraalt fcralta fcralat fcrtaal fcrtala fcrtaal fcrtala fcrtlaa fcrtlaa fcraatl fcraalt fcratal fcratla fcralat fcralta fcrlata fcrlaat fcrltaa fcrltaa fcrlaat fcrlata fcartal fcartla fcaratl fcaralt fcarlta fcarlat fcatral fcatrla fcatarl fcatalr fcatlra fcatlar fcaartl fcaarlt fcaatrl fcaatlr fcaalrt fcaaltr fcalrta fcalrat fcaltra fcaltar fcalart fcalatr fctraal fctrala fctraal fctrala fctrlaa fctrlaa fctaral fctarla fctaarl fctaalr fctalra fctalar fctaral fctarla fctaarl fctaalr fctalra fctalar fctlraa fctlraa fctlara fctlaar fctlara fctlaar fcaratl fcaralt fcartal fcartla fcarlat fcarlta fcaartl fcaarlt fcaatrl fcaatlr fcaalrt fcaaltr fcatral fcatrla fcatarl fcatalr fcatlra fcatlar fcalrat fcalrta fcalart fcalatr fcaltra fcaltar fclrata fclraat fclrtaa fclrtaa fclraat fclrata fclarta fclarat fclatra fclatar fclaart fclaatr fcltraa fcltraa fcltara fcltaar fcltara fcltaar fclarat fclarta fclaart fclaatr fclatra fclatar ftracal ftracla ftraacl ftraalc ftralca ftralac ftrcaal ftrcala ftrcaal ftrcala ftrclaa ftrclaa ftraacl ftraalc ftracal ftracla ftralac ftralca ftrlaca ftrlaac ftrlcaa ftrlcaa ftrlaac ftrlaca ftarcal ftarcla ftaracl ftaralc ftarlca ftarlac ftacral ftacrla ftacarl ftacalr ftaclra ftaclar ftaarcl ftaarlc ftaacrl ftaaclr ftaalrc ftaalcr ftalrca ftalrac ftalcra ftalcar ftalarc ftalacr ftcraal ftcrala ftcraal ftcrala ftcrlaa ftcrlaa ftcaral ftcarla ftcaarl ftcaalr ftcalra ftcalar ftcaral ftcarla ftcaarl ftcaalr ftcalra ftcalar ftclraa ftclraa ftclara ftclaar ftclara ftclaar ftaracl ftaralc ftarcal ftarcla ftarlac ftarlca ftaarcl ftaarlc ftaacrl ftaaclr ftaalrc ftaalcr ftacral ftacrla ftacarl ftacalr ftaclra ftaclar ftalrac ftalrca ftalarc ftalacr ftalcra ftalcar ftlraca ftlraac ftlrcaa ftlrcaa ftlraac ftlraca ftlarca ftlarac ftlacra ftlacar ftlaarc ftlaacr ftlcraa ftlcraa ftlcara ftlcaar ftlcara ftlcaar ftlarac ftlarca ftlaarc ftlaacr ftlacra ftlacar faractl faraclt faratcl faratlc faralct faraltc farcatl farcalt farctal farctla farclat farclta fartacl fartalc fartcal fartcla fartlac fartlca farlact farlatc farlcat farlcta farltac farltca faarctl faarclt faartcl faartlc faarlct faarltc faacrtl faacrlt faactrl faactlr faaclrt faacltr faatrcl faatrlc faatcrl faatclr faatlrc faatlcr faalrct faalrtc faalcrt faalctr faaltrc faaltcr facratl facralt facrtal facrtla facrlat facrlta facartl facarlt facatrl facatlr facalrt facaltr factral factrla factarl factalr factlra factlar faclrat faclrta faclart faclatr facltra facltar fatracl fatralc fatrcal fatrcla fatrlac fatrlca fatarcl fatarlc fatacrl fataclr fatalrc fatalcr fatcral fatcrla fatcarl fatcalr fatclra fatclar fatlrac fatlrca fatlarc fatlacr fatlcra fatlcar falract falratc falrcat falrcta falrtac falrtca falarct falartc falacrt falactr falatrc falatcr falcrat falcrta falcart falcatr falctra falctar faltrac faltrca faltarc faltacr faltcra faltcar flracta flracat flratca flratac flraact flraatc flrcata flrcaat flrctaa flrctaa flrcaat flrcata flrtaca flrtaac flrtcaa flrtcaa flrtaac flrtaca flraact flraatc flracat flracta flratac flratca flarcta flarcat flartca flartac flaract flaratc flacrta flacrat flactra flactar flacart flacatr flatrca flatrac flatcra flatcar flatarc flatacr flaarct flaartc flaacrt flaactr flaatrc flaatcr flcrata flcraat flcrtaa flcrtaa flcraat flcrata flcarta flcarat flcatra flcatar flcaart flcaatr flctraa flctraa flctara flctaar flctara flctaar flcarat flcarta flcaart flcaatr flcatra flcatar fltraca fltraac fltrcaa fltrcaa fltraac fltraca fltarca fltarac fltacra fltacar fltaarc fltaacr fltcraa fltcraa fltcara fltcaar fltcara fltcaar fltarac fltarca fltaarc fltaacr fltacra fltacar flaract flaratc flarcat flarcta flartac flartca flaarct flaartc flaacrt flaactr flaatrc flaatcr flacrat flacrta flacart flacatr flactra flactar flatrac flatrca flatarc flatacr flatcra flatcar rfactal rfactla rfacatl rfacalt rfaclta rfaclat rfatcal rfatcla rfatacl rfatalc rfatlca rfatlac rfaactl rfaaclt rfaatcl rfaatlc rfaalct rfaaltc rfalcta rfalcat rfaltca rfaltac rfalact rfalatc rfcatal rfcatla rfcaatl rfcaalt rfcalta rfcalat rfctaal rfctala rfctaal rfctala rfctlaa rfctlaa rfcaatl rfcaalt rfcatal rfcatla rfcalat rfcalta rfclata rfclaat rfcltaa rfcltaa rfclaat rfclata rftacal rftacla rftaacl rftaalc rftalca rftalac rftcaal rftcala rftcaal rftcala rftclaa rftclaa rftaacl rftaalc rftacal rftacla rftalac rftalca rftlaca rftlaac rftlcaa rftlcaa rftlaac rftlaca rfaactl rfaaclt rfaatcl rfaatlc rfaalct rfaaltc rfacatl rfacalt rfactal rfactla rfaclat rfaclta rfatacl rfatalc rfatcal rfatcla rfatlac rfatlca rfalact rfalatc rfalcat rfalcta rfaltac rfaltca rflacta rflacat rflatca rflatac rflaact rflaatc rflcata rflcaat rflctaa rflctaa rflcaat rflcata rfltaca rfltaac rfltcaa rfltcaa rfltaac rfltaca rflaact rflaatc rflacat rflacta rflatac rflatca rafctal rafctla rafcatl rafcalt rafclta rafclat raftcal raftcla raftacl raftalc raftlca raftlac rafactl rafaclt rafatcl rafatlc rafalct rafaltc raflcta raflcat rafltca rafltac raflact raflatc racftal racftla racfatl racfalt racflta racflat ractfal ractfla ractafl ractalf ractlfa ractlaf racaftl racaflt racatfl racatlf racalft racaltf raclfta raclfat racltfa racltaf raclaft raclatf ratfcal ratfcla ratfacl ratfalc ratflca ratflac ratcfal ratcfla ratcafl ratcalf ratclfa ratclaf ratafcl rataflc ratacfl rataclf ratalfc ratalcf ratlfca ratlfac ratlcfa ratlcaf ratlafc ratlacf raafctl raafclt raaftcl raaftlc raaflct raafltc raacftl raacflt raactfl raactlf raaclft raacltf raatfcl raatflc raatcfl raatclf raatlfc raatlcf raalfct raalftc raalcft raalctf raaltfc raaltcf ralfcta ralfcat ralftca ralftac ralfact ralfatc ralcfta ralcfat ralctfa ralctaf ralcaft ralcatf raltfca raltfac raltcfa raltcaf raltafc raltacf ralafct ralaftc ralacft ralactf ralatfc ralatcf rcfatal rcfatla rcfaatl rcfaalt rcfalta rcfalat rcftaal rcftala rcftaal rcftala rcftlaa rcftlaa rcfaatl rcfaalt rcfatal rcfatla rcfalat rcfalta rcflata rcflaat rcfltaa rcfltaa rcflaat rcflata rcaftal rcaftla rcafatl rcafalt rcaflta rcaflat rcatfal rcatfla rcatafl rcatalf rcatlfa rcatlaf rcaaftl rcaaflt rcaatfl rcaatlf rcaalft rcaaltf rcalfta rcalfat rcaltfa rcaltaf rcalaft rcalatf rctfaal rctfala rctfaal rctfala rctflaa rctflaa rctafal rctafla rctaafl rctaalf rctalfa rctalaf rctafal rctafla rctaafl rctaalf rctalfa rctalaf rctlfaa rctlfaa rctlafa rctlaaf rctlafa rctlaaf rcafatl rcafalt rcaftal rcaftla rcaflat rcaflta rcaaftl rcaaflt rcaatfl rcaatlf rcaalft rcaaltf rcatfal rcatfla rcatafl rcatalf rcatlfa rcatlaf rcalfat rcalfta rcalaft rcalatf rcaltfa rcaltaf rclfata rclfaat rclftaa rclftaa rclfaat rclfata rclafta rclafat rclatfa rclataf rclaaft rclaatf rcltfaa rcltfaa rcltafa rcltaaf rcltafa rcltaaf rclafat rclafta rclaaft rclaatf rclatfa rclataf rtfacal rtfacla rtfaacl rtfaalc rtfalca rtfalac rtfcaal rtfcala rtfcaal rtfcala rtfclaa rtfclaa rtfaacl rtfaalc rtfacal rtfacla rtfalac rtfalca rtflaca rtflaac rtflcaa rtflcaa rtflaac rtflaca rtafcal rtafcla rtafacl rtafalc rtaflca rtaflac rtacfal rtacfla rtacafl rtacalf rtaclfa rtaclaf rtaafcl rtaaflc rtaacfl rtaaclf rtaalfc rtaalcf rtalfca rtalfac rtalcfa rtalcaf rtalafc rtalacf rtcfaal rtcfala rtcfaal rtcfala rtcflaa rtcflaa rtcafal rtcafla rtcaafl rtcaalf rtcalfa rtcalaf rtcafal rtcafla rtcaafl rtcaalf rtcalfa rtcalaf rtclfaa rtclfaa rtclafa rtclaaf rtclafa rtclaaf rtafacl rtafalc rtafcal rtafcla rtaflac rtaflca rtaafcl rtaaflc rtaacfl rtaaclf rtaalfc rtaalcf rtacfal rtacfla rtacafl rtacalf rtaclfa rtaclaf rtalfac rtalfca rtalafc rtalacf rtalcfa rtalcaf rtlfaca rtlfaac rtlfcaa rtlfcaa rtlfaac rtlfaca rtlafca rtlafac rtlacfa rtlacaf rtlaafc rtlaacf rtlcfaa rtlcfaa rtlcafa rtlcaaf rtlcafa rtlcaaf rtlafac rtlafca rtlaafc rtlaacf rtlacfa rtlacaf rafactl rafaclt rafatcl rafatlc rafalct rafaltc rafcatl rafcalt rafctal rafctla rafclat rafclta raftacl raftalc raftcal raftcla raftlac raftlca raflact raflatc raflcat raflcta rafltac rafltca raafctl raafclt raaftcl raaftlc raaflct raafltc raacftl raacflt raactfl raactlf raaclft raacltf raatfcl raatflc raatcfl raatclf raatlfc raatlcf raalfct raalftc raalcft raalctf raaltfc raaltcf racfatl racfalt racftal racftla racflat racflta racaftl racaflt racatfl racatlf racalft racaltf ractfal ractfla ractafl ractalf ractlfa ractlaf raclfat raclfta raclaft raclatf racltfa racltaf ratfacl ratfalc ratfcal ratfcla ratflac ratflca ratafcl rataflc ratacfl rataclf ratalfc ratalcf ratcfal ratcfla ratcafl ratcalf ratclfa ratclaf ratlfac ratlfca ratlafc ratlacf ratlcfa ratlcaf ralfact ralfatc ralfcat ralfcta ralftac ralftca ralafct ralaftc ralacft ralactf ralatfc ralatcf ralcfat ralcfta ralcaft ralcatf ralctfa ralctaf raltfac raltfca raltafc raltacf raltcfa raltcaf rlfacta rlfacat rlfatca rlfatac rlfaact rlfaatc rlfcata rlfcaat rlfctaa rlfctaa rlfcaat rlfcata rlftaca rlftaac rlftcaa rlftcaa rlftaac rlftaca rlfaact rlfaatc rlfacat rlfacta rlfatac rlfatca rlafcta rlafcat rlaftca rlaftac rlafact rlafatc rlacfta rlacfat rlactfa rlactaf rlacaft rlacatf rlatfca rlatfac rlatcfa rlatcaf rlatafc rlatacf rlaafct rlaaftc rlaacft rlaactf rlaatfc rlaatcf rlcfata rlcfaat rlcftaa rlcftaa rlcfaat rlcfata rlcafta rlcafat rlcatfa rlcataf rlcaaft rlcaatf rlctfaa rlctfaa rlctafa rlctaaf rlctafa rlctaaf rlcafat rlcafta rlcaaft rlcaatf rlcatfa rlcataf rltfaca rltfaac rltfcaa rltfcaa rltfaac rltfaca rltafca rltafac rltacfa rltacaf rltaafc rltaacf rltcfaa rltcfaa rltcafa rltcaaf rltcafa rltcaaf rltafac rltafca rltaafc rltaacf rltacfa rltacaf rlafact rlafatc rlafcat rlafcta rlaftac rlaftca rlaafct rlaaftc rlaacft rlaactf rlaatfc rlaatcf rlacfat rlacfta rlacaft rlacatf rlactfa rlactaf rlatfac rlatfca rlatafc rlatacf rlatcfa rlatcaf afrctal afrctla afrcatl afrcalt afrclta afrclat afrtcal afrtcla afrtacl afrtalc afrtlca afrtlac afractl afraclt afratcl afratlc afralct afraltc afrlcta afrlcat afrltca afrltac afrlact afrlatc afcrtal afcrtla afcratl afcralt afcrlta afcrlat afctral afctrla afctarl afctalr afctlra afctlar afcartl afcarlt afcatrl afcatlr afcalrt afcaltr afclrta afclrat afcltra afcltar afclart afclatr aftrcal aftrcla aftracl aftralc aftrlca aftrlac aftcral aftcrla aftcarl aftcalr aftclra aftclar aftarcl aftarlc aftacrl aftaclr aftalrc aftalcr aftlrca aftlrac aftlcra aftlcar aftlarc aftlacr afarctl afarclt afartcl afartlc afarlct afarltc afacrtl afacrlt afactrl afactlr afaclrt afacltr afatrcl afatrlc afatcrl afatclr afatlrc afatlcr afalrct afalrtc afalcrt afalctr afaltrc afaltcr aflrcta aflrcat aflrtca aflrtac aflract aflratc aflcrta aflcrat aflctra aflctar aflcart aflcatr afltrca afltrac afltcra afltcar afltarc afltacr aflarct aflartc aflacrt aflactr aflatrc aflatcr arfctal arfctla arfcatl arfcalt arfclta arfclat arftcal arftcla arftacl arftalc arftlca arftlac arfactl arfaclt arfatcl arfatlc arfalct arfaltc arflcta arflcat arfltca arfltac arflact arflatc arcftal arcftla arcfatl arcfalt arcflta arcflat arctfal arctfla arctafl arctalf arctlfa arctlaf arcaftl arcaflt arcatfl arcatlf arcalft arcaltf arclfta arclfat arcltfa arcltaf arclaft arclatf artfcal artfcla artfacl artfalc artflca artflac artcfal artcfla artcafl artcalf artclfa artclaf artafcl artaflc artacfl artaclf artalfc artalcf artlfca artlfac artlcfa artlcaf artlafc artlacf arafctl arafclt araftcl araftlc araflct arafltc aracftl aracflt aractfl aractlf araclft aracltf aratfcl aratflc aratcfl aratclf aratlfc aratlcf aralfct aralftc aralcft aralctf araltfc araltcf arlfcta arlfcat arlftca arlftac arlfact arlfatc arlcfta arlcfat arlctfa arlctaf arlcaft arlcatf arltfca arltfac arltcfa arltcaf arltafc arltacf arlafct arlaftc arlacft arlactf arlatfc arlatcf acfrtal acfrtla acfratl acfralt acfrlta acfrlat acftral acftrla acftarl acftalr acftlra acftlar acfartl acfarlt acfatrl acfatlr acfalrt acfaltr acflrta acflrat acfltra acfltar acflart acflatr acrftal acrftla acrfatl acrfalt acrflta acrflat acrtfal acrtfla acrtafl acrtalf acrtlfa acrtlaf acraftl acraflt acratfl acratlf acralft acraltf acrlfta acrlfat acrltfa acrltaf acrlaft acrlatf actfral actfrla actfarl actfalr actflra actflar actrfal actrfla actrafl actralf actrlfa actrlaf actafrl actaflr actarfl actarlf actalfr actalrf actlfra actlfar actlrfa actlraf actlafr actlarf acafrtl acafrlt acaftrl acaftlr acaflrt acafltr acarftl acarflt acartfl acartlf acarlft acarltf acatfrl acatflr acatrfl acatrlf acatlfr acatlrf acalfrt acalftr acalrft acalrtf acaltfr acaltrf aclfrta aclfrat aclftra aclftar aclfart aclfatr aclrfta aclrfat aclrtfa aclrtaf aclraft aclratf acltfra acltfar acltrfa acltraf acltafr acltarf aclafrt aclaftr aclarft aclartf aclatfr aclatrf atfrcal atfrcla atfracl atfralc atfrlca atfrlac atfcral atfcrla atfcarl atfcalr atfclra atfclar atfarcl atfarlc atfacrl atfaclr atfalrc atfalcr atflrca atflrac atflcra atflcar atflarc atflacr atrfcal atrfcla atrfacl atrfalc atrflca atrflac atrcfal atrcfla atrcafl atrcalf atrclfa atrclaf atrafcl atraflc atracfl atraclf atralfc atralcf atrlfca atrlfac atrlcfa atrlcaf atrlafc atrlacf atcfral atcfrla atcfarl atcfalr atcflra atcflar atcrfal atcrfla atcrafl atcralf atcrlfa atcrlaf atcafrl atcaflr atcarfl atcarlf atcalfr atcalrf atclfra atclfar atclrfa atclraf atclafr atclarf atafrcl atafrlc atafcrl atafclr ataflrc ataflcr atarfcl atarflc atarcfl atarclf atarlfc atarlcf atacfrl atacflr atacrfl atacrlf ataclfr ataclrf atalfrc atalfcr atalrfc atalrcf atalcfr atalcrf atlfrca atlfrac atlfcra atlfcar atlfarc atlfacr atlrfca atlrfac atlrcfa atlrcaf atlrafc atlracf atlcfra atlcfar atlcrfa atlcraf atlcafr atlcarf atlafrc atlafcr atlarfc atlarcf atlacfr atlacrf aafrctl aafrclt aafrtcl aafrtlc aafrlct aafrltc aafcrtl aafcrlt aafctrl aafctlr aafclrt aafcltr aaftrcl aaftrlc aaftcrl aaftclr aaftlrc aaftlcr aaflrct aaflrtc aaflcrt aaflctr aafltrc aafltcr aarfctl aarfclt aarftcl aarftlc aarflct aarfltc aarcftl aarcflt aarctfl aarctlf aarclft aarcltf aartfcl aartflc aartcfl aartclf aartlfc aartlcf aarlfct aarlftc aarlcft aarlctf aarltfc aarltcf aacfrtl aacfrlt aacftrl aacftlr aacflrt aacfltr aacrftl aacrflt aacrtfl aacrtlf aacrlft aacrltf aactfrl aactflr aactrfl aactrlf aactlfr aactlrf aaclfrt aaclftr aaclrft aaclrtf aacltfr aacltrf aatfrcl aatfrlc aatfcrl aatfclr aatflrc aatflcr aatrfcl aatrflc aatrcfl aatrclf aatrlfc aatrlcf aatcfrl aatcflr aatcrfl aatcrlf aatclfr aatclrf aatlfrc aatlfcr aatlrfc aatlrcf aatlcfr aatlcrf aalfrct aalfrtc aalfcrt aalfctr aalftrc aalftcr aalrfct aalrftc aalrcft aalrctf aalrtfc aalrtcf aalcfrt aalcftr aalcrft aalcrtf aalctfr aalctrf aaltfrc aaltfcr aaltrfc aaltrcf aaltcfr aaltcrf alfrcta alfrcat alfrtca alfrtac alfract alfratc alfcrta alfcrat alfctra alfctar alfcart alfcatr alftrca alftrac alftcra alftcar alftarc alftacr alfarct alfartc alfacrt alfactr alfatrc alfatcr alrfcta alrfcat alrftca alrftac alrfact alrfatc alrcfta alrcfat alrctfa alrctaf alrcaft alrcatf alrtfca alrtfac alrtcfa alrtcaf alrtafc alrtacf alrafct alraftc alracft alractf alratfc alratcf alcfrta alcfrat alcftra alcftar alcfart alcfatr alcrfta alcrfat alcrtfa alcrtaf alcraft alcratf alctfra alctfar alctrfa alctraf alctafr alctarf alcafrt alcaftr alcarft alcartf alcatfr alcatrf altfrca altfrac altfcra altfcar altfarc altfacr altrfca altrfac altrcfa altrcaf altrafc altracf altcfra altcfar altcrfa altcraf altcafr altcarf altafrc altafcr altarfc altarcf altacfr altacrf alafrct alafrtc alafcrt alafctr alaftrc alaftcr alarfct alarftc alarcft alarctf alartfc alartcf alacfrt alacftr alacrft alacrtf alactfr alactrf alatfrc alatfcr alatrfc alatrcf alatcfr alatcrf cfratal cfratla cfraatl cfraalt cfralta cfralat cfrtaal cfrtala cfrtaal cfrtala cfrtlaa cfrtlaa cfraatl cfraalt cfratal cfratla cfralat cfralta cfrlata cfrlaat cfrltaa cfrltaa cfrlaat cfrlata cfartal cfartla cfaratl cfaralt cfarlta cfarlat cfatral cfatrla cfatarl cfatalr cfatlra cfatlar cfaartl cfaarlt cfaatrl cfaatlr cfaalrt cfaaltr cfalrta cfalrat cfaltra cfaltar cfalart cfalatr cftraal cftrala cftraal cftrala cftrlaa cftrlaa cftaral cftarla cftaarl cftaalr cftalra cftalar cftaral cftarla cftaarl cftaalr cftalra cftalar cftlraa cftlraa cftlara cftlaar cftlara cftlaar cfaratl cfaralt cfartal cfartla cfarlat cfarlta cfaartl cfaarlt cfaatrl cfaatlr cfaalrt cfaaltr cfatral cfatrla cfatarl cfatalr cfatlra cfatlar cfalrat cfalrta cfalart cfalatr cfaltra cfaltar cflrata cflraat cflrtaa cflrtaa cflraat cflrata cflarta cflarat cflatra cflatar cflaart cflaatr cfltraa cfltraa cfltara cfltaar cfltara cfltaar cflarat cflarta cflaart cflaatr cflatra cflatar crfatal crfatla crfaatl crfaalt crfalta crfalat crftaal crftala crftaal crftala crftlaa crftlaa crfaatl crfaalt crfatal crfatla crfalat crfalta crflata crflaat crfltaa crfltaa crflaat crflata craftal craftla crafatl crafalt craflta craflat cratfal cratfla cratafl cratalf cratlfa cratlaf craaftl craaflt craatfl craatlf craalft craaltf cralfta cralfat craltfa craltaf cralaft cralatf crtfaal crtfala crtfaal crtfala crtflaa crtflaa crtafal crtafla crtaafl crtaalf crtalfa crtalaf crtafal crtafla crtaafl crtaalf crtalfa crtalaf crtlfaa crtlfaa crtlafa crtlaaf crtlafa crtlaaf crafatl crafalt craftal craftla craflat craflta craaftl craaflt craatfl craatlf craalft craaltf cratfal cratfla cratafl cratalf cratlfa cratlaf cralfat cralfta cralaft cralatf craltfa craltaf crlfata crlfaat crlftaa crlftaa crlfaat crlfata crlafta crlafat crlatfa crlataf crlaaft crlaatf crltfaa crltfaa crltafa crltaaf crltafa crltaaf crlafat crlafta crlaaft crlaatf crlatfa crlataf cafrtal cafrtla cafratl cafralt cafrlta cafrlat caftral caftrla caftarl caftalr caftlra caftlar cafartl cafarlt cafatrl cafatlr cafalrt cafaltr caflrta caflrat cafltra cafltar caflart caflatr carftal carftla carfatl carfalt carflta carflat cartfal cartfla cartafl cartalf cartlfa cartlaf caraftl caraflt caratfl caratlf caralft caraltf carlfta carlfat carltfa carltaf carlaft carlatf catfral catfrla catfarl catfalr catflra catflar catrfal catrfla catrafl catralf catrlfa catrlaf catafrl cataflr catarfl catarlf catalfr catalrf catlfra catlfar catlrfa catlraf catlafr catlarf caafrtl caafrlt caaftrl caaftlr caaflrt caafltr caarftl caarflt caartfl caartlf caarlft caarltf caatfrl caatflr caatrfl caatrlf caatlfr caatlrf caalfrt caalftr caalrft caalrtf caaltfr caaltrf calfrta calfrat calftra calftar calfart calfatr calrfta calrfat calrtfa calrtaf calraft calratf caltfra caltfar caltrfa caltraf caltafr caltarf calafrt calaftr calarft calartf calatfr calatrf ctfraal ctfrala ctfraal ctfrala ctfrlaa ctfrlaa ctfaral ctfarla ctfaarl ctfaalr ctfalra ctfalar ctfaral ctfarla ctfaarl ctfaalr ctfalra ctfalar ctflraa ctflraa ctflara ctflaar ctflara ctflaar ctrfaal ctrfala ctrfaal ctrfala ctrflaa ctrflaa ctrafal ctrafla ctraafl ctraalf ctralfa ctralaf ctrafal ctrafla ctraafl ctraalf ctralfa ctralaf ctrlfaa ctrlfaa ctrlafa ctrlaaf ctrlafa ctrlaaf ctafral ctafrla ctafarl ctafalr ctaflra ctaflar ctarfal ctarfla ctarafl ctaralf ctarlfa ctarlaf ctaafrl ctaaflr ctaarfl ctaarlf ctaalfr ctaalrf ctalfra ctalfar ctalrfa ctalraf ctalafr ctalarf ctafral ctafrla ctafarl ctafalr ctaflra ctaflar ctarfal ctarfla ctarafl ctaralf ctarlfa ctarlaf ctaafrl ctaaflr ctaarfl ctaarlf ctaalfr ctaalrf ctalfra ctalfar ctalrfa ctalraf ctalafr ctalarf ctlfraa ctlfraa ctlfara ctlfaar ctlfara ctlfaar ctlrfaa ctlrfaa ctlrafa ctlraaf ctlrafa ctlraaf ctlafra ctlafar ctlarfa ctlaraf ctlaafr ctlaarf ctlafra ctlafar ctlarfa ctlaraf ctlaafr ctlaarf cafratl cafralt cafrtal cafrtla cafrlat cafrlta cafartl cafarlt cafatrl cafatlr cafalrt cafaltr caftral caftrla caftarl caftalr caftlra caftlar caflrat caflrta caflart caflatr cafltra cafltar carfatl carfalt carftal carftla carflat carflta caraftl caraflt caratfl caratlf caralft caraltf cartfal cartfla cartafl cartalf cartlfa cartlaf carlfat carlfta carlaft carlatf carltfa carltaf caafrtl caafrlt caaftrl caaftlr caaflrt caafltr caarftl caarflt caartfl caartlf caarlft caarltf caatfrl caatflr caatrfl caatrlf caatlfr caatlrf caalfrt caalftr caalrft caalrtf caaltfr caaltrf catfral catfrla catfarl catfalr catflra catflar catrfal catrfla catrafl catralf catrlfa catrlaf catafrl cataflr catarfl catarlf catalfr catalrf catlfra catlfar catlrfa catlraf catlafr catlarf calfrat calfrta calfart calfatr calftra calftar calrfat calrfta calraft calratf calrtfa calrtaf calafrt calaftr calarft calartf calatfr calatrf caltfra caltfar caltrfa caltraf caltafr caltarf clfrata clfraat clfrtaa clfrtaa clfraat clfrata clfarta clfarat clfatra clfatar clfaart clfaatr clftraa clftraa clftara clftaar clftara clftaar clfarat clfarta clfaart clfaatr clfatra clfatar clrfata clrfaat clrftaa clrftaa clrfaat clrfata clrafta clrafat clratfa clrataf clraaft clraatf clrtfaa clrtfaa clrtafa clrtaaf clrtafa clrtaaf clrafat clrafta clraaft clraatf clratfa clrataf clafrta clafrat claftra claftar clafart clafatr clarfta clarfat clartfa clartaf claraft claratf clatfra clatfar clatrfa clatraf clatafr clatarf claafrt claaftr claarft claartf claatfr claatrf cltfraa cltfraa cltfara cltfaar cltfara cltfaar cltrfaa cltrfaa cltrafa cltraaf cltrafa cltraaf cltafra cltafar cltarfa cltaraf cltaafr cltaarf cltafra cltafar cltarfa cltaraf cltaafr cltaarf clafrat clafrta clafart clafatr claftra claftar clarfat clarfta claraft claratf clartfa clartaf claafrt claaftr claarft claartf claatfr claatrf clatfra clatfar clatrfa clatraf clatafr clatarf tfracal tfracla tfraacl tfraalc tfralca tfralac tfrcaal tfrcala tfrcaal tfrcala tfrclaa tfrclaa tfraacl tfraalc tfracal tfracla tfralac tfralca tfrlaca tfrlaac tfrlcaa tfrlcaa tfrlaac tfrlaca tfarcal tfarcla tfaracl tfaralc tfarlca tfarlac tfacral tfacrla tfacarl tfacalr tfaclra tfaclar tfaarcl tfaarlc tfaacrl tfaaclr tfaalrc tfaalcr tfalrca tfalrac tfalcra tfalcar tfalarc tfalacr tfcraal tfcrala tfcraal tfcrala tfcrlaa tfcrlaa tfcaral tfcarla tfcaarl tfcaalr tfcalra tfcalar tfcaral tfcarla tfcaarl tfcaalr tfcalra tfcalar tfclraa tfclraa tfclara tfclaar tfclara tfclaar tfaracl tfaralc tfarcal tfarcla tfarlac tfarlca tfaarcl tfaarlc tfaacrl tfaaclr tfaalrc tfaalcr tfacral tfacrla tfacarl tfacalr tfaclra tfaclar tfalrac tfalrca tfalarc tfalacr tfalcra tfalcar tflraca tflraac tflrcaa tflrcaa tflraac tflraca tflarca tflarac tflacra tflacar tflaarc tflaacr tflcraa tflcraa tflcara tflcaar tflcara tflcaar tflarac tflarca tflaarc tflaacr tflacra tflacar trfacal trfacla trfaacl trfaalc trfalca trfalac trfcaal trfcala trfcaal trfcala trfclaa trfclaa trfaacl trfaalc trfacal trfacla trfalac trfalca trflaca trflaac trflcaa trflcaa trflaac trflaca trafcal trafcla trafacl trafalc traflca traflac tracfal tracfla tracafl tracalf traclfa traclaf traafcl traaflc traacfl traaclf traalfc traalcf tralfca tralfac tralcfa tralcaf tralafc tralacf trcfaal trcfala trcfaal trcfala trcflaa trcflaa trcafal trcafla trcaafl trcaalf trcalfa trcalaf trcafal trcafla trcaafl trcaalf trcalfa trcalaf trclfaa trclfaa trclafa trclaaf trclafa trclaaf trafacl trafalc trafcal trafcla traflac traflca traafcl traaflc traacfl traaclf traalfc traalcf tracfal tracfla tracafl tracalf traclfa traclaf tralfac tralfca tralafc tralacf tralcfa tralcaf trlfaca trlfaac trlfcaa trlfcaa trlfaac trlfaca trlafca trlafac trlacfa trlacaf trlaafc trlaacf trlcfaa trlcfaa trlcafa trlcaaf trlcafa trlcaaf trlafac trlafca trlaafc trlaacf trlacfa trlacaf tafrcal tafrcla tafracl tafralc tafrlca tafrlac tafcral tafcrla tafcarl tafcalr tafclra tafclar tafarcl tafarlc tafacrl tafaclr tafalrc tafalcr taflrca taflrac taflcra taflcar taflarc taflacr tarfcal tarfcla tarfacl tarfalc tarflca tarflac tarcfal tarcfla tarcafl tarcalf tarclfa tarclaf tarafcl taraflc taracfl taraclf taralfc taralcf tarlfca tarlfac tarlcfa tarlcaf tarlafc tarlacf tacfral tacfrla tacfarl tacfalr tacflra tacflar tacrfal tacrfla tacrafl tacralf tacrlfa tacrlaf tacafrl tacaflr tacarfl tacarlf tacalfr tacalrf taclfra taclfar taclrfa taclraf taclafr taclarf taafrcl taafrlc taafcrl taafclr taaflrc taaflcr taarfcl taarflc taarcfl taarclf taarlfc taarlcf taacfrl taacflr taacrfl taacrlf taaclfr taaclrf taalfrc taalfcr taalrfc taalrcf taalcfr taalcrf talfrca talfrac talfcra talfcar talfarc talfacr talrfca talrfac talrcfa talrcaf talrafc talracf talcfra talcfar talcrfa talcraf talcafr talcarf talafrc talafcr talarfc talarcf talacfr talacrf tcfraal tcfrala tcfraal tcfrala tcfrlaa tcfrlaa tcfaral tcfarla tcfaarl tcfaalr tcfalra tcfalar tcfaral tcfarla tcfaarl tcfaalr tcfalra tcfalar tcflraa tcflraa tcflara tcflaar tcflara tcflaar tcrfaal tcrfala tcrfaal tcrfala tcrflaa tcrflaa tcrafal tcrafla tcraafl tcraalf tcralfa tcralaf tcrafal tcrafla tcraafl tcraalf tcralfa tcralaf tcrlfaa tcrlfaa tcrlafa tcrlaaf tcrlafa tcrlaaf tcafral tcafrla tcafarl tcafalr tcaflra tcaflar tcarfal tcarfla tcarafl tcaralf tcarlfa tcarlaf tcaafrl tcaaflr tcaarfl tcaarlf tcaalfr tcaalrf tcalfra tcalfar tcalrfa tcalraf tcalafr tcalarf tcafral tcafrla tcafarl tcafalr tcaflra tcaflar tcarfal tcarfla tcarafl tcaralf tcarlfa tcarlaf tcaafrl tcaaflr tcaarfl tcaarlf tcaalfr tcaalrf tcalfra tcalfar tcalrfa tcalraf tcalafr tcalarf tclfraa tclfraa tclfara tclfaar tclfara tclfaar tclrfaa tclrfaa tclrafa tclraaf tclrafa tclraaf tclafra tclafar tclarfa tclaraf tclaafr tclaarf tclafra tclafar tclarfa tclaraf tclaafr tclaarf tafracl tafralc tafrcal tafrcla tafrlac tafrlca tafarcl tafarlc tafacrl tafaclr tafalrc tafalcr tafcral tafcrla tafcarl tafcalr tafclra tafclar taflrac taflrca taflarc taflacr taflcra taflcar tarfacl tarfalc tarfcal tarfcla tarflac tarflca tarafcl taraflc taracfl taraclf taralfc taralcf tarcfal tarcfla tarcafl tarcalf tarclfa tarclaf tarlfac tarlfca tarlafc tarlacf tarlcfa tarlcaf taafrcl taafrlc taafcrl taafclr taaflrc taaflcr taarfcl taarflc taarcfl taarclf taarlfc taarlcf taacfrl taacflr taacrfl taacrlf taaclfr taaclrf taalfrc taalfcr taalrfc taalrcf taalcfr taalcrf tacfral tacfrla tacfarl tacfalr tacflra tacflar tacrfal tacrfla tacrafl tacralf tacrlfa tacrlaf tacafrl tacaflr tacarfl tacarlf tacalfr tacalrf taclfra taclfar taclrfa taclraf taclafr taclarf talfrac talfrca talfarc talfacr talfcra talfcar talrfac talrfca talrafc talracf talrcfa talrcaf talafrc talafcr talarfc talarcf talacfr talacrf talcfra talcfar talcrfa talcraf talcafr talcarf tlfraca tlfraac tlfrcaa tlfrcaa tlfraac tlfraca tlfarca tlfarac tlfacra tlfacar tlfaarc tlfaacr tlfcraa tlfcraa tlfcara tlfcaar tlfcara tlfcaar tlfarac tlfarca tlfaarc tlfaacr tlfacra tlfacar tlrfaca tlrfaac tlrfcaa tlrfcaa tlrfaac tlrfaca tlrafca tlrafac tlracfa tlracaf tlraafc tlraacf tlrcfaa tlrcfaa tlrcafa tlrcaaf tlrcafa tlrcaaf tlrafac tlrafca tlraafc tlraacf tlracfa tlracaf tlafrca tlafrac tlafcra tlafcar tlafarc tlafacr tlarfca tlarfac tlarcfa tlarcaf tlarafc tlaracf tlacfra tlacfar tlacrfa tlacraf tlacafr tlacarf tlaafrc tlaafcr tlaarfc tlaarcf tlaacfr tlaacrf tlcfraa tlcfraa tlcfara tlcfaar tlcfara tlcfaar tlcrfaa tlcrfaa tlcrafa tlcraaf tlcrafa tlcraaf tlcafra tlcafar tlcarfa tlcaraf tlcaafr tlcaarf tlcafra tlcafar tlcarfa tlcaraf tlcaafr tlcaarf tlafrac tlafrca tlafarc tlafacr tlafcra tlafcar tlarfac tlarfca tlarafc tlaracf tlarcfa tlarcaf tlaafrc tlaafcr tlaarfc tlaarcf tlaacfr tlaacrf tlacfra tlacfar tlacrfa tlacraf tlacafr tlacarf afractl afraclt afratcl afratlc afralct afraltc afrcatl afrcalt afrctal afrctla afrclat afrclta afrtacl afrtalc afrtcal afrtcla afrtlac afrtlca afrlact afrlatc afrlcat afrlcta afrltac afrltca afarctl afarclt afartcl afartlc afarlct afarltc afacrtl afacrlt afactrl afactlr afaclrt afacltr afatrcl afatrlc afatcrl afatclr afatlrc afatlcr afalrct afalrtc afalcrt afalctr afaltrc afaltcr afcratl afcralt afcrtal afcrtla afcrlat afcrlta afcartl afcarlt afcatrl afcatlr afcalrt afcaltr afctral afctrla afctarl afctalr afctlra afctlar afclrat afclrta afclart afclatr afcltra afcltar aftracl aftralc aftrcal aftrcla aftrlac aftrlca aftarcl aftarlc aftacrl aftaclr aftalrc aftalcr aftcral aftcrla aftcarl aftcalr aftclra aftclar aftlrac aftlrca aftlarc aftlacr aftlcra aftlcar aflract aflratc aflrcat aflrcta aflrtac aflrtca aflarct aflartc aflacrt aflactr aflatrc aflatcr aflcrat aflcrta aflcart aflcatr aflctra aflctar afltrac afltrca afltarc afltacr afltcra afltcar arfactl arfaclt arfatcl arfatlc arfalct arfaltc arfcatl arfcalt arfctal arfctla arfclat arfclta arftacl arftalc arftcal arftcla arftlac arftlca arflact arflatc arflcat arflcta arfltac arfltca arafctl arafclt araftcl araftlc araflct arafltc aracftl aracflt aractfl aractlf araclft aracltf aratfcl aratflc aratcfl aratclf aratlfc aratlcf aralfct aralftc aralcft aralctf araltfc araltcf arcfatl arcfalt arcftal arcftla arcflat arcflta arcaftl arcaflt arcatfl arcatlf arcalft arcaltf arctfal arctfla arctafl arctalf arctlfa arctlaf arclfat arclfta arclaft arclatf arcltfa arcltaf artfacl artfalc artfcal artfcla artflac artflca artafcl artaflc artacfl artaclf artalfc artalcf artcfal artcfla artcafl artcalf artclfa artclaf artlfac artlfca artlafc artlacf artlcfa artlcaf arlfact arlfatc arlfcat arlfcta arlftac arlftca arlafct arlaftc arlacft arlactf arlatfc arlatcf arlcfat arlcfta arlcaft arlcatf arlctfa arlctaf arltfac arltfca arltafc arltacf arltcfa arltcaf aafrctl aafrclt aafrtcl aafrtlc aafrlct aafrltc aafcrtl aafcrlt aafctrl aafctlr aafclrt aafcltr aaftrcl aaftrlc aaftcrl aaftclr aaftlrc aaftlcr aaflrct aaflrtc aaflcrt aaflctr aafltrc aafltcr aarfctl aarfclt aarftcl aarftlc aarflct aarfltc aarcftl aarcflt aarctfl aarctlf aarclft aarcltf aartfcl aartflc aartcfl aartclf aartlfc aartlcf aarlfct aarlftc aarlcft aarlctf aarltfc aarltcf aacfrtl aacfrlt aacftrl aacftlr aacflrt aacfltr aacrftl aacrflt aacrtfl aacrtlf aacrlft aacrltf aactfrl aactflr aactrfl aactrlf aactlfr aactlrf aaclfrt aaclftr aaclrft aaclrtf aacltfr aacltrf aatfrcl aatfrlc aatfcrl aatfclr aatflrc aatflcr aatrfcl aatrflc aatrcfl aatrclf aatrlfc aatrlcf aatcfrl aatcflr aatcrfl aatcrlf aatclfr aatclrf aatlfrc aatlfcr aatlrfc aatlrcf aatlcfr aatlcrf aalfrct aalfrtc aalfcrt aalfctr aalftrc aalftcr aalrfct aalrftc aalrcft aalrctf aalrtfc aalrtcf aalcfrt aalcftr aalcrft aalcrtf aalctfr aalctrf aaltfrc aaltfcr aaltrfc aaltrcf aaltcfr aaltcrf acfratl acfralt acfrtal acfrtla acfrlat acfrlta acfartl acfarlt acfatrl acfatlr acfalrt acfaltr acftral acftrla acftarl acftalr acftlra acftlar acflrat acflrta acflart acflatr acfltra acfltar acrfatl acrfalt acrftal acrftla acrflat acrflta acraftl acraflt acratfl acratlf acralft acraltf acrtfal acrtfla acrtafl acrtalf acrtlfa acrtlaf acrlfat acrlfta acrlaft acrlatf acrltfa acrltaf acafrtl acafrlt acaftrl acaftlr acaflrt acafltr acarftl acarflt acartfl acartlf acarlft acarltf acatfrl acatflr acatrfl acatrlf acatlfr acatlrf acalfrt acalftr acalrft acalrtf acaltfr acaltrf actfral actfrla actfarl actfalr actflra actflar actrfal actrfla actrafl actralf actrlfa actrlaf actafrl actaflr actarfl actarlf actalfr actalrf actlfra actlfar actlrfa actlraf actlafr actlarf aclfrat aclfrta aclfart aclfatr aclftra aclftar aclrfat aclrfta aclraft aclratf aclrtfa aclrtaf aclafrt aclaftr aclarft aclartf aclatfr aclatrf acltfra acltfar acltrfa acltraf acltafr acltarf atfracl atfralc atfrcal atfrcla atfrlac atfrlca atfarcl atfarlc atfacrl atfaclr atfalrc atfalcr atfcral atfcrla atfcarl atfcalr atfclra atfclar atflrac atflrca atflarc atflacr atflcra atflcar atrfacl atrfalc atrfcal atrfcla atrflac atrflca atrafcl atraflc atracfl atraclf atralfc atralcf atrcfal atrcfla atrcafl atrcalf atrclfa atrclaf atrlfac atrlfca atrlafc atrlacf atrlcfa atrlcaf atafrcl atafrlc atafcrl atafclr ataflrc ataflcr atarfcl atarflc atarcfl atarclf atarlfc atarlcf atacfrl atacflr atacrfl atacrlf ataclfr ataclrf atalfrc atalfcr atalrfc atalrcf atalcfr atalcrf atcfral atcfrla atcfarl atcfalr atcflra atcflar atcrfal atcrfla atcrafl atcralf atcrlfa atcrlaf atcafrl atcaflr atcarfl atcarlf atcalfr atcalrf atclfra atclfar atclrfa atclraf atclafr atclarf atlfrac atlfrca atlfarc atlfacr atlfcra atlfcar atlrfac atlrfca atlrafc atlracf atlrcfa atlrcaf atlafrc atlafcr atlarfc atlarcf atlacfr atlacrf atlcfra atlcfar atlcrfa atlcraf atlcafr atlcarf alfract alfratc alfrcat alfrcta alfrtac alfrtca alfarct alfartc alfacrt alfactr alfatrc alfatcr alfcrat alfcrta alfcart alfcatr alfctra alfctar alftrac alftrca alftarc alftacr alftcra alftcar alrfact alrfatc alrfcat alrfcta alrftac alrftca alrafct alraftc alracft alractf alratfc alratcf alrcfat alrcfta alrcaft alrcatf alrctfa alrctaf alrtfac alrtfca alrtafc alrtacf alrtcfa alrtcaf alafrct alafrtc alafcrt alafctr alaftrc alaftcr alarfct alarftc alarcft alarctf alartfc alartcf alacfrt alacftr alacrft alacrtf alactfr alactrf alatfrc alatfcr alatrfc alatrcf alatcfr alatcrf alcfrat alcfrta alcfart alcfatr alcftra alcftar alcrfat alcrfta alcraft alcratf alcrtfa alcrtaf alcafrt alcaftr alcarft alcartf alcatfr alcatrf alctfra alctfar alctrfa alctraf alctafr alctarf altfrac altfrca altfarc altfacr altfcra altfcar altrfac altrfca altrafc altracf altrcfa altrcaf altafrc altafcr altarfc altarcf altacfr altacrf altcfra altcfar altcrfa altcraf altcafr altcarf lfracta lfracat lfratca lfratac lfraact lfraatc lfrcata lfrcaat lfrctaa lfrctaa lfrcaat lfrcata lfrtaca lfrtaac lfrtcaa lfrtcaa lfrtaac lfrtaca lfraact lfraatc lfracat lfracta lfratac lfratca lfarcta lfarcat lfartca lfartac lfaract lfaratc lfacrta lfacrat lfactra lfactar lfacart lfacatr lfatrca lfatrac lfatcra lfatcar lfatarc lfatacr lfaarct lfaartc lfaacrt lfaactr lfaatrc lfaatcr lfcrata lfcraat lfcrtaa lfcrtaa lfcraat lfcrata lfcarta lfcarat lfcatra lfcatar lfcaart lfcaatr lfctraa lfctraa lfctara lfctaar lfctara lfctaar lfcarat lfcarta lfcaart lfcaatr lfcatra lfcatar lftraca lftraac lftrcaa lftrcaa lftraac lftraca lftarca lftarac lftacra lftacar lftaarc lftaacr lftcraa lftcraa lftcara lftcaar lftcara lftcaar lftarac lftarca lftaarc lftaacr lftacra lftacar lfaract lfaratc lfarcat lfarcta lfartac lfartca lfaarct lfaartc lfaacrt lfaactr lfaatrc lfaatcr lfacrat lfacrta lfacart lfacatr lfactra lfactar lfatrac lfatrca lfatarc lfatacr lfatcra lfatcar lrfacta lrfacat lrfatca lrfatac lrfaact lrfaatc lrfcata lrfcaat lrfctaa lrfctaa lrfcaat lrfcata lrftaca lrftaac lrftcaa lrftcaa lrftaac lrftaca lrfaact lrfaatc lrfacat lrfacta lrfatac lrfatca lrafcta lrafcat lraftca lraftac lrafact lrafatc lracfta lracfat lractfa lractaf lracaft lracatf lratfca lratfac lratcfa lratcaf lratafc lratacf lraafct lraaftc lraacft lraactf lraatfc lraatcf lrcfata lrcfaat lrcftaa lrcftaa lrcfaat lrcfata lrcafta lrcafat lrcatfa lrcataf lrcaaft lrcaatf lrctfaa lrctfaa lrctafa lrctaaf lrctafa lrctaaf lrcafat lrcafta lrcaaft lrcaatf lrcatfa lrcataf lrtfaca lrtfaac lrtfcaa lrtfcaa lrtfaac lrtfaca lrtafca lrtafac lrtacfa lrtacaf lrtaafc lrtaacf lrtcfaa lrtcfaa lrtcafa lrtcaaf lrtcafa lrtcaaf lrtafac lrtafca lrtaafc lrtaacf lrtacfa lrtacaf lrafact lrafatc lrafcat lrafcta lraftac lraftca lraafct lraaftc lraacft lraactf lraatfc lraatcf lracfat lracfta lracaft lracatf lractfa lractaf lratfac lratfca lratafc lratacf lratcfa lratcaf lafrcta lafrcat lafrtca lafrtac lafract lafratc lafcrta lafcrat lafctra lafctar lafcart lafcatr laftrca laftrac laftcra laftcar laftarc laftacr lafarct lafartc lafacrt lafactr lafatrc lafatcr larfcta larfcat larftca larftac larfact larfatc larcfta larcfat larctfa larctaf larcaft larcatf lartfca lartfac lartcfa lartcaf lartafc lartacf larafct laraftc laracft laractf laratfc laratcf lacfrta lacfrat lacftra lacftar lacfart lacfatr lacrfta lacrfat lacrtfa lacrtaf lacraft lacratf lactfra lactfar lactrfa lactraf lactafr lactarf lacafrt lacaftr lacarft lacartf lacatfr lacatrf latfrca latfrac latfcra latfcar latfarc latfacr latrfca latrfac latrcfa latrcaf latrafc latracf latcfra latcfar latcrfa latcraf latcafr latcarf latafrc latafcr latarfc latarcf latacfr latacrf laafrct laafrtc laafcrt laafctr laaftrc laaftcr laarfct laarftc laarcft laarctf laartfc laartcf laacfrt laacftr laacrft laacrtf laactfr laactrf laatfrc laatfcr laatrfc laatrcf laatcfr laatcrf lcfrata lcfraat lcfrtaa lcfrtaa lcfraat lcfrata lcfarta lcfarat lcfatra lcfatar lcfaart lcfaatr lcftraa lcftraa lcftara lcftaar lcftara lcftaar lcfarat lcfarta lcfaart lcfaatr lcfatra lcfatar lcrfata lcrfaat lcrftaa lcrftaa lcrfaat lcrfata lcrafta lcrafat lcratfa lcrataf lcraaft lcraatf lcrtfaa lcrtfaa lcrtafa lcrtaaf lcrtafa lcrtaaf lcrafat lcrafta lcraaft lcraatf lcratfa lcrataf lcafrta lcafrat lcaftra lcaftar lcafart lcafatr lcarfta lcarfat lcartfa lcartaf lcaraft lcaratf lcatfra lcatfar lcatrfa lcatraf lcatafr lcatarf lcaafrt lcaaftr lcaarft lcaartf lcaatfr lcaatrf lctfraa lctfraa lctfara lctfaar lctfara lctfaar lctrfaa lctrfaa lctrafa lctraaf lctrafa lctraaf lctafra lctafar lctarfa lctaraf lctaafr lctaarf lctafra lctafar lctarfa lctaraf lctaafr lctaarf lcafrat lcafrta lcafart lcafatr lcaftra lcaftar lcarfat lcarfta lcaraft lcaratf lcartfa lcartaf lcaafrt lcaaftr lcaarft lcaartf lcaatfr lcaatrf lcatfra lcatfar lcatrfa lcatraf lcatafr lcatarf ltfraca ltfraac ltfrcaa ltfrcaa ltfraac ltfraca ltfarca ltfarac ltfacra ltfacar ltfaarc ltfaacr ltfcraa ltfcraa ltfcara ltfcaar ltfcara ltfcaar ltfarac ltfarca ltfaarc ltfaacr ltfacra ltfacar ltrfaca ltrfaac ltrfcaa ltrfcaa ltrfaac ltrfaca ltrafca ltrafac ltracfa ltracaf ltraafc ltraacf ltrcfaa ltrcfaa ltrcafa ltrcaaf ltrcafa ltrcaaf ltrafac ltrafca ltraafc ltraacf ltracfa ltracaf ltafrca ltafrac ltafcra ltafcar ltafarc ltafacr ltarfca ltarfac ltarcfa ltarcaf ltarafc ltaracf ltacfra ltacfar ltacrfa ltacraf ltacafr ltacarf ltaafrc ltaafcr ltaarfc ltaarcf ltaacfr ltaacrf ltcfraa ltcfraa ltcfara ltcfaar ltcfara ltcfaar ltcrfaa ltcrfaa ltcrafa ltcraaf ltcrafa ltcraaf ltcafra ltcafar ltcarfa ltcaraf ltcaafr ltcaarf ltcafra ltcafar ltcarfa ltcaraf ltcaafr ltcaarf ltafrac ltafrca ltafarc ltafacr ltafcra ltafcar ltarfac ltarfca ltarafc ltaracf ltarcfa ltarcaf ltaafrc ltaafcr ltaarfc ltaarcf ltaacfr ltaacrf ltacfra ltacfar ltacrfa ltacraf ltacafr ltacarf lafract lafratc lafrcat lafrcta lafrtac lafrtca lafarct lafartc lafacrt lafactr lafatrc lafatcr lafcrat lafcrta lafcart lafcatr lafctra lafctar laftrac laftrca laftarc laftacr laftcra laftcar larfact larfatc larfcat larfcta larftac larftca larafct laraftc laracft laractf laratfc laratcf larcfat larcfta larcaft larcatf larctfa larctaf lartfac lartfca lartafc lartacf lartcfa lartcaf laafrct laafrtc laafcrt laafctr laaftrc laaftcr laarfct laarftc laarcft laarctf laartfc laartcf laacfrt laacftr laacrft laacrtf laactfr laactrf laatfrc laatfcr laatrfc laatrcf laatcfr laatcrf lacfrat lacfrta lacfart lacfatr lacftra lacftar lacrfat lacrfta lacraft lacratf lacrtfa lacrtaf lacafrt lacaftr lacarft lacartf lacatfr lacatrf lactfra lactfar lactrfa lactraf lactafr lactarf latfrac latfrca latfarc latfacr latfcra latfcar latrfac latrfca latrafc latracf latrcfa latrcaf latafrc latafcr latarfc latarcf latacfr latacrf latcfra latcfar latcrfa latcraf latcafr latcarf.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
