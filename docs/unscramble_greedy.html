@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble greedy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble greedy and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble greedy and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble greedy" name="twitter:title">
+    <meta content="Unscramble greedy" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble greedy</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters greedy. To unscramble greedy we can search against each letter in greedy and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling greedy means that
+
+immoderately desirous of acquiring e.g. wealth,
+
+(often followed by `for&#39;) ardently or excessively desirous,
+
+wanting to eat or drink more than one can reasonably consume,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble greedy with word unscrambler" src="images/unscramble_greedy.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from greedy</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> greedy </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> greyed </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from greedy</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gyred </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> redye </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reedy </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> edger </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> greed </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from greedy</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> grey </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gyre </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eery </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eyer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eyre </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eger </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gree </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dyer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> edgy </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dreg </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eyed </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> deer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dere </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dree </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rede </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reed </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> edge </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> geed </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from greedy</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rye </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gey </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> erg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reg </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eye </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ere </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ree </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gee </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dry </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dey </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dye </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> red </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ged </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> dee </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from greedy</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ye </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> de </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ed </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in greedy like greedy greeyd gredey gredye greyed greyde greedy greeyd gredey gredye greyed greyde grdeey grdeye grdeey grdeye grdyee grdyee gryeed gryede gryeed gryede grydee grydee geredy gereyd gerdey gerdye geryed geryde geerdy geeryd geedry geedyr geeyrd geeydr gedrey gedrye gedery gedeyr gedyre gedyer geyred geyrde geyerd geyedr geydre geyder geredy gereyd gerdey gerdye geryed geryde geerdy geeryd geedry geedyr geeyrd geeydr gedrey gedrye gedery gedeyr gedyre gedyer geyred geyrde geyerd geyedr geydre geyder gdreey gdreye gdreey gdreye gdryee gdryee gderey gderye gdeery gdeeyr gdeyre gdeyer gderey gderye gdeery gdeeyr gdeyre gdeyer gdyree gdyree gdyere gdyeer gdyere gdyeer gyreed gyrede gyreed gyrede gyrdee gyrdee gyered gyerde gyeerd gyeedr gyedre gyeder gyered gyerde gyeerd gyeedr gyedre gyeder gydree gydree gydere gydeer gydere gydeer rgeedy rgeeyd rgedey rgedye rgeyed rgeyde rgeedy rgeeyd rgedey rgedye rgeyed rgeyde rgdeey rgdeye rgdeey rgdeye rgdyee rgdyee rgyeed rgyede rgyeed rgyede rgydee rgydee regedy regeyd regdey regdye regyed regyde reegdy reegyd reedgy reedyg reeygd reeydg redgey redgye redegy redeyg redyge redyeg reyged reygde reyegd reyedg reydge reydeg regedy regeyd regdey regdye regyed regyde reegdy reegyd reedgy reedyg reeygd reeydg redgey redgye redegy redeyg redyge redyeg reyged reygde reyegd reyedg reydge reydeg rdgeey rdgeye rdgeey rdgeye rdgyee rdgyee rdegey rdegye rdeegy rdeeyg rdeyge rdeyeg rdegey rdegye rdeegy rdeeyg rdeyge rdeyeg rdygee rdygee rdyege rdyeeg rdyege rdyeeg rygeed rygede rygeed rygede rygdee rygdee ryeged ryegde ryeegd ryeedg ryedge ryedeg ryeged ryegde ryeegd ryeedg ryedge ryedeg rydgee rydgee rydege rydeeg rydege rydeeg egredy egreyd egrdey egrdye egryed egryde egerdy egeryd egedry egedyr egeyrd egeydr egdrey egdrye egdery egdeyr egdyre egdyer egyred egyrde egyerd egyedr egydre egyder ergedy ergeyd ergdey ergdye ergyed ergyde eregdy eregyd eredgy eredyg ereygd ereydg erdgey erdgye erdegy erdeyg erdyge erdyeg eryged erygde eryegd eryedg erydge erydeg eegrdy eegryd eegdry eegdyr eegyrd eegydr eergdy eergyd eerdgy eerdyg eerygd eerydg eedgry eedgyr eedrgy eedryg eedygr eedyrg eeygrd eeygdr eeyrgd eeyrdg eeydgr eeydrg edgrey edgrye edgery edgeyr edgyre edgyer edrgey edrgye edregy edreyg edryge edryeg edegry edegyr edergy ederyg edeygr edeyrg edygre edyger edyrge edyreg edyegr edyerg eygred eygrde eygerd eygedr eygdre eygder eyrged eyrgde eyregd eyredg eyrdge eyrdeg eyegrd eyegdr eyergd eyerdg eyedgr eyedrg eydgre eydger eydrge eydreg eydegr eyderg egredy egreyd egrdey egrdye egryed egryde egerdy egeryd egedry egedyr egeyrd egeydr egdrey egdrye egdery egdeyr egdyre egdyer egyred egyrde egyerd egyedr egydre egyder ergedy ergeyd ergdey ergdye ergyed ergyde eregdy eregyd eredgy eredyg ereygd ereydg erdgey erdgye erdegy erdeyg erdyge erdyeg eryged erygde eryegd eryedg erydge erydeg eegrdy eegryd eegdry eegdyr eegyrd eegydr eergdy eergyd eerdgy eerdyg eerygd eerydg eedgry eedgyr eedrgy eedryg eedygr eedyrg eeygrd eeygdr eeyrgd eeyrdg eeydgr eeydrg edgrey edgrye edgery edgeyr edgyre edgyer edrgey edrgye edregy edreyg edryge edryeg edegry edegyr edergy ederyg edeygr edeyrg edygre edyger edyrge edyreg edyegr edyerg eygred eygrde eygerd eygedr eygdre eygder eyrged eyrgde eyregd eyredg eyrdge eyrdeg eyegrd eyegdr eyergd eyerdg eyedgr eyedrg eydgre eydger eydrge eydreg eydegr eyderg dgreey dgreye dgreey dgreye dgryee dgryee dgerey dgerye dgeery dgeeyr dgeyre dgeyer dgerey dgerye dgeery dgeeyr dgeyre dgeyer dgyree dgyree dgyere dgyeer dgyere dgyeer drgeey drgeye drgeey drgeye drgyee drgyee dregey dregye dreegy dreeyg dreyge dreyeg dregey dregye dreegy dreeyg dreyge dreyeg drygee drygee dryege dryeeg dryege dryeeg degrey degrye degery degeyr degyre degyer dergey dergye deregy dereyg deryge deryeg deegry deegyr deergy deeryg deeygr deeyrg deygre deyger deyrge deyreg deyegr deyerg degrey degrye degery degeyr degyre degyer dergey dergye deregy dereyg deryge deryeg deegry deegyr deergy deeryg deeygr deeyrg deygre deyger deyrge deyreg deyegr deyerg dygree dygree dygere dygeer dygere dygeer dyrgee dyrgee dyrege dyreeg dyrege dyreeg dyegre dyeger dyerge dyereg dyeegr dyeerg dyegre dyeger dyerge dyereg dyeegr dyeerg ygreed ygrede ygreed ygrede ygrdee ygrdee ygered ygerde ygeerd ygeedr ygedre ygeder ygered ygerde ygeerd ygeedr ygedre ygeder ygdree ygdree ygdere ygdeer ygdere ygdeer yrgeed yrgede yrgeed yrgede yrgdee yrgdee yreged yregde yreegd yreedg yredge yredeg yreged yregde yreegd yreedg yredge yredeg yrdgee yrdgee yrdege yrdeeg yrdege yrdeeg yegred yegrde yegerd yegedr yegdre yegder yerged yergde yeregd yeredg yerdge yerdeg yeegrd yeegdr yeergd yeerdg yeedgr yeedrg yedgre yedger yedrge yedreg yedegr yederg yegred yegrde yegerd yegedr yegdre yegder yerged yergde yeregd yeredg yerdge yerdeg yeegrd yeegdr yeergd yeerdg yeedgr yeedrg yedgre yedger yedrge yedreg yedegr yederg ydgree ydgree ydgere ydgeer ydgere ydgeer ydrgee ydrgee ydrege ydreeg ydrege ydreeg ydegre ydeger yderge ydereg ydeegr ydeerg ydegre ydeger yderge ydereg ydeegr ydeerg.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
