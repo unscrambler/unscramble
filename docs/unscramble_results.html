@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble results and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble results and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble results" name="twitter:title">
+    <meta content="Unscramble results" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble results</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters results. To unscramble results we can search against each letter in results and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling results means that
+
+a quality that outshines the usual,
+
+the visual property of something that shines with reflected light,
+
+a surface coating for ceramics or porcelain,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble results with word unscrambler" src="images/unscramble_results.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="7-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 7 letter words from results</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lusters </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lustres </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> results </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rustles </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sutlers </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ulsters </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from results</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> estrus </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> russet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> surest </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tusser </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tussle </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> luster </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lustre </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> result </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rustle </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sutler </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ulster </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from results</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rusts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> truss </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lusts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sluts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slurs </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruses </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suers </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> users </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rests </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tress </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lutes </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tules </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lures </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rules </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from results</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rust </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lust </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slur </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> utes </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sues </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> uses </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> true </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sure </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> user </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> erst </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tres </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sers </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lute </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tule </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lues </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tels </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> less </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sels </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lure </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rule </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from results</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> uts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ute </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> use </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> set </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ess </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ret </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ers </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> res </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ser </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leu </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> let </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tel </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> els </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> les </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sel </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from results</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> us </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> et </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> es </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> el </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in results like results resulst resutls resutsl resuslt resustl resluts reslust resltus resltsu reslsut reslstu restuls restusl restlus restlsu restsul restslu ressult ressutl resslut ressltu resstul resstlu reuslts reuslst reustls reustsl reusslt reusstl reulsts reulsst reultss reultss reulsst reulsts reutsls reutssl reutlss reutlss reutssl reutsls reusslt reusstl reuslst reuslts reustsl reustls relsuts relsust relstus relstsu relssut relsstu relusts relusst relutss relutss relusst relusts reltsus reltssu reltuss reltuss reltssu reltsus relssut relsstu relsust relsuts relstsu relstus retsuls retsusl retslus retslsu retssul retsslu retusls retussl retulss retulss retussl retusls retlsus retlssu retluss retluss retlssu retlsus retssul retsslu retsusl retsuls retslsu retslus ressult ressutl resslut ressltu resstul resstlu resuslt resustl resulst results resutsl resutls reslsut reslstu reslust resluts resltsu resltus restsul restslu restusl restuls restlsu restlus rseults rseulst rseutls rseutsl rseuslt rseustl rseluts rselust rseltus rseltsu rselsut rselstu rsetuls rsetusl rsetlus rsetlsu rsetsul rsetslu rsesult rsesutl rseslut rsesltu rsestul rsestlu rsuelts rsuelst rsuetls rsuetsl rsueslt rsuestl rsulets rsulest rsultes rsultse rsulset rsulste rsutels rsutesl rsutles rsutlse rsutsel rsutsle rsuselt rsusetl rsuslet rsuslte rsustel rsustle rsleuts rsleust rsletus rsletsu rslesut rslestu rsluets rsluest rslutes rslutse rsluset rsluste rslteus rsltesu rsltues rsltuse rsltseu rsltsue rslseut rslsetu rslsuet rslsute rslsteu rslstue rsteuls rsteusl rstelus rstelsu rstesul rsteslu rstuels rstuesl rstules rstulse rstusel rstusle rstleus rstlesu rstlues rstluse rstlseu rstlsue rstseul rstselu rstsuel rstsule rstsleu rstslue rsseult rsseutl rsselut rsseltu rssetul rssetlu rssuelt rssuetl rssulet rssulte rssutel rssutle rssleut rssletu rssluet rsslute rsslteu rssltue rssteul rsstelu rsstuel rsstule rsstleu rsstlue rueslts rueslst ruestls ruestsl ruesslt ruesstl ruelsts ruelsst rueltss rueltss ruelsst ruelsts ruetsls ruetssl ruetlss ruetlss ruetssl ruetsls ruesslt ruesstl rueslst rueslts ruestsl ruestls ruselts ruselst rusetls rusetsl ruseslt rusestl ruslets ruslest rusltes rusltse ruslset ruslste rustels rustesl rustles rustlse rustsel rustsle russelt russetl russlet russlte russtel russtle rulests rulesst ruletss ruletss rulesst rulests rulsets rulsest rulstes rulstse rulsset rulsste rultess rultess rultses rultsse rultses rultsse rulsest rulsets rulsset rulsste rulstes rulstse rutesls rutessl rutelss rutelss rutessl rutesls rutsels rutsesl rutsles rutslse rutssel rutssle rutless rutless rutlses rutlsse rutlses rutlsse rutsesl rutsels rutssel rutssle rutsles rutslse ruseslt rusestl ruselst ruselts rusetsl rusetls russelt russetl russlet russlte russtel russtle ruslest ruslets ruslset ruslste rusltes rusltse rustesl rustels rustsel rustsle rustles rustlse rlesuts rlesust rlestus rlestsu rlessut rlesstu rleusts rleusst rleutss rleutss rleusst rleusts rletsus rletssu rletuss rletuss rletssu rletsus rlessut rlesstu rlesust rlesuts rlestsu rlestus rlseuts rlseust rlsetus rlsetsu rlsesut rlsestu rlsuets rlsuest rlsutes rlsutse rlsuset rlsuste rlsteus rlstesu rlstues rlstuse rlstseu rlstsue rlsseut rlssetu rlssuet rlssute rlssteu rlsstue rluests rluesst rluetss rluetss rluesst rluests rlusets rlusest rlustes rlustse rlusset rlusste rlutess rlutess rlutses rlutsse rlutses rlutsse rlusest rlusets rlusset rlusste rlustes rlustse rltesus rltessu rlteuss rlteuss rltessu rltesus rltseus rltsesu rltsues rltsuse rltsseu rltssue rltuess rltuess rltuses rltusse rltuses rltusse rltsesu rltseus rltsseu rltssue rltsues rltsuse rlsesut rlsestu rlseust rlseuts rlsetsu rlsetus rlsseut rlssetu rlssuet rlssute rlssteu rlsstue rlsuest rlsuets rlsuset rlsuste rlsutes rlsutse rlstesu rlsteus rlstseu rlstsue rlstues rlstuse rtesuls rtesusl rteslus rteslsu rtessul rtesslu rteusls rteussl rteulss rteulss rteussl rteusls rtelsus rtelssu rteluss rteluss rtelssu rtelsus rtessul rtesslu rtesusl rtesuls rteslsu rteslus rtseuls rtseusl rtselus rtselsu rtsesul rtseslu rtsuels rtsuesl rtsules rtsulse rtsusel rtsusle rtsleus rtslesu rtslues rtsluse rtslseu rtslsue rtsseul rtsselu rtssuel rtssule rtssleu rtsslue rtuesls rtuessl rtuelss rtuelss rtuessl rtuesls rtusels rtusesl rtusles rtuslse rtussel rtussle rtuless rtuless rtulses rtulsse rtulses rtulsse rtusesl rtusels rtussel rtussle rtusles rtuslse rtlesus rtlessu rtleuss rtleuss rtlessu rtlesus rtlseus rtlsesu rtlsues rtlsuse rtlsseu rtlssue rtluess rtluess rtluses rtlusse rtluses rtlusse rtlsesu rtlseus rtlsseu rtlssue rtlsues rtlsuse rtsesul rtseslu rtseusl rtseuls rtselsu rtselus rtsseul rtsselu rtssuel rtssule rtssleu rtsslue rtsuesl rtsuels rtsusel rtsusle rtsules rtsulse rtslesu rtsleus rtslseu rtslsue rtslues rtsluse rsesult rsesutl rseslut rsesltu rsestul rsestlu rseuslt rseustl rseulst rseults rseutsl rseutls rselsut rselstu rselust rseluts rseltsu rseltus rsetsul rsetslu rsetusl rsetuls rsetlsu rsetlus rsseult rsseutl rsselut rsseltu rssetul rssetlu rssuelt rssuetl rssulet rssulte rssutel rssutle rssleut rssletu rssluet rsslute rsslteu rssltue rssteul rsstelu rsstuel rsstule rsstleu rsstlue rsueslt rsuestl rsuelst rsuelts rsuetsl rsuetls rsuselt rsusetl rsuslet rsuslte rsustel rsustle rsulest rsulets rsulset rsulste rsultes rsultse rsutesl rsutels rsutsel rsutsle rsutles rsutlse rslesut rslestu rsleust rsleuts rsletsu rsletus rslseut rslsetu rslsuet rslsute rslsteu rslstue rsluest rsluets rsluset rsluste rslutes rslutse rsltesu rslteus rsltseu rsltsue rsltues rsltuse rstesul rsteslu rsteusl rsteuls rstelsu rstelus rstseul rstselu rstsuel rstsule rstsleu rstslue rstuesl rstuels rstusel rstusle rstules rstulse rstlesu rstleus rstlseu rstlsue rstlues rstluse ersults ersulst ersutls ersutsl ersuslt ersustl ersluts erslust ersltus ersltsu erslsut erslstu erstuls erstusl erstlus erstlsu erstsul erstslu erssult erssutl ersslut erssltu ersstul ersstlu eruslts eruslst erustls erustsl erusslt erusstl erulsts erulsst erultss erultss erulsst erulsts erutsls erutssl erutlss erutlss erutssl erutsls erusslt erusstl eruslst eruslts erustsl erustls erlsuts erlsust erlstus erlstsu erlssut erlsstu erlusts erlusst erlutss erlutss erlusst erlusts erltsus erltssu erltuss erltuss erltssu erltsus erlssut erlsstu erlsust erlsuts erlstsu erlstus ertsuls ertsusl ertslus ertslsu ertssul ertsslu ertusls ertussl ertulss ertulss ertussl ertusls ertlsus ertlssu ertluss ertluss ertlssu ertlsus ertssul ertsslu ertsusl ertsuls ertslsu ertslus erssult erssutl ersslut erssltu ersstul ersstlu ersuslt ersustl ersulst ersults ersutsl ersutls erslsut erslstu erslust ersluts ersltsu ersltus erstsul erstslu erstusl erstuls erstlsu erstlus esrults esrulst esrutls esrutsl esruslt esrustl esrluts esrlust esrltus esrltsu esrlsut esrlstu esrtuls esrtusl esrtlus esrtlsu esrtsul esrtslu esrsult esrsutl esrslut esrsltu esrstul esrstlu esurlts esurlst esurtls esurtsl esurslt esurstl esulrts esulrst esultrs esultsr esulsrt esulstr esutrls esutrsl esutlrs esutlsr esutsrl esutslr esusrlt esusrtl esuslrt esusltr esustrl esustlr eslruts eslrust eslrtus eslrtsu eslrsut eslrstu eslurts eslurst eslutrs eslutsr eslusrt eslustr esltrus esltrsu eslturs esltusr esltsru esltsur eslsrut eslsrtu eslsurt eslsutr eslstru eslstur estruls estrusl estrlus estrlsu estrsul estrslu esturls estursl estulrs estulsr estusrl estuslr estlrus estlrsu estlurs estlusr estlsru estlsur estsrul estsrlu estsurl estsulr estslru estslur essrult essrutl essrlut essrltu essrtul essrtlu essurlt essurtl essulrt essultr essutrl essutlr esslrut esslrtu esslurt esslutr essltru essltur esstrul esstrlu essturl esstulr esstlru esstlur eurslts eurslst eurstls eurstsl eursslt eursstl eurlsts eurlsst eurltss eurltss eurlsst eurlsts eurtsls eurtssl eurtlss eurtlss eurtssl eurtsls eursslt eursstl eurslst eurslts eurstsl eurstls eusrlts eusrlst eusrtls eusrtsl eusrslt eusrstl euslrts euslrst eusltrs eusltsr euslsrt euslstr eustrls eustrsl eustlrs eustlsr eustsrl eustslr eussrlt eussrtl eusslrt eussltr eusstrl eusstlr eulrsts eulrsst eulrtss eulrtss eulrsst eulrsts eulsrts eulsrst eulstrs eulstsr eulssrt eulsstr eultrss eultrss eultsrs eultssr eultsrs eultssr eulsrst eulsrts eulssrt eulsstr eulstrs eulstsr eutrsls eutrssl eutrlss eutrlss eutrssl eutrsls eutsrls eutsrsl eutslrs eutslsr eutssrl eutsslr eutlrss eutlrss eutlsrs eutlssr eutlsrs eutlssr eutsrsl eutsrls eutssrl eutsslr eutslrs eutslsr eusrslt eusrstl eusrlst eusrlts eusrtsl eusrtls eussrlt eussrtl eusslrt eussltr eusstrl eusstlr euslrst euslrts euslsrt euslstr eusltrs eusltsr eustrsl eustrls eustsrl eustslr eustlrs eustlsr elrsuts elrsust elrstus elrstsu elrssut elrsstu elrusts elrusst elrutss elrutss elrusst elrusts elrtsus elrtssu elrtuss elrtuss elrtssu elrtsus elrssut elrsstu elrsust elrsuts elrstsu elrstus elsruts elsrust elsrtus elsrtsu elsrsut elsrstu elsurts elsurst elsutrs elsutsr elsusrt elsustr elstrus elstrsu elsturs elstusr elstsru elstsur elssrut elssrtu elssurt elssutr elsstru elsstur elursts elursst elurtss elurtss elursst elursts elusrts elusrst elustrs elustsr elussrt elusstr elutrss elutrss elutsrs elutssr elutsrs elutssr elusrst elusrts elussrt elusstr elustrs elustsr eltrsus eltrssu eltruss eltruss eltrssu eltrsus eltsrus eltsrsu eltsurs eltsusr eltssru eltssur elturss elturss eltusrs eltussr eltusrs eltussr eltsrsu eltsrus eltssru eltssur eltsurs eltsusr elsrsut elsrstu elsrust elsruts elsrtsu elsrtus elssrut elssrtu elssurt elssutr elsstru elsstur elsurst elsurts elsusrt elsustr elsutrs elsutsr elstrsu elstrus elstsru elstsur elsturs elstusr etrsuls etrsusl etrslus etrslsu etrssul etrsslu etrusls etrussl etrulss etrulss etrussl etrusls etrlsus etrlssu etrluss etrluss etrlssu etrlsus etrssul etrsslu etrsusl etrsuls etrslsu etrslus etsruls etsrusl etsrlus etsrlsu etsrsul etsrslu etsurls etsursl etsulrs etsulsr etsusrl etsuslr etslrus etslrsu etslurs etslusr etslsru etslsur etssrul etssrlu etssurl etssulr etsslru etsslur etursls eturssl eturlss eturlss eturssl etursls etusrls etusrsl etuslrs etuslsr etussrl etusslr etulrss etulrss etulsrs etulssr etulsrs etulssr etusrsl etusrls etussrl etusslr etuslrs etuslsr etlrsus etlrssu etlruss etlruss etlrssu etlrsus etlsrus etlsrsu etlsurs etlsusr etlssru etlssur etlurss etlurss etlusrs etlussr etlusrs etlussr etlsrsu etlsrus etlssru etlssur etlsurs etlsusr etsrsul etsrslu etsrusl etsruls etsrlsu etsrlus etssrul etssrlu etssurl etssulr etsslru etsslur etsursl etsurls etsusrl etsuslr etsulrs etsulsr etslrsu etslrus etslsru etslsur etslurs etslusr esrsult esrsutl esrslut esrsltu esrstul esrstlu esruslt esrustl esrulst esrults esrutsl esrutls esrlsut esrlstu esrlust esrluts esrltsu esrltus esrtsul esrtslu esrtusl esrtuls esrtlsu esrtlus essrult essrutl essrlut essrltu essrtul essrtlu essurlt essurtl essulrt essultr essutrl essutlr esslrut esslrtu esslurt esslutr essltru essltur esstrul esstrlu essturl esstulr esstlru esstlur esurslt esurstl esurlst esurlts esurtsl esurtls esusrlt esusrtl esuslrt esusltr esustrl esustlr esulrst esulrts esulsrt esulstr esultrs esultsr esutrsl esutrls esutsrl esutslr esutlrs esutlsr eslrsut eslrstu eslrust eslruts eslrtsu eslrtus eslsrut eslsrtu eslsurt eslsutr eslstru eslstur eslurst eslurts eslusrt eslustr eslutrs eslutsr esltrsu esltrus esltsru esltsur eslturs esltusr estrsul estrslu estrusl estruls estrlsu estrlus estsrul estsrlu estsurl estsulr estslru estslur estursl esturls estusrl estuslr estulrs estulsr estlrsu estlrus estlsru estlsur estlurs estlusr sreults sreulst sreutls sreutsl sreuslt sreustl sreluts srelust sreltus sreltsu srelsut srelstu sretuls sretusl sretlus sretlsu sretsul sretslu sresult sresutl sreslut sresltu srestul srestlu sruelts sruelst sruetls sruetsl srueslt sruestl srulets srulest srultes srultse srulset srulste srutels srutesl srutles srutlse srutsel srutsle sruselt srusetl sruslet sruslte srustel srustle srleuts srleust srletus srletsu srlesut srlestu srluets srluest srlutes srlutse srluset srluste srlteus srltesu srltues srltuse srltseu srltsue srlseut srlsetu srlsuet srlsute srlsteu srlstue srteuls srteusl srtelus srtelsu srtesul srteslu srtuels srtuesl srtules srtulse srtusel srtusle srtleus srtlesu srtlues srtluse srtlseu srtlsue srtseul srtselu srtsuel srtsule srtsleu srtslue srseult srseutl srselut srseltu srsetul srsetlu srsuelt srsuetl srsulet srsulte srsutel srsutle srsleut srsletu srsluet srslute srslteu srsltue srsteul srstelu srstuel srstule srstleu srstlue serults serulst serutls serutsl seruslt serustl serluts serlust serltus serltsu serlsut serlstu sertuls sertusl sertlus sertlsu sertsul sertslu sersult sersutl serslut sersltu serstul serstlu seurlts seurlst seurtls seurtsl seurslt seurstl seulrts seulrst seultrs seultsr seulsrt seulstr seutrls seutrsl seutlrs seutlsr seutsrl seutslr seusrlt seusrtl seuslrt seusltr seustrl seustlr selruts selrust selrtus selrtsu selrsut selrstu selurts selurst selutrs selutsr selusrt selustr seltrus seltrsu selturs seltusr seltsru seltsur selsrut selsrtu selsurt selsutr selstru selstur setruls setrusl setrlus setrlsu setrsul setrslu seturls setursl setulrs setulsr setusrl setuslr setlrus setlrsu setlurs setlusr setlsru setlsur setsrul setsrlu setsurl setsulr setslru setslur sesrult sesrutl sesrlut sesrltu sesrtul sesrtlu sesurlt sesurtl sesulrt sesultr sesutrl sesutlr seslrut seslrtu seslurt seslutr sesltru sesltur sestrul sestrlu sesturl sestulr sestlru sestlur surelts surelst suretls suretsl sureslt surestl surlets surlest surltes surltse surlset surlste surtels surtesl surtles surtlse surtsel surtsle surselt sursetl surslet surslte surstel surstle suerlts suerlst suertls suertsl suerslt suerstl suelrts suelrst sueltrs sueltsr suelsrt suelstr suetrls suetrsl suetlrs suetlsr suetsrl suetslr suesrlt suesrtl sueslrt suesltr suestrl suestlr sulrets sulrest sulrtes sulrtse sulrset sulrste sulerts sulerst suletrs suletsr sulesrt sulestr sultres sultrse sulters sultesr sultsre sultser sulsret sulsrte sulsert sulsetr sulstre sulster sutrels sutresl sutrles sutrlse sutrsel sutrsle suterls sutersl sutelrs sutelsr sutesrl suteslr sutlres sutlrse sutlers sutlesr sutlsre sutlser sutsrel sutsrle sutserl sutselr sutslre sutsler susrelt susretl susrlet susrlte susrtel susrtle suserlt susertl suselrt suseltr susetrl susetlr suslret suslrte suslert susletr susltre suslter sustrel sustrle susterl sustelr sustlre sustler slreuts slreust slretus slretsu slresut slrestu slruets slruest slrutes slrutse slruset slruste slrteus slrtesu slrtues slrtuse slrtseu slrtsue slrseut slrsetu slrsuet slrsute slrsteu slrstue sleruts slerust slertus slertsu slersut slerstu sleurts sleurst sleutrs sleutsr sleusrt sleustr sletrus sletrsu sleturs sletusr sletsru sletsur slesrut slesrtu slesurt slesutr slestru slestur slurets slurest slurtes slurtse slurset slurste sluerts sluerst sluetrs sluetsr sluesrt sluestr slutres slutrse sluters slutesr slutsre slutser slusret slusrte slusert slusetr slustre sluster sltreus sltresu sltrues sltruse sltrseu sltrsue slterus sltersu slteurs slteusr sltesru sltesur sltures slturse sltuers sltuesr sltusre sltuser sltsreu sltsrue sltseru sltseur sltsure sltsuer slsreut slsretu slsruet slsrute slsrteu slsrtue slserut slsertu slseurt slseutr slsetru slsetur slsuret slsurte slsuert slsuetr slsutre slsuter slstreu slstrue slsteru slsteur slsture slstuer streuls streusl strelus strelsu stresul streslu struels struesl strules strulse strusel strusle strleus strlesu strlues strluse strlseu strlsue strseul strselu strsuel strsule strsleu strslue steruls sterusl sterlus sterlsu stersul sterslu steurls steursl steulrs steulsr steusrl steuslr stelrus stelrsu stelurs stelusr stelsru stelsur stesrul stesrlu stesurl stesulr steslru steslur sturels sturesl sturles sturlse stursel stursle stuerls stuersl stuelrs stuelsr stuesrl stueslr stulres stulrse stulers stulesr stulsre stulser stusrel stusrle stuserl stuselr stuslre stusler stlreus stlresu stlrues stlruse stlrseu stlrsue stlerus stlersu stleurs stleusr stlesru stlesur stlures stlurse stluers stluesr stlusre stluser stlsreu stlsrue stlseru stlseur stlsure stlsuer stsreul stsrelu stsruel stsrule stsrleu stsrlue stserul stserlu stseurl stseulr stselru stselur stsurel stsurle stsuerl stsuelr stsulre stsuler stslreu stslrue stsleru stsleur stslure stsluer ssreult ssreutl ssrelut ssreltu ssretul ssretlu ssruelt ssruetl ssrulet ssrulte ssrutel ssrutle ssrleut ssrletu ssrluet ssrlute ssrlteu ssrltue ssrteul ssrtelu ssrtuel ssrtule ssrtleu ssrtlue sserult sserutl sserlut sserltu ssertul ssertlu sseurlt sseurtl sseulrt sseultr sseutrl sseutlr sselrut sselrtu sselurt sselutr sseltru sseltur ssetrul ssetrlu sseturl ssetulr ssetlru ssetlur ssurelt ssuretl ssurlet ssurlte ssurtel ssurtle ssuerlt ssuertl ssuelrt ssueltr ssuetrl ssuetlr ssulret ssulrte ssulert ssuletr ssultre ssulter ssutrel ssutrle ssuterl ssutelr ssutlre ssutler sslreut sslretu sslruet sslrute sslrteu sslrtue sslerut sslertu ssleurt ssleutr ssletru ssletur ssluret sslurte ssluert ssluetr sslutre ssluter ssltreu ssltrue sslteru sslteur sslture ssltuer sstreul sstrelu sstruel sstrule sstrleu sstrlue ssterul ssterlu ssteurl ssteulr sstelru sstelur ssturel ssturle sstuerl sstuelr sstulre sstuler sstlreu sstlrue sstleru sstleur sstlure sstluer ureslts ureslst urestls urestsl uresslt uresstl urelsts urelsst ureltss ureltss urelsst urelsts uretsls uretssl uretlss uretlss uretssl uretsls uresslt uresstl ureslst ureslts urestsl urestls urselts urselst ursetls ursetsl urseslt ursestl urslets urslest ursltes ursltse urslset urslste urstels urstesl urstles urstlse urstsel urstsle ursselt urssetl ursslet ursslte ursstel ursstle urlests urlesst urletss urletss urlesst urlests urlsets urlsest urlstes urlstse urlsset urlsste urltess urltess urltses urltsse urltses urltsse urlsest urlsets urlsset urlsste urlstes urlstse urtesls urtessl urtelss urtelss urtessl urtesls urtsels urtsesl urtsles urtslse urtssel urtssle urtless urtless urtlses urtlsse urtlses urtlsse urtsesl urtsels urtssel urtssle urtsles urtslse urseslt ursestl urselst urselts ursetsl ursetls ursselt urssetl ursslet ursslte ursstel ursstle urslest urslets urslset urslste ursltes ursltse urstesl urstels urstsel urstsle urstles urstlse uerslts uerslst uerstls uerstsl uersslt uersstl uerlsts uerlsst uerltss uerltss uerlsst uerlsts uertsls uertssl uertlss uertlss uertssl uertsls uersslt uersstl uerslst uerslts uerstsl uerstls uesrlts uesrlst uesrtls uesrtsl uesrslt uesrstl ueslrts ueslrst uesltrs uesltsr ueslsrt ueslstr uestrls uestrsl uestlrs uestlsr uestsrl uestslr uessrlt uessrtl uesslrt uessltr uesstrl uesstlr uelrsts uelrsst uelrtss uelrtss uelrsst uelrsts uelsrts uelsrst uelstrs uelstsr uelssrt uelsstr ueltrss ueltrss ueltsrs ueltssr ueltsrs ueltssr uelsrst uelsrts uelssrt uelsstr uelstrs uelstsr uetrsls uetrssl uetrlss uetrlss uetrssl uetrsls uetsrls uetsrsl uetslrs uetslsr uetssrl uetsslr uetlrss uetlrss uetlsrs uetlssr uetlsrs uetlssr uetsrsl uetsrls uetssrl uetsslr uetslrs uetslsr uesrslt uesrstl uesrlst uesrlts uesrtsl uesrtls uessrlt uessrtl uesslrt uessltr uesstrl uesstlr ueslrst ueslrts ueslsrt ueslstr uesltrs uesltsr uestrsl uestrls uestsrl uestslr uestlrs uestlsr usrelts usrelst usretls usretsl usreslt usrestl usrlets usrlest usrltes usrltse usrlset usrlste usrtels usrtesl usrtles usrtlse usrtsel usrtsle usrselt usrsetl usrslet usrslte usrstel usrstle userlts userlst usertls usertsl userslt userstl uselrts uselrst useltrs useltsr uselsrt uselstr usetrls usetrsl usetlrs usetlsr usetsrl usetslr usesrlt usesrtl useslrt usesltr usestrl usestlr uslrets uslrest uslrtes uslrtse uslrset uslrste uslerts uslerst usletrs usletsr uslesrt uslestr usltres usltrse uslters usltesr usltsre usltser uslsret uslsrte uslsert uslsetr uslstre uslster ustrels ustresl ustrles ustrlse ustrsel ustrsle usterls ustersl ustelrs ustelsr ustesrl usteslr ustlres ustlrse ustlers ustlesr ustlsre ustlser ustsrel ustsrle ustserl ustselr ustslre ustsler ussrelt ussretl ussrlet ussrlte ussrtel ussrtle usserlt ussertl usselrt usseltr ussetrl ussetlr usslret usslrte usslert ussletr ussltre usslter usstrel usstrle ussterl usstelr usstlre usstler ulrests ulresst ulretss ulretss ulresst ulrests ulrsets ulrsest ulrstes ulrstse ulrsset ulrsste ulrtess ulrtess ulrtses ulrtsse ulrtses ulrtsse ulrsest ulrsets ulrsset ulrsste ulrstes ulrstse ulersts ulersst ulertss ulertss ulersst ulersts ulesrts ulesrst ulestrs ulestsr ulessrt ulesstr uletrss uletrss uletsrs uletssr uletsrs uletssr ulesrst ulesrts ulessrt ulesstr ulestrs ulestsr ulsrets ulsrest ulsrtes ulsrtse ulsrset ulsrste ulserts ulserst ulsetrs ulsetsr ulsesrt ulsestr ulstres ulstrse ulsters ulstesr ulstsre ulstser ulssret ulssrte ulssert ulssetr ulsstre ulsster ultress ultress ultrses ultrsse ultrses ultrsse ulterss ulterss ultesrs ultessr ultesrs ultessr ultsres ultsrse ultsers ultsesr ultssre ultsser ultsres ultsrse ultsers ultsesr ultssre ultsser ulsrest ulsrets ulsrset ulsrste ulsrtes ulsrtse ulserst ulserts ulsesrt ulsestr ulsetrs ulsetsr ulssret ulssrte ulssert ulssetr ulsstre ulsster ulstres ulstrse ulsters ulstesr ulstsre ulstser utresls utressl utrelss utrelss utressl utresls utrsels utrsesl utrsles utrslse utrssel utrssle utrless utrless utrlses utrlsse utrlses utrlsse utrsesl utrsels utrssel utrssle utrsles utrslse utersls uterssl uterlss uterlss uterssl utersls utesrls utesrsl uteslrs uteslsr utessrl utesslr utelrss utelrss utelsrs utelssr utelsrs utelssr utesrsl utesrls utessrl utesslr uteslrs uteslsr utsrels utsresl utsrles utsrlse utsrsel utsrsle utserls utsersl utselrs utselsr utsesrl utseslr utslres utslrse utslers utslesr utslsre utslser utssrel utssrle utsserl utsselr utsslre utssler utlress utlress utlrses utlrsse utlrses utlrsse utlerss utlerss utlesrs utlessr utlesrs utlessr utlsres utlsrse utlsers utlsesr utlssre utlsser utlsres utlsrse utlsers utlsesr utlssre utlsser utsresl utsrels utsrsel utsrsle utsrles utsrlse utsersl utserls utsesrl utseslr utselrs utselsr utssrel utssrle utsserl utsselr utsslre utssler utslres utslrse utslers utslesr utslsre utslser usreslt usrestl usrelst usrelts usretsl usretls usrselt usrsetl usrslet usrslte usrstel usrstle usrlest usrlets usrlset usrlste usrltes usrltse usrtesl usrtels usrtsel usrtsle usrtles usrtlse userslt userstl userlst userlts usertsl usertls usesrlt usesrtl useslrt usesltr usestrl usestlr uselrst uselrts uselsrt uselstr useltrs useltsr usetrsl usetrls usetsrl usetslr usetlrs usetlsr ussrelt ussretl ussrlet ussrlte ussrtel ussrtle usserlt ussertl usselrt usseltr ussetrl ussetlr usslret usslrte usslert ussletr ussltre usslter usstrel usstrle ussterl usstelr usstlre usstler uslrest uslrets uslrset uslrste uslrtes uslrtse uslerst uslerts uslesrt uslestr usletrs usletsr uslsret uslsrte uslsert uslsetr uslstre uslster usltres usltrse uslters usltesr usltsre usltser ustresl ustrels ustrsel ustrsle ustrles ustrlse ustersl usterls ustesrl usteslr ustelrs ustelsr ustsrel ustsrle ustserl ustselr ustslre ustsler ustlres ustlrse ustlers ustlesr ustlsre ustlser lresuts lresust lrestus lrestsu lressut lresstu lreusts lreusst lreutss lreutss lreusst lreusts lretsus lretssu lretuss lretuss lretssu lretsus lressut lresstu lresust lresuts lrestsu lrestus lrseuts lrseust lrsetus lrsetsu lrsesut lrsestu lrsuets lrsuest lrsutes lrsutse lrsuset lrsuste lrsteus lrstesu lrstues lrstuse lrstseu lrstsue lrsseut lrssetu lrssuet lrssute lrssteu lrsstue lruests lruesst lruetss lruetss lruesst lruests lrusets lrusest lrustes lrustse lrusset lrusste lrutess lrutess lrutses lrutsse lrutses lrutsse lrusest lrusets lrusset lrusste lrustes lrustse lrtesus lrtessu lrteuss lrteuss lrtessu lrtesus lrtseus lrtsesu lrtsues lrtsuse lrtsseu lrtssue lrtuess lrtuess lrtuses lrtusse lrtuses lrtusse lrtsesu lrtseus lrtsseu lrtssue lrtsues lrtsuse lrsesut lrsestu lrseust lrseuts lrsetsu lrsetus lrsseut lrssetu lrssuet lrssute lrssteu lrsstue lrsuest lrsuets lrsuset lrsuste lrsutes lrsutse lrstesu lrsteus lrstseu lrstsue lrstues lrstuse lersuts lersust lerstus lerstsu lerssut lersstu lerusts lerusst lerutss lerutss lerusst lerusts lertsus lertssu lertuss lertuss lertssu lertsus lerssut lersstu lersust lersuts lerstsu lerstus lesruts lesrust lesrtus lesrtsu lesrsut lesrstu lesurts lesurst lesutrs lesutsr lesusrt lesustr lestrus lestrsu lesturs lestusr lestsru lestsur lessrut lessrtu lessurt lessutr lesstru lesstur leursts leursst leurtss leurtss leursst leursts leusrts leusrst leustrs leustsr leussrt leusstr leutrss leutrss leutsrs leutssr leutsrs leutssr leusrst leusrts leussrt leusstr leustrs leustsr letrsus letrssu letruss letruss letrssu letrsus letsrus letsrsu letsurs letsusr letssru letssur leturss leturss letusrs letussr letusrs letussr letsrsu letsrus letssru letssur letsurs letsusr lesrsut lesrstu lesrust lesruts lesrtsu lesrtus lessrut lessrtu lessurt lessutr lesstru lesstur lesurst lesurts lesusrt lesustr lesutrs lesutsr lestrsu lestrus lestsru lestsur lesturs lestusr lsreuts lsreust lsretus lsretsu lsresut lsrestu lsruets lsruest lsrutes lsrutse lsruset lsruste lsrteus lsrtesu lsrtues lsrtuse lsrtseu lsrtsue lsrseut lsrsetu lsrsuet lsrsute lsrsteu lsrstue lseruts lserust lsertus lsertsu lsersut lserstu lseurts lseurst lseutrs lseutsr lseusrt lseustr lsetrus lsetrsu lseturs lsetusr lsetsru lsetsur lsesrut lsesrtu lsesurt lsesutr lsestru lsestur lsurets lsurest lsurtes lsurtse lsurset lsurste lsuerts lsuerst lsuetrs lsuetsr lsuesrt lsuestr lsutres lsutrse lsuters lsutesr lsutsre lsutser lsusret lsusrte lsusert lsusetr lsustre lsuster lstreus lstresu lstrues lstruse lstrseu lstrsue lsterus lstersu lsteurs lsteusr lstesru lstesur lstures lsturse lstuers lstuesr lstusre lstuser lstsreu lstsrue lstseru lstseur lstsure lstsuer lssreut lssretu lssruet lssrute lssrteu lssrtue lsserut lssertu lsseurt lsseutr lssetru lssetur lssuret lssurte lssuert lssuetr lssutre lssuter lsstreu lsstrue lssteru lssteur lssture lsstuer lurests luresst luretss luretss luresst lurests lursets lursest lurstes lurstse lursset lursste lurtess lurtess lurtses lurtsse lurtses lurtsse lursest lursets lursset lursste lurstes lurstse luersts luersst luertss luertss luersst luersts luesrts luesrst luestrs luestsr luessrt luesstr luetrss luetrss luetsrs luetssr luetsrs luetssr luesrst luesrts luessrt luesstr luestrs luestsr lusrets lusrest lusrtes lusrtse lusrset lusrste luserts luserst lusetrs lusetsr lusesrt lusestr lustres lustrse lusters lustesr lustsre lustser lussret lussrte lussert lussetr lusstre lusster lutress lutress lutrses lutrsse lutrses lutrsse luterss luterss lutesrs lutessr lutesrs lutessr lutsres lutsrse lutsers lutsesr lutssre lutsser lutsres lutsrse lutsers lutsesr lutssre lutsser lusrest lusrets lusrset lusrste lusrtes lusrtse luserst luserts lusesrt lusestr lusetrs lusetsr lussret lussrte lussert lussetr lusstre lusster lustres lustrse lusters lustesr lustsre lustser ltresus ltressu ltreuss ltreuss ltressu ltresus ltrseus ltrsesu ltrsues ltrsuse ltrsseu ltrssue ltruess ltruess ltruses ltrusse ltruses ltrusse ltrsesu ltrseus ltrsseu ltrssue ltrsues ltrsuse ltersus lterssu lteruss lteruss lterssu ltersus ltesrus ltesrsu ltesurs ltesusr ltessru ltessur lteurss lteurss lteusrs lteussr lteusrs lteussr ltesrsu ltesrus ltessru ltessur ltesurs ltesusr ltsreus ltsresu ltsrues ltsruse ltsrseu ltsrsue ltserus ltsersu ltseurs ltseusr ltsesru ltsesur ltsures ltsurse ltsuers ltsuesr ltsusre ltsuser ltssreu ltssrue ltsseru ltsseur ltssure ltssuer lturess lturess lturses ltursse lturses ltursse ltuerss ltuerss ltuesrs ltuessr ltuesrs ltuessr ltusres ltusrse ltusers ltusesr ltussre ltusser ltusres ltusrse ltusers ltusesr ltussre ltusser ltsresu ltsreus ltsrseu ltsrsue ltsrues ltsruse ltsersu ltserus ltsesru ltsesur ltseurs ltseusr ltssreu ltssrue ltsseru ltsseur ltssure ltssuer ltsures ltsurse ltsuers ltsuesr ltsusre ltsuser lsresut lsrestu lsreust lsreuts lsretsu lsretus lsrseut lsrsetu lsrsuet lsrsute lsrsteu lsrstue lsruest lsruets lsruset lsruste lsrutes lsrutse lsrtesu lsrteus lsrtseu lsrtsue lsrtues lsrtuse lsersut lserstu lserust lseruts lsertsu lsertus lsesrut lsesrtu lsesurt lsesutr lsestru lsestur lseurst lseurts lseusrt lseustr lseutrs lseutsr lsetrsu lsetrus lsetsru lsetsur lseturs lsetusr lssreut lssretu lssruet lssrute lssrteu lssrtue lsserut lssertu lsseurt lsseutr lssetru lssetur lssuret lssurte lssuert lssuetr lssutre lssuter lsstreu lsstrue lssteru lssteur lssture lsstuer lsurest lsurets lsurset lsurste lsurtes lsurtse lsuerst lsuerts lsuesrt lsuestr lsuetrs lsuetsr lsusret lsusrte lsusert lsusetr lsustre lsuster lsutres lsutrse lsuters lsutesr lsutsre lsutser lstresu lstreus lstrseu lstrsue lstrues lstruse lstersu lsterus lstesru lstesur lsteurs lsteusr lstsreu lstsrue lstseru lstseur lstsure lstsuer lstures lsturse lstuers lstuesr lstusre lstuser tresuls tresusl treslus treslsu tressul tresslu treusls treussl treulss treulss treussl treusls trelsus trelssu treluss treluss trelssu trelsus tressul tresslu tresusl tresuls treslsu treslus trseuls trseusl trselus trselsu trsesul trseslu trsuels trsuesl trsules trsulse trsusel trsusle trsleus trslesu trslues trsluse trslseu trslsue trsseul trsselu trssuel trssule trssleu trsslue truesls truessl truelss truelss truessl truesls trusels trusesl trusles truslse trussel trussle truless truless trulses trulsse trulses trulsse trusesl trusels trussel trussle trusles truslse trlesus trlessu trleuss trleuss trlessu trlesus trlseus trlsesu trlsues trlsuse trlsseu trlssue trluess trluess trluses trlusse trluses trlusse trlsesu trlseus trlsseu trlssue trlsues trlsuse trsesul trseslu trseusl trseuls trselsu trselus trsseul trsselu trssuel trssule trssleu trsslue trsuesl trsuels trsusel trsusle trsules trsulse trslesu trsleus trslseu trslsue trslues trsluse tersuls tersusl terslus terslsu terssul tersslu terusls terussl terulss terulss terussl terusls terlsus terlssu terluss terluss terlssu terlsus terssul tersslu tersusl tersuls terslsu terslus tesruls tesrusl tesrlus tesrlsu tesrsul tesrslu tesurls tesursl tesulrs tesulsr tesusrl tesuslr teslrus teslrsu teslurs teslusr teslsru teslsur tessrul tessrlu tessurl tessulr tesslru tesslur teursls teurssl teurlss teurlss teurssl teursls teusrls teusrsl teuslrs teuslsr teussrl teusslr teulrss teulrss teulsrs teulssr teulsrs teulssr teusrsl teusrls teussrl teusslr teuslrs teuslsr telrsus telrssu telruss telruss telrssu telrsus telsrus telsrsu telsurs telsusr telssru telssur telurss telurss telusrs telussr telusrs telussr telsrsu telsrus telssru telssur telsurs telsusr tesrsul tesrslu tesrusl tesruls tesrlsu tesrlus tessrul tessrlu tessurl tessulr tesslru tesslur tesursl tesurls tesusrl tesuslr tesulrs tesulsr teslrsu teslrus teslsru teslsur teslurs teslusr tsreuls tsreusl tsrelus tsrelsu tsresul tsreslu tsruels tsruesl tsrules tsrulse tsrusel tsrusle tsrleus tsrlesu tsrlues tsrluse tsrlseu tsrlsue tsrseul tsrselu tsrsuel tsrsule tsrsleu tsrslue tseruls tserusl tserlus tserlsu tsersul tserslu tseurls tseursl tseulrs tseulsr tseusrl tseuslr tselrus tselrsu tselurs tselusr tselsru tselsur tsesrul tsesrlu tsesurl tsesulr tseslru tseslur tsurels tsuresl tsurles tsurlse tsursel tsursle tsuerls tsuersl tsuelrs tsuelsr tsuesrl tsueslr tsulres tsulrse tsulers tsulesr tsulsre tsulser tsusrel tsusrle tsuserl tsuselr tsuslre tsusler tslreus tslresu tslrues tslruse tslrseu tslrsue tslerus tslersu tsleurs tsleusr tslesru tslesur tslures tslurse tsluers tsluesr tslusre tsluser tslsreu tslsrue tslseru tslseur tslsure tslsuer tssreul tssrelu tssruel tssrule tssrleu tssrlue tsserul tsserlu tsseurl tsseulr tsselru tsselur tssurel tssurle tssuerl tssuelr tssulre tssuler tsslreu tsslrue tssleru tssleur tsslure tssluer turesls turessl turelss turelss turessl turesls tursels tursesl tursles turslse turssel turssle turless turless turlses turlsse turlses turlsse tursesl tursels turssel turssle tursles turslse tuersls tuerssl tuerlss tuerlss tuerssl tuersls tuesrls tuesrsl tueslrs tueslsr tuessrl tuesslr tuelrss tuelrss tuelsrs tuelssr tuelsrs tuelssr tuesrsl tuesrls tuessrl tuesslr tueslrs tueslsr tusrels tusresl tusrles tusrlse tusrsel tusrsle tuserls tusersl tuselrs tuselsr tusesrl tuseslr tuslres tuslrse tuslers tuslesr tuslsre tuslser tussrel tussrle tusserl tusselr tusslre tussler tulress tulress tulrses tulrsse tulrses tulrsse tulerss tulerss tulesrs tulessr tulesrs tulessr tulsres tulsrse tulsers tulsesr tulssre tulsser tulsres tulsrse tulsers tulsesr tulssre tulsser tusresl tusrels tusrsel tusrsle tusrles tusrlse tusersl tuserls tusesrl tuseslr tuselrs tuselsr tussrel tussrle tusserl tusselr tusslre tussler tuslres tuslrse tuslers tuslesr tuslsre tuslser tlresus tlressu tlreuss tlreuss tlressu tlresus tlrseus tlrsesu tlrsues tlrsuse tlrsseu tlrssue tlruess tlruess tlruses tlrusse tlruses tlrusse tlrsesu tlrseus tlrsseu tlrssue tlrsues tlrsuse tlersus tlerssu tleruss tleruss tlerssu tlersus tlesrus tlesrsu tlesurs tlesusr tlessru tlessur tleurss tleurss tleusrs tleussr tleusrs tleussr tlesrsu tlesrus tlessru tlessur tlesurs tlesusr tlsreus tlsresu tlsrues tlsruse tlsrseu tlsrsue tlserus tlsersu tlseurs tlseusr tlsesru tlsesur tlsures tlsurse tlsuers tlsuesr tlsusre tlsuser tlssreu tlssrue tlsseru tlsseur tlssure tlssuer tluress tluress tlurses tlursse tlurses tlursse tluerss tluerss tluesrs tluessr tluesrs tluessr tlusres tlusrse tlusers tlusesr tlussre tlusser tlusres tlusrse tlusers tlusesr tlussre tlusser tlsresu tlsreus tlsrseu tlsrsue tlsrues tlsruse tlsersu tlserus tlsesru tlsesur tlseurs tlseusr tlssreu tlssrue tlsseru tlsseur tlssure tlssuer tlsures tlsurse tlsuers tlsuesr tlsusre tlsuser tsresul tsreslu tsreusl tsreuls tsrelsu tsrelus tsrseul tsrselu tsrsuel tsrsule tsrsleu tsrslue tsruesl tsruels tsrusel tsrusle tsrules tsrulse tsrlesu tsrleus tsrlseu tsrlsue tsrlues tsrluse tsersul tserslu tserusl tseruls tserlsu tserlus tsesrul tsesrlu tsesurl tsesulr tseslru tseslur tseursl tseurls tseusrl tseuslr tseulrs tseulsr tselrsu tselrus tselsru tselsur tselurs tselusr tssreul tssrelu tssruel tssrule tssrleu tssrlue tsserul tsserlu tsseurl tsseulr tsselru tsselur tssurel tssurle tssuerl tssuelr tssulre tssuler tsslreu tsslrue tssleru tssleur tsslure tssluer tsuresl tsurels tsursel tsursle tsurles tsurlse tsuersl tsuerls tsuesrl tsueslr tsuelrs tsuelsr tsusrel tsusrle tsuserl tsuselr tsuslre tsusler tsulres tsulrse tsulers tsulesr tsulsre tsulser tslresu tslreus tslrseu tslrsue tslrues tslruse tslersu tslerus tslesru tslesur tsleurs tsleusr tslsreu tslsrue tslseru tslseur tslsure tslsuer tslures tslurse tsluers tsluesr tslusre tsluser sresult sresutl sreslut sresltu srestul srestlu sreuslt sreustl sreulst sreults sreutsl sreutls srelsut srelstu srelust sreluts sreltsu sreltus sretsul sretslu sretusl sretuls sretlsu sretlus srseult srseutl srselut srseltu srsetul srsetlu srsuelt srsuetl srsulet srsulte srsutel srsutle srsleut srsletu srsluet srslute srslteu srsltue srsteul srstelu srstuel srstule srstleu srstlue srueslt sruestl sruelst sruelts sruetsl sruetls sruselt srusetl sruslet sruslte srustel srustle srulest srulets srulset srulste srultes srultse srutesl srutels srutsel srutsle srutles srutlse srlesut srlestu srleust srleuts srletsu srletus srlseut srlsetu srlsuet srlsute srlsteu srlstue srluest srluets srluset srluste srlutes srlutse srltesu srlteus srltseu srltsue srltues srltuse srtesul srteslu srteusl srteuls srtelsu srtelus srtseul srtselu srtsuel srtsule srtsleu srtslue srtuesl srtuels srtusel srtusle srtules srtulse srtlesu srtleus srtlseu srtlsue srtlues srtluse sersult sersutl serslut sersltu serstul serstlu seruslt serustl serulst serults serutsl serutls serlsut serlstu serlust serluts serltsu serltus sertsul sertslu sertusl sertuls sertlsu sertlus sesrult sesrutl sesrlut sesrltu sesrtul sesrtlu sesurlt sesurtl sesulrt sesultr sesutrl sesutlr seslrut seslrtu seslurt seslutr sesltru sesltur sestrul sestrlu sesturl sestulr sestlru sestlur seurslt seurstl seurlst seurlts seurtsl seurtls seusrlt seusrtl seuslrt seusltr seustrl seustlr seulrst seulrts seulsrt seulstr seultrs seultsr seutrsl seutrls seutsrl seutslr seutlrs seutlsr selrsut selrstu selrust selruts selrtsu selrtus selsrut selsrtu selsurt selsutr selstru selstur selurst selurts selusrt selustr selutrs selutsr seltrsu seltrus seltsru seltsur selturs seltusr setrsul setrslu setrusl setruls setrlsu setrlus setsrul setsrlu setsurl setsulr setslru setslur setursl seturls setusrl setuslr setulrs setulsr setlrsu setlrus setlsru setlsur setlurs setlusr ssreult ssreutl ssrelut ssreltu ssretul ssretlu ssruelt ssruetl ssrulet ssrulte ssrutel ssrutle ssrleut ssrletu ssrluet ssrlute ssrlteu ssrltue ssrteul ssrtelu ssrtuel ssrtule ssrtleu ssrtlue sserult sserutl sserlut sserltu ssertul ssertlu sseurlt sseurtl sseulrt sseultr sseutrl sseutlr sselrut sselrtu sselurt sselutr sseltru sseltur ssetrul ssetrlu sseturl ssetulr ssetlru ssetlur ssurelt ssuretl ssurlet ssurlte ssurtel ssurtle ssuerlt ssuertl ssuelrt ssueltr ssuetrl ssuetlr ssulret ssulrte ssulert ssuletr ssultre ssulter ssutrel ssutrle ssuterl ssutelr ssutlre ssutler sslreut sslretu sslruet sslrute sslrteu sslrtue sslerut sslertu ssleurt ssleutr ssletru ssletur ssluret sslurte ssluert ssluetr sslutre ssluter ssltreu ssltrue sslteru sslteur sslture ssltuer sstreul sstrelu sstruel sstrule sstrleu sstrlue ssterul ssterlu ssteurl ssteulr sstelru sstelur ssturel ssturle sstuerl sstuelr sstulre sstuler sstlreu sstlrue sstleru sstleur sstlure sstluer sureslt surestl surelst surelts suretsl suretls surselt sursetl surslet surslte surstel surstle surlest surlets surlset surlste surltes surltse surtesl surtels surtsel surtsle surtles surtlse suerslt suerstl suerlst suerlts suertsl suertls suesrlt suesrtl sueslrt suesltr suestrl suestlr suelrst suelrts suelsrt suelstr sueltrs sueltsr suetrsl suetrls suetsrl suetslr suetlrs suetlsr susrelt susretl susrlet susrlte susrtel susrtle suserlt susertl suselrt suseltr susetrl susetlr suslret suslrte suslert susletr susltre suslter sustrel sustrle susterl sustelr sustlre sustler sulrest sulrets sulrset sulrste sulrtes sulrtse sulerst sulerts sulesrt sulestr suletrs suletsr sulsret sulsrte sulsert sulsetr sulstre sulster sultres sultrse sulters sultesr sultsre sultser sutresl sutrels sutrsel sutrsle sutrles sutrlse sutersl suterls sutesrl suteslr sutelrs sutelsr sutsrel sutsrle sutserl sutselr sutslre sutsler sutlres sutlrse sutlers sutlesr sutlsre sutlser slresut slrestu slreust slreuts slretsu slretus slrseut slrsetu slrsuet slrsute slrsteu slrstue slruest slruets slruset slruste slrutes slrutse slrtesu slrteus slrtseu slrtsue slrtues slrtuse slersut slerstu slerust sleruts slertsu slertus slesrut slesrtu slesurt slesutr slestru slestur sleurst sleurts sleusrt sleustr sleutrs sleutsr sletrsu sletrus sletsru sletsur sleturs sletusr slsreut slsretu slsruet slsrute slsrteu slsrtue slserut slsertu slseurt slseutr slsetru slsetur slsuret slsurte slsuert slsuetr slsutre slsuter slstreu slstrue slsteru slsteur slsture slstuer slurest slurets slurset slurste slurtes slurtse sluerst sluerts sluesrt sluestr sluetrs sluetsr slusret slusrte slusert slusetr slustre sluster slutres slutrse sluters slutesr slutsre slutser sltresu sltreus sltrseu sltrsue sltrues sltruse sltersu slterus sltesru sltesur slteurs slteusr sltsreu sltsrue sltseru sltseur sltsure sltsuer sltures slturse sltuers sltuesr sltusre sltuser stresul streslu streusl streuls strelsu strelus strseul strselu strsuel strsule strsleu strslue struesl struels strusel strusle strules strulse strlesu strleus strlseu strlsue strlues strluse stersul sterslu sterusl steruls sterlsu sterlus stesrul stesrlu stesurl stesulr steslru steslur steursl steurls steusrl steuslr steulrs steulsr stelrsu stelrus stelsru stelsur stelurs stelusr stsreul stsrelu stsruel stsrule stsrleu stsrlue stserul stserlu stseurl stseulr stselru stselur stsurel stsurle stsuerl stsuelr stsulre stsuler stslreu stslrue stsleru stsleur stslure stsluer sturesl sturels stursel stursle sturles sturlse stuersl stuerls stuesrl stueslr stuelrs stuelsr stusrel stusrle stuserl stuselr stuslre stusler stulres stulrse stulers stulesr stulsre stulser stlresu stlreus stlrseu stlrsue stlrues stlruse stlersu stlerus stlesru stlesur stleurs stleusr stlsreu stlsrue stlseru stlseur stlsure stlsuer stlures stlurse stluers stluesr stlusre stluser.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
