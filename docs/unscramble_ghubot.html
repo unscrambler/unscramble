@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble ghubot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble ghubot and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble ghubot and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble ghubot" name="twitter:title">
+    <meta content="Unscramble ghubot" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble ghubot</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters ghubot. To unscramble ghubot we can search against each letter in ghubot and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling ghubot means that
+
+obtain by purchase; acquire by means of a financial transaction,
+
+make illegal payments to in exchange for favors or influence,
+
+be worth or be capable of buying,
+
+acquire by trade or sacrifice or exchange,
+
+accept as true,
+
+.
+</p>
+
+
+<p>
+<b>ghubot</b> has jumble solution. Please see which words made after unscrambling ghubot.
+<div class="mb-3">
+
+<div class=" mt-3" id="jumble">
+  <p class="my-2" style="font-size:2rem;"> Daily Jumble Solution: <strong>bought</strong></p>
+  <p>You can use following links to see other word jumble solutions for the same day</p>
+  
+  
+
+<a class="my-2 btn  btn-outline-primary btn-md" href="./unscramble_dtoenboucen.html" title="Unscramble word dtoenboucen"> dtoenboucen </a>
+
+
+  
+  
+
+<a class="my-2 btn  btn-outline-primary btn-md" href="./unscramble_ghubot.html" title="Unscramble word ghubot"> ghubot </a>
+
+
+  
+  
+
+<a class="my-2 btn  btn-outline-primary btn-md" href="./unscramble_neetv.html" title="Unscramble word neetv"> neetv </a>
+
+
+  
+  
+
+<a class="my-2 btn  btn-outline-primary btn-md" href="./unscramble_tidot.html" title="Unscramble word tidot"> tidot </a>
+
+
+  
+  
+
+<a class="my-2 btn  btn-outline-primary btn-md" href="./unscramble_tmeenc.html" title="Unscramble word tmeenc"> tmeenc </a>
+
+
+  
+</div>
+
+<div class="row my-2">
+  
+</div>
+</p>
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble ghubot with word unscrambler" src="images/unscramble_ghubot.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from ghubot</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bought </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from ghubot</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ought </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tough </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bough </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from ghubot</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> thou </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gout </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> thug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> goth </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bout </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bhut </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> both </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from ghubot</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> out </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> hut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> hot </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tho </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gut </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> got </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tog </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> hug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ugh </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> hog </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> but </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tub </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bot </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> hub </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> hob </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bog </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gob </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from ghubot</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> to </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> uh </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ho </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oh </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> go </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> bo </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in ghubot like ghubot ghubto ghuobt ghuotb ghutbo ghutob ghbuot ghbuto ghbout ghbotu ghbtuo ghbtou ghoubt ghoutb ghobut ghobtu ghotub ghotbu ghtubo ghtuob ghtbuo ghtbou ghtoub ghtobu guhbot guhbto guhobt guhotb guhtbo guhtob gubhot gubhto guboht guboth gubtho gubtoh guohbt guohtb guobht guobth guothb guotbh guthbo guthob gutbho gutboh gutohb gutobh gbhuot gbhuto gbhout gbhotu gbhtuo gbhtou gbuhot gbuhto gbuoht gbuoth gbutho gbutoh gbohut gbohtu gbouht gbouth gbothu gbotuh gbthuo gbthou gbtuho gbtuoh gbtohu gbtouh gohubt gohutb gohbut gohbtu gohtub gohtbu gouhbt gouhtb goubht goubth gouthb goutbh gobhut gobhtu gobuht gobuth gobthu gobtuh gothub gothbu gotuhb gotubh gotbhu gotbuh gthubo gthuob gthbuo gthbou gthoub gthobu gtuhbo gtuhob gtubho gtuboh gtuohb gtuobh gtbhuo gtbhou gtbuho gtbuoh gtbohu gtbouh gtohub gtohbu gtouhb gtoubh gtobhu gtobuh hgubot hgubto hguobt hguotb hgutbo hgutob hgbuot hgbuto hgbout hgbotu hgbtuo hgbtou hgoubt hgoutb hgobut hgobtu hgotub hgotbu hgtubo hgtuob hgtbuo hgtbou hgtoub hgtobu hugbot hugbto hugobt hugotb hugtbo hugtob hubgot hubgto hubogt hubotg hubtgo hubtog huogbt huogtb huobgt huobtg huotgb huotbg hutgbo hutgob hutbgo hutbog hutogb hutobg hbguot hbguto hbgout hbgotu hbgtuo hbgtou hbugot hbugto hbuogt hbuotg hbutgo hbutog hbogut hbogtu hbougt hboutg hbotgu hbotug hbtguo hbtgou hbtugo hbtuog hbtogu hbtoug hogubt hogutb hogbut hogbtu hogtub hogtbu hougbt hougtb houbgt houbtg houtgb houtbg hobgut hobgtu hobugt hobutg hobtgu hobtug hotgub hotgbu hotugb hotubg hotbgu hotbug htgubo htguob htgbuo htgbou htgoub htgobu htugbo htugob htubgo htubog htuogb htuobg htbguo htbgou htbugo htbuog htbogu htboug htogub htogbu htougb htoubg htobgu htobug ughbot ughbto ughobt ughotb ughtbo ughtob ugbhot ugbhto ugboht ugboth ugbtho ugbtoh ugohbt ugohtb ugobht ugobth ugothb ugotbh ugthbo ugthob ugtbho ugtboh ugtohb ugtobh uhgbot uhgbto uhgobt uhgotb uhgtbo uhgtob uhbgot uhbgto uhbogt uhbotg uhbtgo uhbtog uhogbt uhogtb uhobgt uhobtg uhotgb uhotbg uhtgbo uhtgob uhtbgo uhtbog uhtogb uhtobg ubghot ubghto ubgoht ubgoth ubgtho ubgtoh ubhgot ubhgto ubhogt ubhotg ubhtgo ubhtog uboght ubogth ubohgt ubohtg ubotgh ubothg ubtgho ubtgoh ubthgo ubthog ubtogh ubtohg uoghbt uoghtb uogbht uogbth uogthb uogtbh uohgbt uohgtb uohbgt uohbtg uohtgb uohtbg uobght uobgth uobhgt uobhtg uobtgh uobthg uotghb uotgbh uothgb uothbg uotbgh uotbhg utghbo utghob utgbho utgboh utgohb utgobh uthgbo uthgob uthbgo uthbog uthogb uthobg utbgho utbgoh utbhgo utbhog utbogh utbohg utoghb utogbh utohgb utohbg utobgh utobhg bghuot bghuto bghout bghotu bghtuo bghtou bguhot bguhto bguoht bguoth bgutho bgutoh bgohut bgohtu bgouht bgouth bgothu bgotuh bgthuo bgthou bgtuho bgtuoh bgtohu bgtouh bhguot bhguto bhgout bhgotu bhgtuo bhgtou bhugot bhugto bhuogt bhuotg bhutgo bhutog bhogut bhogtu bhougt bhoutg bhotgu bhotug bhtguo bhtgou bhtugo bhtuog bhtogu bhtoug bughot bughto bugoht bugoth bugtho bugtoh buhgot buhgto buhogt buhotg buhtgo buhtog buoght buogth buohgt buohtg buotgh buothg butgho butgoh buthgo buthog butogh butohg boghut boghtu boguht boguth bogthu bogtuh bohgut bohgtu bohugt bohutg bohtgu bohtug bought bougth bouhgt bouhtg boutgh bouthg botghu botguh bothgu bothug botugh botuhg btghuo btghou btguho btguoh btgohu btgouh bthguo bthgou bthugo bthuog bthogu bthoug btugho btugoh btuhgo btuhog btuogh btuohg btoghu btoguh btohgu btohug btough btouhg oghubt oghutb oghbut oghbtu oghtub oghtbu oguhbt oguhtb ogubht ogubth oguthb ogutbh ogbhut ogbhtu ogbuht ogbuth ogbthu ogbtuh ogthub ogthbu ogtuhb ogtubh ogtbhu ogtbuh ohgubt ohgutb ohgbut ohgbtu ohgtub ohgtbu ohugbt ohugtb ohubgt ohubtg ohutgb ohutbg ohbgut ohbgtu ohbugt ohbutg ohbtgu ohbtug ohtgub ohtgbu ohtugb ohtubg ohtbgu ohtbug oughbt oughtb ougbht ougbth ougthb ougtbh ouhgbt ouhgtb ouhbgt ouhbtg ouhtgb ouhtbg oubght oubgth oubhgt oubhtg oubtgh oubthg outghb outgbh outhgb outhbg outbgh outbhg obghut obghtu obguht obguth obgthu obgtuh obhgut obhgtu obhugt obhutg obhtgu obhtug obught obugth obuhgt obuhtg obutgh obuthg obtghu obtguh obthgu obthug obtugh obtuhg otghub otghbu otguhb otgubh otgbhu otgbuh othgub othgbu othugb othubg othbgu othbug otughb otugbh otuhgb otuhbg otubgh otubhg otbghu otbguh otbhgu otbhug otbugh otbuhg tghubo tghuob tghbuo tghbou tghoub tghobu tguhbo tguhob tgubho tguboh tguohb tguobh tgbhuo tgbhou tgbuho tgbuoh tgbohu tgbouh tgohub tgohbu tgouhb tgoubh tgobhu tgobuh thgubo thguob thgbuo thgbou thgoub thgobu thugbo thugob thubgo thubog thuogb thuobg thbguo thbgou thbugo thbuog thbogu thboug thogub thogbu thougb thoubg thobgu thobug tughbo tughob tugbho tugboh tugohb tugobh tuhgbo tuhgob tuhbgo tuhbog tuhogb tuhobg tubgho tubgoh tubhgo tubhog tubogh tubohg tuoghb tuogbh tuohgb tuohbg tuobgh tuobhg tbghuo tbghou tbguho tbguoh tbgohu tbgouh tbhguo tbhgou tbhugo tbhuog tbhogu tbhoug tbugho tbugoh tbuhgo tbuhog tbuogh tbuohg tboghu tboguh tbohgu tbohug tbough tbouhg toghub toghbu toguhb togubh togbhu togbuh tohgub tohgbu tohugb tohubg tohbgu tohbug toughb tougbh touhgb touhbg toubgh toubhg tobghu tobguh tobhgu tobhug tobugh tobuhg.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
