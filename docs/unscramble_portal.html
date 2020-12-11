@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble portal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble portal and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble portal and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble portal" name="twitter:title">
+    <meta content="Unscramble portal" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble portal</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters portal. To unscramble portal we can search against each letter in portal and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling portal means that
+
+a detachment used for security or reconnaissance,
+
+the activity of going around or through an area at regular intervals for security purposes,
+
+a group that goes through a region at regular intervals for the purpose of security,
+
+maintain the security of by carrying out a patrol,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble portal with word unscrambler" src="images/unscramble_portal.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from portal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> patrol </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> portal </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from portal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aport </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tolar </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> parol </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> polar </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from portal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> port </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trop </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rotl </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> plot </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> part </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> prat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rapt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tarp </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trap </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rato </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rota </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> taro </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tora </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> atop </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> prao </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> proa </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> plat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> alto </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lota </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tola </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oral </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> opal </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from portal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ort </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rot </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tor </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> opt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pot </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> top </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pro </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lot </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lop </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pol </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> art </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> apt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tap </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> par </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rap </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tao </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> oar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ora </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> apo </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> alt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> alp </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lap </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pal </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from portal</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> to </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> or </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> op </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lo </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> at </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ta </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> pa </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> al </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> la </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in portal like portal portla poratl poralt porlta porlat potral potrla potarl potalr potlra potlar poartl poarlt poatrl poatlr poalrt poaltr polrta polrat poltra poltar polart polatr protal protla proatl proalt prolta prolat prtoal prtola prtaol prtalo prtloa prtlao praotl praolt pratol pratlo pralot pralto prlota prloat prltoa prltao prlaot prlato ptoral ptorla ptoarl ptoalr ptolra ptolar ptroal ptrola ptraol ptralo ptrloa ptrlao ptaorl ptaolr ptarol ptarlo ptalor ptalro ptlora ptloar ptlroa ptlrao ptlaor ptlaro paortl paorlt paotrl paotlr paolrt paoltr parotl parolt partol partlo parlot parlto patorl patolr patrol patrlo patlor patlro palort palotr palrot palrto paltor paltro plorta plorat plotra plotar ploart ploatr plrota plroat plrtoa plrtao plraot plrato pltora pltoar pltroa pltrao pltaor pltaro plaort plaotr plarot plarto plator platro oprtal oprtla opratl opralt oprlta oprlat optral optrla optarl optalr optlra optlar opartl oparlt opatrl opatlr opalrt opaltr oplrta oplrat opltra opltar oplart oplatr orptal orptla orpatl orpalt orplta orplat ortpal ortpla ortapl ortalp ortlpa ortlap oraptl oraplt oratpl oratlp oralpt oraltp orlpta orlpat orltpa orltap orlapt orlatp otpral otprla otparl otpalr otplra otplar otrpal otrpla otrapl otralp otrlpa otrlap otaprl otaplr otarpl otarlp otalpr otalrp otlpra otlpar otlrpa otlrap otlapr otlarp oaprtl oaprlt oaptrl oaptlr oaplrt oapltr oarptl oarplt oartpl oartlp oarlpt oarltp oatprl oatplr oatrpl oatrlp oatlpr oatlrp oalprt oalptr oalrpt oalrtp oaltpr oaltrp olprta olprat olptra olptar olpart olpatr olrpta olrpat olrtpa olrtap olrapt olratp oltpra oltpar oltrpa oltrap oltapr oltarp olaprt olaptr olarpt olartp olatpr olatrp rpotal rpotla rpoatl rpoalt rpolta rpolat rptoal rptola rptaol rptalo rptloa rptlao rpaotl rpaolt rpatol rpatlo rpalot rpalto rplota rploat rpltoa rpltao rplaot rplato roptal roptla ropatl ropalt roplta roplat rotpal rotpla rotapl rotalp rotlpa rotlap roaptl roaplt roatpl roatlp roalpt roaltp rolpta rolpat roltpa roltap rolapt rolatp rtpoal rtpola rtpaol rtpalo rtploa rtplao rtopal rtopla rtoapl rtoalp rtolpa rtolap rtapol rtaplo rtaopl rtaolp rtalpo rtalop rtlpoa rtlpao rtlopa rtloap rtlapo rtlaop rapotl rapolt raptol raptlo raplot raplto raoptl raoplt raotpl raotlp raolpt raoltp ratpol ratplo ratopl ratolp ratlpo ratlop ralpot ralpto ralopt ralotp raltpo raltop rlpota rlpoat rlptoa rlptao rlpaot rlpato rlopta rlopat rlotpa rlotap rloapt rloatp rltpoa rltpao rltopa rltoap rltapo rltaop rlapot rlapto rlaopt rlaotp rlatpo rlatop tporal tporla tpoarl tpoalr tpolra tpolar tproal tprola tpraol tpralo tprloa tprlao tpaorl tpaolr tparol tparlo tpalor tpalro tplora tploar tplroa tplrao tplaor tplaro topral toprla toparl topalr toplra toplar torpal torpla torapl toralp torlpa torlap toaprl toaplr toarpl toarlp toalpr toalrp tolpra tolpar tolrpa tolrap tolapr tolarp trpoal trpola trpaol trpalo trploa trplao tropal tropla troapl troalp trolpa trolap trapol traplo traopl traolp tralpo tralop trlpoa trlpao trlopa trloap trlapo trlaop taporl tapolr taprol taprlo taplor taplro taoprl taoplr taorpl taorlp taolpr taolrp tarpol tarplo taropl tarolp tarlpo tarlop talpor talpro talopr talorp talrpo talrop tlpora tlpoar tlproa tlprao tlpaor tlparo tlopra tlopar tlorpa tlorap tloapr tloarp tlrpoa tlrpao tlropa tlroap tlrapo tlraop tlapor tlapro tlaopr tlaorp tlarpo tlarop aportl aporlt apotrl apotlr apolrt apoltr aprotl aprolt aprtol aprtlo aprlot aprlto aptorl aptolr aptrol aptrlo aptlor aptlro aplort aplotr aplrot aplrto apltor apltro aoprtl aoprlt aoptrl aoptlr aoplrt aopltr aorptl aorplt aortpl aortlp aorlpt aorltp aotprl aotplr aotrpl aotrlp aotlpr aotlrp aolprt aolptr aolrpt aolrtp aoltpr aoltrp arpotl arpolt arptol arptlo arplot arplto aroptl aroplt arotpl arotlp arolpt aroltp artpol artplo artopl artolp artlpo artlop arlpot arlpto arlopt arlotp arltpo arltop atporl atpolr atprol atprlo atplor atplro atoprl atoplr atorpl atorlp atolpr atolrp atrpol atrplo atropl atrolp atrlpo atrlop atlpor atlpro atlopr atlorp atlrpo atlrop alport alpotr alprot alprto alptor alptro aloprt aloptr alorpt alortp alotpr alotrp alrpot alrpto alropt alrotp alrtpo alrtop altpor altpro altopr altorp altrpo altrop lporta lporat lpotra lpotar lpoart lpoatr lprota lproat lprtoa lprtao lpraot lprato lptora lptoar lptroa lptrao lptaor lptaro lpaort lpaotr lparot lparto lpator lpatro loprta loprat loptra loptar lopart lopatr lorpta lorpat lortpa lortap lorapt loratp lotpra lotpar lotrpa lotrap lotapr lotarp loaprt loaptr loarpt loartp loatpr loatrp lrpota lrpoat lrptoa lrptao lrpaot lrpato lropta lropat lrotpa lrotap lroapt lroatp lrtpoa lrtpao lrtopa lrtoap lrtapo lrtaop lrapot lrapto lraopt lraotp lratpo lratop ltpora ltpoar ltproa ltprao ltpaor ltparo ltopra ltopar ltorpa ltorap ltoapr ltoarp ltrpoa ltrpao ltropa ltroap ltrapo ltraop ltapor ltapro ltaopr ltaorp ltarpo ltarop laport lapotr laprot laprto laptor laptro laoprt laoptr laorpt laortp laotpr laotrp larpot larpto laropt larotp lartpo lartop latpor latpro latopr latorp latrpo latrop.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
