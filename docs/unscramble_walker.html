@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble walker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble walker and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble walker and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble walker" name="twitter:title">
+    <meta content="Unscramble walker" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble walker</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters walker. To unscramble walker we can search against each letter in walker and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling walker means that
+
+New Zealand runner who in 1975 became the first person to run a mile in less that 3 minutes and 50 seconds (born in 1952),
+
+United States writer (born in 1944),
+
+a person who travels by foot,
+
+a shoe designed for comfortable walking,
+
+a light enclosing framework (trade name Zimmer) with rubber castors or wheels and handles; helps invalids or the handicapped or the aged to walk,
+
+an enclosing framework on casters or wheels; helps babies learn to walk,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble walker with word unscrambler" src="images/unscramble_walker.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from walker</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> walker </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from walker</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> waler </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> waker </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> wreak </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> laker </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from walker</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> wark </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> walk </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lark </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ware </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> wear </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> wale </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> weal </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> earl </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lear </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rale </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> real </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> wake </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> weak </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> weka </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rake </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> kale </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lake </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leak </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from walker</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> elk </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lek </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> raw </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> war </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> awl </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> law </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ark </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> awe </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> wae </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> are </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ear </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> era </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ale </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lea </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> kae </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> kea </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from walker</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> we </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> el </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aw </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ar </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> al </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> la </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ka </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ae </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in walker like walker walkre walekr walerk walrke walrek wakler waklre wakelr wakerl wakrle wakrel waelkr waelrk waeklr waekrl waerlk waerkl warlke warlek warkle warkel warelk warekl wlaker wlakre wlaekr wlaerk wlarke wlarek wlkaer wlkare wlkear wlkera wlkrae wlkrea wleakr wleark wlekar wlekra wlerak wlerka wlrake wlraek wlrkae wlrkea wlreak wlreka wkaler wkalre wkaelr wkaerl wkarle wkarel wklaer wklare wklear wklera wklrae wklrea wkealr wkearl wkelar wkelra wkeral wkerla wkrale wkrael wkrlae wkrlea wkreal wkrela wealkr wealrk weaklr weakrl wearlk wearkl welakr welark welkar welkra welrak welrka wekalr wekarl weklar weklra wekral wekrla weralk werakl werlak werlka werkal werkla wralke wralek wrakle wrakel wraelk wraekl wrlake wrlaek wrlkae wrlkea wrleak wrleka wrkale wrkael wrklae wrklea wrkeal wrkela wrealk wreakl wrelak wrelka wrekal wrekla awlker awlkre awlekr awlerk awlrke awlrek awkler awklre awkelr awkerl awkrle awkrel awelkr awelrk aweklr awekrl awerlk awerkl awrlke awrlek awrkle awrkel awrelk awrekl alwker alwkre alwekr alwerk alwrke alwrek alkwer alkwre alkewr alkerw alkrwe alkrew alewkr alewrk alekwr alekrw alerwk alerkw alrwke alrwek alrkwe alrkew alrewk alrekw akwler akwlre akwelr akwerl akwrle akwrel aklwer aklwre aklewr aklerw aklrwe aklrew akewlr akewrl akelwr akelrw akerwl akerlw akrwle akrwel akrlwe akrlew akrewl akrelw aewlkr aewlrk aewklr aewkrl aewrlk aewrkl aelwkr aelwrk aelkwr aelkrw aelrwk aelrkw aekwlr aekwrl aeklwr aeklrw aekrwl aekrlw aerwlk aerwkl aerlwk aerlkw aerkwl aerklw arwlke arwlek arwkle arwkel arwelk arwekl arlwke arlwek arlkwe arlkew arlewk arlekw arkwle arkwel arklwe arklew arkewl arkelw arewlk arewkl arelwk arelkw arekwl areklw lwaker lwakre lwaekr lwaerk lwarke lwarek lwkaer lwkare lwkear lwkera lwkrae lwkrea lweakr lweark lwekar lwekra lwerak lwerka lwrake lwraek lwrkae lwrkea lwreak lwreka lawker lawkre lawekr lawerk lawrke lawrek lakwer lakwre lakewr lakerw lakrwe lakrew laewkr laewrk laekwr laekrw laerwk laerkw larwke larwek larkwe larkew larewk larekw lkwaer lkware lkwear lkwera lkwrae lkwrea lkawer lkawre lkaewr lkaerw lkarwe lkarew lkewar lkewra lkeawr lkearw lkerwa lkeraw lkrwae lkrwea lkrawe lkraew lkrewa lkreaw lewakr lewark lewkar lewkra lewrak lewrka leawkr leawrk leakwr leakrw learwk learkw lekwar lekwra lekawr lekarw lekrwa lekraw lerwak lerwka lerawk lerakw lerkwa lerkaw lrwake lrwaek lrwkae lrwkea lrweak lrweka lrawke lrawek lrakwe lrakew lraewk lraekw lrkwae lrkwea lrkawe lrkaew lrkewa lrkeaw lrewak lrewka lreawk lreakw lrekwa lrekaw kwaler kwalre kwaelr kwaerl kwarle kwarel kwlaer kwlare kwlear kwlera kwlrae kwlrea kwealr kwearl kwelar kwelra kweral kwerla kwrale kwrael kwrlae kwrlea kwreal kwrela kawler kawlre kawelr kawerl kawrle kawrel kalwer kalwre kalewr kalerw kalrwe kalrew kaewlr kaewrl kaelwr kaelrw kaerwl kaerlw karwle karwel karlwe karlew karewl karelw klwaer klware klwear klwera klwrae klwrea klawer klawre klaewr klaerw klarwe klarew klewar klewra kleawr klearw klerwa kleraw klrwae klrwea klrawe klraew klrewa klreaw kewalr kewarl kewlar kewlra kewral kewrla keawlr keawrl kealwr kealrw kearwl kearlw kelwar kelwra kelawr kelarw kelrwa kelraw kerwal kerwla kerawl keralw kerlwa kerlaw krwale krwael krwlae krwlea krweal krwela krawle krawel kralwe kralew kraewl kraelw krlwae krlwea krlawe krlaew krlewa krleaw krewal krewla kreawl krealw krelwa krelaw ewalkr ewalrk ewaklr ewakrl ewarlk ewarkl ewlakr ewlark ewlkar ewlkra ewlrak ewlrka ewkalr ewkarl ewklar ewklra ewkral ewkrla ewralk ewrakl ewrlak ewrlka ewrkal ewrkla eawlkr eawlrk eawklr eawkrl eawrlk eawrkl ealwkr ealwrk ealkwr ealkrw ealrwk ealrkw eakwlr eakwrl eaklwr eaklrw eakrwl eakrlw earwlk earwkl earlwk earlkw earkwl earklw elwakr elwark elwkar elwkra elwrak elwrka elawkr elawrk elakwr elakrw elarwk elarkw elkwar elkwra elkawr elkarw elkrwa elkraw elrwak elrwka elrawk elrakw elrkwa elrkaw ekwalr ekwarl ekwlar ekwlra ekwral ekwrla ekawlr ekawrl ekalwr ekalrw ekarwl ekarlw eklwar eklwra eklawr eklarw eklrwa eklraw ekrwal ekrwla ekrawl ekralw ekrlwa ekrlaw erwalk erwakl erwlak erwlka erwkal erwkla erawlk erawkl eralwk eralkw erakwl eraklw erlwak erlwka erlawk erlakw erlkwa erlkaw erkwal erkwla erkawl erkalw erklwa erklaw rwalke rwalek rwakle rwakel rwaelk rwaekl rwlake rwlaek rwlkae rwlkea rwleak rwleka rwkale rwkael rwklae rwklea rwkeal rwkela rwealk rweakl rwelak rwelka rwekal rwekla rawlke rawlek rawkle rawkel rawelk rawekl ralwke ralwek ralkwe ralkew ralewk ralekw rakwle rakwel raklwe raklew rakewl rakelw raewlk raewkl raelwk raelkw raekwl raeklw rlwake rlwaek rlwkae rlwkea rlweak rlweka rlawke rlawek rlakwe rlakew rlaewk rlaekw rlkwae rlkwea rlkawe rlkaew rlkewa rlkeaw rlewak rlewka rleawk rleakw rlekwa rlekaw rkwale rkwael rkwlae rkwlea rkweal rkwela rkawle rkawel rkalwe rkalew rkaewl rkaelw rklwae rklwea rklawe rklaew rklewa rkleaw rkewal rkewla rkeawl rkealw rkelwa rkelaw rewalk rewakl rewlak rewlka rewkal rewkla reawlk reawkl realwk realkw reakwl reaklw relwak relwka relawk relakw relkwa relkaw rekwal rekwla rekawl rekalw reklwa reklaw.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
