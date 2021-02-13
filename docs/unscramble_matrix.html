@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble matrix</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble matrix and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble matrix and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble matrix" name="twitter:title">
+    <meta content="Unscramble matrix" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble matrix</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters matrix. To unscramble matrix we can search against each letter in matrix and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling matrix means that
+
+(mathematics) a rectangular array of quantities or expressions set out by rows and columns; treated as a single element and manipulated according to rules,
+
+(geology) amass of fine-grained rock in which fossils, crystals, or gems are embedded,
+
+an enclosure within which something originates or develops (from the Latin for womb),
+
+the body substance in which tissue cells are embedded,
+
+the formative tissue at the base of a nail,
+
+mold used in the production of phonograph records, type, or other relief surface,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble matrix with word unscrambler" src="images/unscramble_matrix.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from matrix</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> matrix </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from matrix</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mixt </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trim </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mart </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tram </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> taxi </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> airt </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> maxi </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> amir </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mair </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rami </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from matrix</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mix </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mir </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rim </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tax </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rax </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> art </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rat </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> max </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mat </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tam </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> arm </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ram </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ait </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> air </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rai </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ria </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> aim </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ami </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from matrix</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> xi </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> it </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ti </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> mi </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ax </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> at </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ta </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ar </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> am </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ma </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ai </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in matrix like matrix matrxi matirx matixr matxri matxir martix martxi maritx marixt marxti marxit maitrx maitxr mairtx mairxt maixtr maixrt maxtri maxtir maxrti maxrit maxitr maxirt mtarix mtarxi mtairx mtaixr mtaxri mtaxir mtraix mtraxi mtriax mtrixa mtrxai mtrxia mtiarx mtiaxr mtirax mtirxa mtixar mtixra mtxari mtxair mtxrai mtxria mtxiar mtxira mratix mratxi mraitx mraixt mraxti mraxit mrtaix mrtaxi mrtiax mrtixa mrtxai mrtxia mriatx mriaxt mritax mritxa mrixat mrixta mrxati mrxait mrxtai mrxtia mrxiat mrxita miatrx miatxr miartx miarxt miaxtr miaxrt mitarx mitaxr mitrax mitrxa mitxar mitxra miratx miraxt mirtax mirtxa mirxat mirxta mixatr mixart mixtar mixtra mixrat mixrta mxatri mxatir mxarti mxarit mxaitr mxairt mxtari mxtair mxtrai mxtria mxtiar mxtira mxrati mxrait mxrtai mxrtia mxriat mxrita mxiatr mxiart mxitar mxitra mxirat mxirta amtrix amtrxi amtirx amtixr amtxri amtxir amrtix amrtxi amritx amrixt amrxti amrxit amitrx amitxr amirtx amirxt amixtr amixrt amxtri amxtir amxrti amxrit amxitr amxirt atmrix atmrxi atmirx atmixr atmxri atmxir atrmix atrmxi atrimx atrixm atrxmi atrxim atimrx atimxr atirmx atirxm atixmr atixrm atxmri atxmir atxrmi atxrim atximr atxirm armtix armtxi armitx armixt armxti armxit artmix artmxi artimx artixm artxmi artxim arimtx arimxt aritmx aritxm arixmt arixtm arxmti arxmit arxtmi arxtim arximt arxitm aimtrx aimtxr aimrtx aimrxt aimxtr aimxrt aitmrx aitmxr aitrmx aitrxm aitxmr aitxrm airmtx airmxt airtmx airtxm airxmt airxtm aixmtr aixmrt aixtmr aixtrm aixrmt aixrtm axmtri axmtir axmrti axmrit axmitr axmirt axtmri axtmir axtrmi axtrim axtimr axtirm axrmti axrmit axrtmi axrtim axrimt axritm aximtr aximrt axitmr axitrm axirmt axirtm tmarix tmarxi tmairx tmaixr tmaxri tmaxir tmraix tmraxi tmriax tmrixa tmrxai tmrxia tmiarx tmiaxr tmirax tmirxa tmixar tmixra tmxari tmxair tmxrai tmxria tmxiar tmxira tamrix tamrxi tamirx tamixr tamxri tamxir tarmix tarmxi tarimx tarixm tarxmi tarxim taimrx taimxr tairmx tairxm taixmr taixrm taxmri taxmir taxrmi taxrim taximr taxirm trmaix trmaxi trmiax trmixa trmxai trmxia tramix tramxi traimx traixm traxmi traxim trimax trimxa triamx triaxm trixma trixam trxmai trxmia trxami trxaim trxima trxiam timarx timaxr timrax timrxa timxar timxra tiamrx tiamxr tiarmx tiarxm tiaxmr tiaxrm tirmax tirmxa tiramx tiraxm tirxma tirxam tixmar tixmra tixamr tixarm tixrma tixram txmari txmair txmrai txmria txmiar txmira txamri txamir txarmi txarim txaimr txairm txrmai txrmia txrami txraim txrima txriam tximar tximra txiamr txiarm txirma txiram rmatix rmatxi rmaitx rmaixt rmaxti rmaxit rmtaix rmtaxi rmtiax rmtixa rmtxai rmtxia rmiatx rmiaxt rmitax rmitxa rmixat rmixta rmxati rmxait rmxtai rmxtia rmxiat rmxita ramtix ramtxi ramitx ramixt ramxti ramxit ratmix ratmxi ratimx ratixm ratxmi ratxim raimtx raimxt raitmx raitxm raixmt raixtm raxmti raxmit raxtmi raxtim raximt raxitm rtmaix rtmaxi rtmiax rtmixa rtmxai rtmxia rtamix rtamxi rtaimx rtaixm rtaxmi rtaxim rtimax rtimxa rtiamx rtiaxm rtixma rtixam rtxmai rtxmia rtxami rtxaim rtxima rtxiam rimatx rimaxt rimtax rimtxa rimxat rimxta riamtx riamxt riatmx riatxm riaxmt riaxtm ritmax ritmxa ritamx ritaxm ritxma ritxam rixmat rixmta rixamt rixatm rixtma rixtam rxmati rxmait rxmtai rxmtia rxmiat rxmita rxamti rxamit rxatmi rxatim rxaimt rxaitm rxtmai rxtmia rxtami rxtaim rxtima rxtiam rximat rximta rxiamt rxiatm rxitma rxitam imatrx imatxr imartx imarxt imaxtr imaxrt imtarx imtaxr imtrax imtrxa imtxar imtxra imratx imraxt imrtax imrtxa imrxat imrxta imxatr imxart imxtar imxtra imxrat imxrta iamtrx iamtxr iamrtx iamrxt iamxtr iamxrt iatmrx iatmxr iatrmx iatrxm iatxmr iatxrm iarmtx iarmxt iartmx iartxm iarxmt iarxtm iaxmtr iaxmrt iaxtmr iaxtrm iaxrmt iaxrtm itmarx itmaxr itmrax itmrxa itmxar itmxra itamrx itamxr itarmx itarxm itaxmr itaxrm itrmax itrmxa itramx itraxm itrxma itrxam itxmar itxmra itxamr itxarm itxrma itxram irmatx irmaxt irmtax irmtxa irmxat irmxta iramtx iramxt iratmx iratxm iraxmt iraxtm irtmax irtmxa irtamx irtaxm irtxma irtxam irxmat irxmta irxamt irxatm irxtma irxtam ixmatr ixmart ixmtar ixmtra ixmrat ixmrta ixamtr ixamrt ixatmr ixatrm ixarmt ixartm ixtmar ixtmra ixtamr ixtarm ixtrma ixtram ixrmat ixrmta ixramt ixratm ixrtma ixrtam xmatri xmatir xmarti xmarit xmaitr xmairt xmtari xmtair xmtrai xmtria xmtiar xmtira xmrati xmrait xmrtai xmrtia xmriat xmrita xmiatr xmiart xmitar xmitra xmirat xmirta xamtri xamtir xamrti xamrit xamitr xamirt xatmri xatmir xatrmi xatrim xatimr xatirm xarmti xarmit xartmi xartim xarimt xaritm xaimtr xaimrt xaitmr xaitrm xairmt xairtm xtmari xtmair xtmrai xtmria xtmiar xtmira xtamri xtamir xtarmi xtarim xtaimr xtairm xtrmai xtrmia xtrami xtraim xtrima xtriam xtimar xtimra xtiamr xtiarm xtirma xtiram xrmati xrmait xrmtai xrmtia xrmiat xrmita xramti xramit xratmi xratim xraimt xraitm xrtmai xrtmia xrtami xrtaim xrtima xrtiam xrimat xrimta xriamt xriatm xritma xritam ximatr ximart ximtar ximtra ximrat ximrta xiamtr xiamrt xiatmr xiatrm xiarmt xiartm xitmar xitmra xitamr xitarm xitrma xitram xirmat xirmta xiramt xiratm xirtma xirtam.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
