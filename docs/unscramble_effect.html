@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble effect</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble effect and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble effect and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble effect" name="twitter:title">
+    <meta content="Unscramble effect" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble effect</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters effect. To unscramble effect we can search against each letter in effect and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling effect means that
+
+a phenomenon that follows and is caused by some previous phenomenon,
+
+an outward appearance,
+
+an impression (especially one that is artificial or contrived),
+
+the central meaning or theme of a speech or literary work,
+
+(of a law) having legal validity,
+
+a symptom caused by an illness or a drug,
+
+produce,
+
+act so as to bring into existence,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble effect with word unscrambler" src="images/unscramble_effect.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from effect</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> effect </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from effect</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> teff </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> feet </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fete </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cete </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from effect</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eft </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fet </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eff </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tee </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fee </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> cee </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from effect</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> et </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ef </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> fe </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in effect like effect effetc effcet effcte efftec efftce efefct efeftc efecft efectf efetfc efetcf efcfet efcfte efceft efcetf efctfe efctef eftfec eftfce eftefc eftecf eftcfe eftcef effect effetc effcet effcte efftec efftce efefct efeftc efecft efectf efetfc efetcf efcfet efcfte efceft efcetf efctfe efctef eftfec eftfce eftefc eftecf eftcfe eftcef eeffct eefftc eefcft eefctf eeftfc eeftcf eeffct eefftc eefcft eefctf eeftfc eeftcf eecfft eecftf eecfft eecftf eectff eectff eetffc eetfcf eetffc eetfcf eetcff eetcff ecffet ecffte ecfeft ecfetf ecftfe ecftef ecffet ecffte ecfeft ecfetf ecftfe ecftef ecefft eceftf ecefft eceftf ecetff ecetff ectffe ectfef ectffe ectfef ecteff ecteff etffec etffce etfefc etfecf etfcfe etfcef etffec etffce etfefc etfecf etfcfe etfcef eteffc etefcf eteffc etefcf etecff etecff etcffe etcfef etcffe etcfef etceff etceff fefect fefetc fefcet fefcte feftec feftce feefct feeftc feecft feectf feetfc feetcf fecfet fecfte feceft fecetf fectfe fectef fetfec fetfce fetefc fetecf fetcfe fetcef ffeect ffeetc ffecet ffecte ffetec ffetce ffeect ffeetc ffecet ffecte ffetec ffetce ffceet ffcete ffceet ffcete ffctee ffctee ffteec fftece ffteec fftece fftcee fftcee feefct feeftc feecft feectf feetfc feetcf fefect fefetc fefcet fefcte feftec feftce feceft fecetf fecfet fecfte fectef fectfe fetefc fetecf fetfec fetfce fetcef fetcfe fcefet fcefte fceeft fceetf fcetfe fcetef fcfeet fcfete fcfeet fcfete fcftee fcftee fceeft fceetf fcefet fcefte fcetef fcetfe fctefe fcteef fctfee fctfee fcteef fctefe ftefec ftefce fteefc fteecf ftecfe ftecef ftfeec ftfece ftfeec ftfece ftfcee ftfcee fteefc fteecf ftefec ftefce ftecef ftecfe ftcefe ftceef ftcfee ftcfee ftceef ftcefe fefect fefetc fefcet fefcte feftec feftce feefct feeftc feecft feectf feetfc feetcf fecfet fecfte feceft fecetf fectfe fectef fetfec fetfce fetefc fetecf fetcfe fetcef ffeect ffeetc ffecet ffecte ffetec ffetce ffeect ffeetc ffecet ffecte ffetec ffetce ffceet ffcete ffceet ffcete ffctee ffctee ffteec fftece ffteec fftece fftcee fftcee feefct feeftc feecft feectf feetfc feetcf fefect fefetc fefcet fefcte feftec feftce feceft fecetf fecfet fecfte fectef fectfe fetefc fetecf fetfec fetfce fetcef fetcfe fcefet fcefte fceeft fceetf fcetfe fcetef fcfeet fcfete fcfeet fcfete fcftee fcftee fceeft fceetf fcefet fcefte fcetef fcetfe fctefe fcteef fctfee fctfee fcteef fctefe ftefec ftefce fteefc fteecf ftecfe ftecef ftfeec ftfece ftfeec ftfece ftfcee ftfcee fteefc fteecf ftefec ftefce ftecef ftecfe ftcefe ftceef ftcfee ftcfee ftceef ftcefe eeffct eefftc eefcft eefctf eeftfc eeftcf eeffct eefftc eefcft eefctf eeftfc eeftcf eecfft eecftf eecfft eecftf eectff eectff eetffc eetfcf eetffc eetfcf eetcff eetcff efefct efeftc efecft efectf efetfc efetcf effect effetc effcet effcte efftec efftce efceft efcetf efcfet efcfte efctef efctfe eftefc eftecf eftfec eftfce eftcef eftcfe efefct efeftc efecft efectf efetfc efetcf effect effetc effcet effcte efftec efftce efceft efcetf efcfet efcfte efctef efctfe eftefc eftecf eftfec eftfce eftcef eftcfe ecefft eceftf ecefft eceftf ecetff ecetff ecfeft ecfetf ecffet ecffte ecftef ecftfe ecfeft ecfetf ecffet ecffte ecftef ecftfe ecteff ecteff ectfef ectffe ectfef ectffe eteffc etefcf eteffc etefcf etecff etecff etfefc etfecf etffec etffce etfcef etfcfe etfefc etfecf etffec etffce etfcef etfcfe etceff etceff etcfef etcffe etcfef etcffe ceffet ceffte cefeft cefetf ceftfe ceftef ceffet ceffte cefeft cefetf ceftfe ceftef ceefft ceeftf ceefft ceeftf ceetff ceetff cetffe cetfef cetffe cetfef ceteff ceteff cfefet cfefte cfeeft cfeetf cfetfe cfetef cffeet cffete cffeet cffete cfftee cfftee cfeeft cfeetf cfefet cfefte cfetef cfetfe cftefe cfteef cftfee cftfee cfteef cftefe cfefet cfefte cfeeft cfeetf cfetfe cfetef cffeet cffete cffeet cffete cfftee cfftee cfeeft cfeetf cfefet cfefte cfetef cfetfe cftefe cfteef cftfee cftfee cfteef cftefe ceefft ceeftf ceefft ceeftf ceetff ceetff cefeft cefetf ceffet ceffte ceftef ceftfe cefeft cefetf ceffet ceffte ceftef ceftfe ceteff ceteff cetfef cetffe cetfef cetffe cteffe ctefef cteffe ctefef cteeff cteeff ctfefe ctfeef ctffee ctffee ctfeef ctfefe ctfefe ctfeef ctffee ctffee ctfeef ctfefe cteeff cteeff ctefef cteffe ctefef cteffe teffec teffce tefefc tefecf tefcfe tefcef teffec teffce tefefc tefecf tefcfe tefcef teeffc teefcf teeffc teefcf teecff teecff tecffe tecfef tecffe tecfef teceff teceff tfefec tfefce tfeefc tfeecf tfecfe tfecef tffeec tffece tffeec tffece tffcee tffcee tfeefc tfeecf tfefec tfefce tfecef tfecfe tfcefe tfceef tfcfee tfcfee tfceef tfcefe tfefec tfefce tfeefc tfeecf tfecfe tfecef tffeec tffece tffeec tffece tffcee tffcee tfeefc tfeecf tfefec tfefce tfecef tfecfe tfcefe tfceef tfcfee tfcfee tfceef tfcefe teeffc teefcf teeffc teefcf teecff teecff tefefc tefecf teffec teffce tefcef tefcfe tefefc tefecf teffec teffce tefcef tefcfe teceff teceff tecfef tecffe tecfef tecffe tceffe tcefef tceffe tcefef tceeff tceeff tcfefe tcfeef tcffee tcffee tcfeef tcfefe tcfefe tcfeef tcffee tcffee tcfeef tcfefe tceeff tceeff tcefef tceffe tcefef tceffe.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
