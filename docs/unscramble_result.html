@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble result</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble result and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble result and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble result" name="twitter:title">
+    <meta content="Unscramble result" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble result</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters result. To unscramble result we can search against each letter in result and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling result means that
+
+a quality that outshines the usual,
+
+the visual property of something that shines with reflected light,
+
+a surface coating for ceramics or porcelain,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble result with word unscrambler" src="images/unscramble_result.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from result</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> luster </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lustre </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> result </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rustle </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sutler </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ulster </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from result</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lutes </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tules </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lures </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rules </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from result</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rust </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lust </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slur </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> utes </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> true </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sure </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> user </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> erst </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tres </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lute </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tule </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lues </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> slue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tels </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> lure </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rule </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from result</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> uts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ute </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> use </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> set </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ret </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ers </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> res </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ser </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> leu </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> let </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tel </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> els </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> les </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sel </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from result</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> us </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> et </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> es </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> el </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in result like result resutl reslut resltu restul restlu reuslt reustl reulst reults reutsl reutls relsut relstu relust reluts reltsu reltus retsul retslu retusl retuls retlsu retlus rseult rseutl rselut rseltu rsetul rsetlu rsuelt rsuetl rsulet rsulte rsutel rsutle rsleut rsletu rsluet rslute rslteu rsltue rsteul rstelu rstuel rstule rstleu rstlue rueslt ruestl ruelst ruelts ruetsl ruetls ruselt rusetl ruslet ruslte rustel rustle rulest rulets rulset rulste rultes rultse rutesl rutels rutsel rutsle rutles rutlse rlesut rlestu rleust rleuts rletsu rletus rlseut rlsetu rlsuet rlsute rlsteu rlstue rluest rluets rluset rluste rlutes rlutse rltesu rlteus rltseu rltsue rltues rltuse rtesul rteslu rteusl rteuls rtelsu rtelus rtseul rtselu rtsuel rtsule rtsleu rtslue rtuesl rtuels rtusel rtusle rtules rtulse rtlesu rtleus rtlseu rtlsue rtlues rtluse ersult ersutl erslut ersltu erstul erstlu eruslt erustl erulst erults erutsl erutls erlsut erlstu erlust erluts erltsu erltus ertsul ertslu ertusl ertuls ertlsu ertlus esrult esrutl esrlut esrltu esrtul esrtlu esurlt esurtl esulrt esultr esutrl esutlr eslrut eslrtu eslurt eslutr esltru esltur estrul estrlu esturl estulr estlru estlur eurslt eurstl eurlst eurlts eurtsl eurtls eusrlt eusrtl euslrt eusltr eustrl eustlr eulrst eulrts eulsrt eulstr eultrs eultsr eutrsl eutrls eutsrl eutslr eutlrs eutlsr elrsut elrstu elrust elruts elrtsu elrtus elsrut elsrtu elsurt elsutr elstru elstur elurst elurts elusrt elustr elutrs elutsr eltrsu eltrus eltsru eltsur elturs eltusr etrsul etrslu etrusl etruls etrlsu etrlus etsrul etsrlu etsurl etsulr etslru etslur etursl eturls etusrl etuslr etulrs etulsr etlrsu etlrus etlsru etlsur etlurs etlusr sreult sreutl srelut sreltu sretul sretlu sruelt sruetl srulet srulte srutel srutle srleut srletu srluet srlute srlteu srltue srteul srtelu srtuel srtule srtleu srtlue serult serutl serlut serltu sertul sertlu seurlt seurtl seulrt seultr seutrl seutlr selrut selrtu selurt selutr seltru seltur setrul setrlu seturl setulr setlru setlur surelt suretl surlet surlte surtel surtle suerlt suertl suelrt sueltr suetrl suetlr sulret sulrte sulert suletr sultre sulter sutrel sutrle suterl sutelr sutlre sutler slreut slretu slruet slrute slrteu slrtue slerut slertu sleurt sleutr sletru sletur sluret slurte sluert sluetr slutre sluter sltreu sltrue slteru slteur slture sltuer streul strelu struel strule strleu strlue sterul sterlu steurl steulr stelru stelur sturel sturle stuerl stuelr stulre stuler stlreu stlrue stleru stleur stlure stluer ureslt urestl urelst urelts uretsl uretls urselt ursetl urslet urslte urstel urstle urlest urlets urlset urlste urltes urltse urtesl urtels urtsel urtsle urtles urtlse uerslt uerstl uerlst uerlts uertsl uertls uesrlt uesrtl ueslrt uesltr uestrl uestlr uelrst uelrts uelsrt uelstr ueltrs ueltsr uetrsl uetrls uetsrl uetslr uetlrs uetlsr usrelt usretl usrlet usrlte usrtel usrtle userlt usertl uselrt useltr usetrl usetlr uslret uslrte uslert usletr usltre uslter ustrel ustrle usterl ustelr ustlre ustler ulrest ulrets ulrset ulrste ulrtes ulrtse ulerst ulerts ulesrt ulestr uletrs uletsr ulsret ulsrte ulsert ulsetr ulstre ulster ultres ultrse ulters ultesr ultsre ultser utresl utrels utrsel utrsle utrles utrlse utersl uterls utesrl uteslr utelrs utelsr utsrel utsrle utserl utselr utslre utsler utlres utlrse utlers utlesr utlsre utlser lresut lrestu lreust lreuts lretsu lretus lrseut lrsetu lrsuet lrsute lrsteu lrstue lruest lruets lruset lruste lrutes lrutse lrtesu lrteus lrtseu lrtsue lrtues lrtuse lersut lerstu lerust leruts lertsu lertus lesrut lesrtu lesurt lesutr lestru lestur leurst leurts leusrt leustr leutrs leutsr letrsu letrus letsru letsur leturs letusr lsreut lsretu lsruet lsrute lsrteu lsrtue lserut lsertu lseurt lseutr lsetru lsetur lsuret lsurte lsuert lsuetr lsutre lsuter lstreu lstrue lsteru lsteur lsture lstuer lurest lurets lurset lurste lurtes lurtse luerst luerts luesrt luestr luetrs luetsr lusret lusrte lusert lusetr lustre luster lutres lutrse luters lutesr lutsre lutser ltresu ltreus ltrseu ltrsue ltrues ltruse ltersu lterus ltesru ltesur lteurs lteusr ltsreu ltsrue ltseru ltseur ltsure ltsuer ltures lturse ltuers ltuesr ltusre ltuser tresul treslu treusl treuls trelsu trelus trseul trselu trsuel trsule trsleu trslue truesl truels trusel trusle trules trulse trlesu trleus trlseu trlsue trlues trluse tersul terslu terusl teruls terlsu terlus tesrul tesrlu tesurl tesulr teslru teslur teursl teurls teusrl teuslr teulrs teulsr telrsu telrus telsru telsur telurs telusr tsreul tsrelu tsruel tsrule tsrleu tsrlue tserul tserlu tseurl tseulr tselru tselur tsurel tsurle tsuerl tsuelr tsulre tsuler tslreu tslrue tsleru tsleur tslure tsluer turesl turels tursel tursle turles turlse tuersl tuerls tuesrl tueslr tuelrs tuelsr tusrel tusrle tuserl tuselr tuslre tusler tulres tulrse tulers tulesr tulsre tulser tlresu tlreus tlrseu tlrsue tlrues tlruse tlersu tlerus tlesru tlesur tleurs tleusr tlsreu tlsrue tlseru tlseur tlsure tlsuer tlures tlurse tluers tluesr tlusre tluser.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
