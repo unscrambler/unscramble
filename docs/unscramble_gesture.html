@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3888849-36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3888849-36');
+    </script>
+    <meta name="google-site-verification" content="" />
+    <meta name="author" content="Unscramble Words">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Unscramble Words">
+
+    <title>Unscramble gesture</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+
+    <meta content="unscramble gesture and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="description" property="og:description">
+    <meta content="unscramble gesture and unscramble words,unscramble words cheat, unscramble words with answers, unscramble long words,unscramble words for free" name="twitter:description">
+    <meta content="Unscramble gesture" name="twitter:title">
+    <meta content="Unscramble gesture" property="og:title">
+
+
+    <!--add codes-->
+    <style >
+      /*extra small - max width */
+    @media (max-width: 767px) {
+
+    /*.hidden-xs { display: none!important; } */
+    .mrec-xs { width:300px; height:250px; }
+    .leaderboard-xs { width:728px; height:90px; }
+    .mobile-xs { width:320px; height:50px; }
+    .skyscraper-xs { width:120px; height:600px; }
+    .banner-xs { width:468px; height:60px; }
+    .halfpage-xs {width: 300px; height: 600px;}
+    .bigrect-xs {width: 336px; height: 280px;}
+    .flex-banner-xs{width: 100%; height: 100px;}
+    .flex-square-xs{width: 100%; height: 250px;}
+    .hugead-xs {height: 280px;}
+
+    }
+
+    /* small */
+    @media (min-width: 768px) and (max-width: 991px) {
+
+    /*.hidden-sm { display: none!important; } */
+    .mrec-sm { width:300px; height:250px; }
+    .leaderboard-sm { width:728px; height:90px; }
+    .mobile-sm { width:320px; height:50px; }
+    .skyscraper-sm { width:120px; height:600px; }
+    .banner-sm { width:468px; height:60px; }
+    .halfpage-sm {width: 300px; height: 600px;}
+    .bigrect-sm {width: 336px; height: 280px;}
+    .flex-banner-sm{width: 100%; height: 100px;}
+    .flex-square-sm{width: 100%; height: 250px;}
+    .hugead-sm {height: 280px;}
+    }
+
+    /* medium */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+    /*.hidden-md { display: none!important; } */
+    .mrec-md { width:300px; height:250px; }
+    .leaderboard-md { width:728px; height:90px; }
+    .mobile-md { width:320px; height:50px; }
+    .skyscraper-md { width:120px; height:600px; }
+    .banner-md { width:468px; height:60px; }
+    .halfpage-md {width: 300px; height: 600px;}
+    .bigrect-md {width: 336px; height: 280px;}
+    .flex-banner-md{width: 100%; height: 100px;}
+    .flex-square-md{width: 100%; height: 250px;}
+    .hugead-md {height: 280px;}
+    }
+
+    /* large */
+    @media (min-width: 1200px) {
+
+    /*.hidden-lg { display: none!important; } */
+    .mrec-lg { width:300px; height:250px; }
+    .leaderboard-lg { width:728px; height:90px; }
+    .mobile-lg { width:320px; height:50px; }
+    .skyscraper-lg { width:120px; height:600px; }
+    .banner-lg { width:468px; height:60px; }
+    .halfpage-lg {width: 300px; height: 600px;}
+    .bigrect-lg {width: 336px; height: 280px;}
+    .flex-banner-lg{width: 100%; height: 100px;}
+    .flex-square-lg{width: 100%; height: 250px;}
+    .hugead-lg {max-width:48rem;height: 280px;}
+    }
+    .article{
+      padding-top: 15px;
+    }
+    .adspace{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .word-definition{
+      padding-top: 5px;
+    }
+
+    .word-related{
+      padding-top: 5px;
+    }
+
+    .word-heading{
+      display:inline-block;
+    }
+
+    .word-labels{
+      margin-bottom: 3px;
+    }
+
+    #jumble .solution{
+      padding: 10px;
+      font-size: 2em;
+    }
+    @-ms-viewport{width:device-width;}
+    @-o-viewport{width:device-width;}
+    @viewport{width:device-width;}
+    .panel-title{font-size: 1.4em;}
+    .page-title{font-size:2em;}
+    .container{max-width: 48rem;}
+    </style>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-1">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Unscramble Words</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            
+            <!--<li><a href="#">Link</a></li>-->
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="page-title">Unscramble gesture</h1>
+          <!-- theunscrambled -->
+          
+          
+
+<!-- google_ad_section_start -->
+<article>
+
+Do you wonder how many words you can made out of letters gesture. To unscramble gesture we can search against each letter in gesture and find meaningful words in dictionary. You can use this word list to cheat word games. Unscramble word cheat is one of the things you can do by using our site. 
+
+
+<p>
+The word found after unscrambling gesture means that
+
+motion of hands or body to emphasize or help to express a thought or feeling,
+
+the use of movements (especially of the hands) to communicate familiar or prearranged signals,
+
+something done as an indication of intention,
+
+show, express or direct through movement,
+
+.
+</p>
+
+
+
+
+<div class="row mb-3">
+  <img class="rounded mx-auto" alt="unscramble gesture with word unscrambler" src="images/unscramble_gesture.svg"/>
+</div>
+
+
+</article>
+<!-- google_ad_section_end -->
+
+
+
+
+<div class="row mb-3" id="7-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 7 letter words from gesture</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gesture </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="6-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 6 letter words from gesture</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> retuse </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> egrets </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> greets </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="5-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 5 letter words from gesture</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trugs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> guest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> grues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> surge </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> urges </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reuse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ester </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reset </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> steer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> stere </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> terse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trees </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> segue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> egest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> geest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> geste </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> egret </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> greet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> egers </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> grees </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reges </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> serge </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row my-2">
+  
+</div>
+
+
+
+
+<div class="row mb-3" id="4-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 4 letter words from gesture</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rust </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gust </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> guts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tugs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> trug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rugs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suet </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> utes </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> true </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rues </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ruse </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> suer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sure </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> user </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> erst </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rets </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tres </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gest </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gets </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tegs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> grue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> urge </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ergs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> regs </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tees </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rete </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tree </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rees </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> seer </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sere </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gees </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> eger </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gree </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="3-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 3 letter words from gesture</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> uts </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rug </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ute </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> sue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> use </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> set </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> rue </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ret </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ers </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> res </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ser </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> get </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> teg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> seg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> erg </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> reg </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> tee </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> see </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ere </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ree </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> gee </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mb-3" id="2-letter-unscrambled-words">
+  <div class="col">
+    <b>Unscrambled 2 letter words from gesture</b>
+    <div class="row">
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> ut </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> us </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> et </span>
+
+
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> es </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> er </span>
+
+
+          
+      </div>
+      
+      <div class="col">
+          
+            
+
+<span class="my-2 btn btn-block btn-outline-dark btn-md  disabled"> re </span>
+
+
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row mb-3" id="">
+  <div class="col">
+    <b>Other letter combinations</b>
+    <p>You can also find solutions for different combinations of letters in gesture like gesture gestuer gestrue gestreu gesteur gesteru gesutre gesuter gesurte gesuret gesuetr gesuert gesrtue gesrteu gesrute gesruet gesretu gesreut gesetur gesetru geseutr geseurt gesertu geserut getsure getsuer getsrue getsreu getseur getseru getusre getuser geturse getures getuesr getuers getrsue getrseu getruse getrues getresu getreus getesur getesru geteusr geteurs getersu geterus geustre geuster geusrte geusret geusetr geusert geutsre geutser geutrse geutres geutesr geuters geurste geurset geurtse geurtes geurest geurets geuestr geuesrt geuetsr geuetrs geuerst geuerts gerstue gersteu gersute gersuet gersetu gerseut gertsue gertseu gertuse gertues gertesu gerteus geruste geruset gerutse gerutes geruest geruets gerestu geresut geretsu geretus gereust gereuts geestur geestru geesutr geesurt geesrtu geesrut geetsur geetsru geetusr geeturs geetrsu geetrus geeustr geeusrt geeutsr geeutrs geeurst geeurts geerstu geersut geertsu geertus geerust geeruts gseture gsetuer gsetrue gsetreu gseteur gseteru gseutre gseuter gseurte gseuret gseuetr gseuert gsertue gserteu gserute gseruet gseretu gsereut gseetur gseetru gseeutr gseeurt gseertu gseerut gsteure gsteuer gsterue gstereu gsteeur gsteeru gstuere gstueer gsturee gsturee gstueer gstuere gstreue gstreeu gstruee gstruee gstreeu gstreue gsteeur gsteeru gsteuer gsteure gstereu gsterue gsuetre gsueter gsuerte gsueret gsueetr gsueert gsutere gsuteer gsutree gsutree gsuteer gsutere gsurete gsureet gsurtee gsurtee gsureet gsurete gsueetr gsueert gsueter gsuetre gsueret gsuerte gsretue gsreteu gsreute gsreuet gsreetu gsreeut gsrteue gsrteeu gsrtuee gsrtuee gsrteeu gsrteue gsruete gsrueet gsrutee gsrutee gsrueet gsruete gsreetu gsreeut gsreteu gsretue gsreuet gsreute gseetur gseetru gseeutr gseeurt gseertu gseerut gseteur gseteru gsetuer gseture gsetreu gsetrue gseuetr gseuert gseuter gseutre gseuret gseurte gseretu gsereut gserteu gsertue gseruet gserute gtesure gtesuer gtesrue gtesreu gteseur gteseru gteusre gteuser gteurse gteures gteuesr gteuers gtersue gterseu gteruse gterues gteresu gtereus gteesur gteesru gteeusr gteeurs gteersu gteerus gtseure gtseuer gtserue gtsereu gtseeur gtseeru gtsuere gtsueer gtsuree gtsuree gtsueer gtsuere gtsreue gtsreeu gtsruee gtsruee gtsreeu gtsreue gtseeur gtseeru gtseuer gtseure gtsereu gtserue gtuesre gtueser gtuerse gtueres gtueesr gtueers gtusere gtuseer gtusree gtusree gtuseer gtusere gturese gturees gtursee gtursee gturees gturese gtueesr gtueers gtueser gtuesre gtueres gtuerse gtresue gtreseu gtreuse gtreues gtreesu gtreeus gtrseue gtrseeu gtrsuee gtrsuee gtrseeu gtrseue gtruese gtruees gtrusee gtrusee gtruees gtruese gtreesu gtreeus gtreseu gtresue gtreues gtreuse gteesur gteesru gteeusr gteeurs gteersu gteerus gteseur gteseru gtesuer gtesure gtesreu gtesrue gteuesr gteuers gteuser gteusre gteures gteurse gteresu gtereus gterseu gtersue gterues gteruse guestre guester guesrte guesret guesetr guesert guetsre guetser guetrse guetres guetesr gueters guerste guerset guertse guertes guerest guerets gueestr gueesrt gueetsr gueetrs gueerst gueerts gusetre guseter guserte guseret guseetr guseert gustere gusteer gustree gustree gusteer gustere gusrete gusreet gusrtee gusrtee gusreet gusrete guseetr guseert guseter gusetre guseret guserte gutesre guteser guterse guteres guteesr guteers gutsere gutseer gutsree gutsree gutseer gutsere gutrese gutrees gutrsee gutrsee gutrees gutrese guteesr guteers guteser gutesre guteres guterse gureste gureset guretse guretes gureest gureets gursete gurseet gurstee gurstee gurseet gursete gurtese gurtees gurtsee gurtsee gurtees gurtese gureest gureets gureset gureste guretes guretse gueestr gueesrt gueetsr gueetrs gueerst gueerts guesetr guesert guester guestre guesret guesrte guetesr gueters guetser guetsre guetres guetrse guerest guerets guerset guerste guertes guertse grestue gresteu gresute gresuet gresetu greseut gretsue gretseu gretuse gretues gretesu greteus greuste greuset greutse greutes greuest greuets greestu greesut greetsu greetus greeust greeuts grsetue grseteu grseute grseuet grseetu grseeut grsteue grsteeu grstuee grstuee grsteeu grsteue grsuete grsueet grsutee grsutee grsueet grsuete grseetu grseeut grseteu grsetue grseuet grseute grtesue grteseu grteuse grteues grteesu grteeus grtseue grtseeu grtsuee grtsuee grtseeu grtseue grtuese grtuees grtusee grtusee grtuees grtuese grteesu grteeus grteseu grtesue grteues grteuse grueste grueset gruetse gruetes grueest grueets grusete gruseet grustee grustee gruseet grusete grutese grutees grutsee grutsee grutees grutese grueest grueets grueset grueste gruetes gruetse greestu greesut greetsu greetus greeust greeuts gresetu greseut gresteu grestue gresuet gresute gretesu greteus gretseu gretsue gretues gretuse greuest greuets greuset greuste greutes greutse geestur geestru geesutr geesurt geesrtu geesrut geetsur geetsru geetusr geeturs geetrsu geetrus geeustr geeusrt geeutsr geeutrs geeurst geeurts geerstu geersut geertsu geertus geerust geeruts gesetur gesetru geseutr geseurt gesertu geserut gesteur gesteru gestuer gesture gestreu gestrue gesuetr gesuert gesuter gesutre gesuret gesurte gesretu gesreut gesrteu gesrtue gesruet gesrute getesur getesru geteusr geteurs getersu geterus getseur getseru getsuer getsure getsreu getsrue getuesr getuers getuser getusre getures geturse getresu getreus getrseu getrsue getrues getruse geuestr geuesrt geuetsr geuetrs geuerst geuerts geusetr geusert geuster geustre geusret geusrte geutesr geuters geutser geutsre geutres geutrse geurest geurets geurset geurste geurtes geurtse gerestu geresut geretsu geretus gereust gereuts gersetu gerseut gersteu gerstue gersuet gersute gertesu gerteus gertseu gertsue gertues gertuse geruest geruets geruset geruste gerutes gerutse egsture egstuer egstrue egstreu egsteur egsteru egsutre egsuter egsurte egsuret egsuetr egsuert egsrtue egsrteu egsrute egsruet egsretu egsreut egsetur egsetru egseutr egseurt egsertu egserut egtsure egtsuer egtsrue egtsreu egtseur egtseru egtusre egtuser egturse egtures egtuesr egtuers egtrsue egtrseu egtruse egtrues egtresu egtreus egtesur egtesru egteusr egteurs egtersu egterus egustre eguster egusrte egusret egusetr egusert egutsre egutser egutrse egutres egutesr eguters egurste egurset egurtse egurtes egurest egurets eguestr eguesrt eguetsr eguetrs eguerst eguerts egrstue egrsteu egrsute egrsuet egrsetu egrseut egrtsue egrtseu egrtuse egrtues egrtesu egrteus egruste egruset egrutse egrutes egruest egruets egrestu egresut egretsu egretus egreust egreuts egestur egestru egesutr egesurt egesrtu egesrut egetsur egetsru egetusr egeturs egetrsu egetrus egeustr egeusrt egeutsr egeutrs egeurst egeurts egerstu egersut egertsu egertus egerust egeruts esgture esgtuer esgtrue esgtreu esgteur esgteru esgutre esguter esgurte esguret esguetr esguert esgrtue esgrteu esgrute esgruet esgretu esgreut esgetur esgetru esgeutr esgeurt esgertu esgerut estgure estguer estgrue estgreu estgeur estgeru estugre estuger esturge estureg estuegr estuerg estrgue estrgeu estruge estrueg estregu estreug estegur estegru esteugr esteurg estergu esterug esugtre esugter esugrte esugret esugetr esugert esutgre esutger esutrge esutreg esutegr esuterg esurgte esurget esurtge esurteg esuregt esuretg esuegtr esuegrt esuetgr esuetrg esuergt esuertg esrgtue esrgteu esrgute esrguet esrgetu esrgeut esrtgue esrtgeu esrtuge esrtueg esrtegu esrteug esrugte esruget esrutge esruteg esruegt esruetg esregtu esregut esretgu esretug esreugt esreutg esegtur esegtru esegutr esegurt esegrtu esegrut esetgur esetgru esetugr eseturg esetrgu esetrug eseugtr eseugrt eseutgr eseutrg eseurgt eseurtg esergtu esergut esertgu esertug eserugt eserutg etgsure etgsuer etgsrue etgsreu etgseur etgseru etgusre etguser etgurse etgures etguesr etguers etgrsue etgrseu etgruse etgrues etgresu etgreus etgesur etgesru etgeusr etgeurs etgersu etgerus etsgure etsguer etsgrue etsgreu etsgeur etsgeru etsugre etsuger etsurge etsureg etsuegr etsuerg etsrgue etsrgeu etsruge etsrueg etsregu etsreug etsegur etsegru etseugr etseurg etsergu etserug etugsre etugser etugrse etugres etugesr etugers etusgre etusger etusrge etusreg etusegr etuserg eturgse eturges etursge eturseg eturegs eturesg etuegsr etuegrs etuesgr etuesrg etuergs etuersg etrgsue etrgseu etrguse etrgues etrgesu etrgeus etrsgue etrsgeu etrsuge etrsueg etrsegu etrseug etrugse etruges etrusge etruseg etruegs etruesg etregsu etregus etresgu etresug etreugs etreusg etegsur etegsru etegusr etegurs etegrsu etegrus etesgur etesgru etesugr etesurg etesrgu etesrug eteugsr eteugrs eteusgr eteusrg eteurgs eteursg etergsu etergus etersgu etersug eterugs eterusg eugstre eugster eugsrte eugsret eugsetr eugsert eugtsre eugtser eugtrse eugtres eugtesr eugters eugrste eugrset eugrtse eugrtes eugrest eugrets eugestr eugesrt eugetsr eugetrs eugerst eugerts eusgtre eusgter eusgrte eusgret eusgetr eusgert eustgre eustger eustrge eustreg eustegr eusterg eusrgte eusrget eusrtge eusrteg eusregt eusretg eusegtr eusegrt eusetgr eusetrg eusergt eusertg eutgsre eutgser eutgrse eutgres eutgesr eutgers eutsgre eutsger eutsrge eutsreg eutsegr eutserg eutrgse eutrges eutrsge eutrseg eutregs eutresg eutegsr eutegrs eutesgr eutesrg eutergs eutersg eurgste eurgset eurgtse eurgtes eurgest eurgets eursgte eursget eurstge eursteg eursegt eursetg eurtgse eurtges eurtsge eurtseg eurtegs eurtesg euregst euregts euresgt eurestg euretgs euretsg euegstr euegsrt euegtsr euegtrs euegrst euegrts euesgtr euesgrt euestgr euestrg euesrgt euesrtg euetgsr euetgrs euetsgr euetsrg euetrgs euetrsg euergst euergts euersgt euerstg euertgs euertsg ergstue ergsteu ergsute ergsuet ergsetu ergseut ergtsue ergtseu ergtuse ergtues ergtesu ergteus erguste erguset ergutse ergutes erguest erguets ergestu ergesut ergetsu ergetus ergeust ergeuts ersgtue ersgteu ersgute ersguet ersgetu ersgeut erstgue erstgeu erstuge erstueg erstegu ersteug ersugte ersuget ersutge ersuteg ersuegt ersuetg ersegtu ersegut ersetgu ersetug erseugt erseutg ertgsue ertgseu ertguse ertgues ertgesu ertgeus ertsgue ertsgeu ertsuge ertsueg ertsegu ertseug ertugse ertuges ertusge ertuseg ertuegs ertuesg ertegsu ertegus ertesgu ertesug erteugs erteusg erugste erugset erugtse erugtes erugest erugets erusgte erusget erustge erusteg erusegt erusetg erutgse erutges erutsge erutseg erutegs erutesg eruegst eruegts eruesgt eruestg eruetgs eruetsg eregstu eregsut eregtsu eregtus eregust ereguts eresgtu eresgut erestgu erestug eresugt eresutg eretgsu eretgus eretsgu eretsug eretugs eretusg ereugst ereugts ereusgt ereustg ereutgs ereutsg eegstur eegstru eegsutr eegsurt eegsrtu eegsrut eegtsur eegtsru eegtusr eegturs eegtrsu eegtrus eegustr eegusrt eegutsr eegutrs eegurst eegurts eegrstu eegrsut eegrtsu eegrtus eegrust eegruts eesgtur eesgtru eesgutr eesgurt eesgrtu eesgrut eestgur eestgru eestugr eesturg eestrgu eestrug eesugtr eesugrt eesutgr eesutrg eesurgt eesurtg eesrgtu eesrgut eesrtgu eesrtug eesrugt eesrutg eetgsur eetgsru eetgusr eetgurs eetgrsu eetgrus eetsgur eetsgru eetsugr eetsurg eetsrgu eetsrug eetugsr eetugrs eetusgr eetusrg eeturgs eetursg eetrgsu eetrgus eetrsgu eetrsug eetrugs eetrusg eeugstr eeugsrt eeugtsr eeugtrs eeugrst eeugrts eeusgtr eeusgrt eeustgr eeustrg eeusrgt eeusrtg eeutgsr eeutgrs eeutsgr eeutsrg eeutrgs eeutrsg eeurgst eeurgts eeursgt eeurstg eeurtgs eeurtsg eergstu eergsut eergtsu eergtus eergust eerguts eersgtu eersgut eerstgu eerstug eersugt eersutg eertgsu eertgus eertsgu eertsug eertugs eertusg eerugst eerugts eerusgt eerustg eerutgs eerutsg sgeture sgetuer sgetrue sgetreu sgeteur sgeteru sgeutre sgeuter sgeurte sgeuret sgeuetr sgeuert sgertue sgerteu sgerute sgeruet sgeretu sgereut sgeetur sgeetru sgeeutr sgeeurt sgeertu sgeerut sgteure sgteuer sgterue sgtereu sgteeur sgteeru sgtuere sgtueer sgturee sgturee sgtueer sgtuere sgtreue sgtreeu sgtruee sgtruee sgtreeu sgtreue sgteeur sgteeru sgteuer sgteure sgtereu sgterue sguetre sgueter sguerte sgueret sgueetr sgueert sgutere sguteer sgutree sgutree sguteer sgutere sgurete sgureet sgurtee sgurtee sgureet sgurete sgueetr sgueert sgueter sguetre sgueret sguerte sgretue sgreteu sgreute sgreuet sgreetu sgreeut sgrteue sgrteeu sgrtuee sgrtuee sgrteeu sgrteue sgruete sgrueet sgrutee sgrutee sgrueet sgruete sgreetu sgreeut sgreteu sgretue sgreuet sgreute sgeetur sgeetru sgeeutr sgeeurt sgeertu sgeerut sgeteur sgeteru sgetuer sgeture sgetreu sgetrue sgeuetr sgeuert sgeuter sgeutre sgeuret sgeurte sgeretu sgereut sgerteu sgertue sgeruet sgerute segture segtuer segtrue segtreu segteur segteru segutre seguter segurte seguret seguetr seguert segrtue segrteu segrute segruet segretu segreut segetur segetru segeutr segeurt segertu segerut setgure setguer setgrue setgreu setgeur setgeru setugre setuger seturge setureg setuegr setuerg setrgue setrgeu setruge setrueg setregu setreug setegur setegru seteugr seteurg setergu seterug seugtre seugter seugrte seugret seugetr seugert seutgre seutger seutrge seutreg seutegr seuterg seurgte seurget seurtge seurteg seuregt seuretg seuegtr seuegrt seuetgr seuetrg seuergt seuertg sergtue sergteu sergute serguet sergetu sergeut sertgue sertgeu sertuge sertueg sertegu serteug serugte seruget serutge seruteg seruegt seruetg seregtu seregut seretgu seretug sereugt sereutg seegtur seegtru seegutr seegurt seegrtu seegrut seetgur seetgru seetugr seeturg seetrgu seetrug seeugtr seeugrt seeutgr seeutrg seeurgt seeurtg seergtu seergut seertgu seertug seerugt seerutg stgeure stgeuer stgerue stgereu stgeeur stgeeru stguere stgueer stguree stguree stgueer stguere stgreue stgreeu stgruee stgruee stgreeu stgreue stgeeur stgeeru stgeuer stgeure stgereu stgerue stegure steguer stegrue stegreu stegeur stegeru steugre steuger steurge steureg steuegr steuerg stergue stergeu steruge sterueg steregu stereug steegur steegru steeugr steeurg steergu steerug stugere stugeer stugree stugree stugeer stugere stuegre stueger stuerge stuereg stueegr stueerg sturgee sturgee sturege stureeg sturege stureeg stueger stuegre stueegr stueerg stuerge stuereg strgeue strgeeu strguee strguee strgeeu strgeue stregue stregeu streuge streueg streegu streeug strugee strugee struege strueeg struege strueeg stregeu stregue streegu streeug streuge streueg stegeur stegeru steguer stegure stegreu stegrue steegur steegru steeugr steeurg steergu steerug steuger steugre steuegr steuerg steurge steureg stergeu stergue steregu stereug steruge sterueg sugetre sugeter sugerte sugeret sugeetr sugeert sugtere sugteer sugtree sugtree sugteer sugtere sugrete sugreet sugrtee sugrtee sugreet sugrete sugeetr sugeert sugeter sugetre sugeret sugerte suegtre suegter suegrte suegret suegetr suegert suetgre suetger suetrge suetreg suetegr sueterg suergte suerget suertge suerteg sueregt sueretg sueegtr sueegrt sueetgr sueetrg sueergt sueertg sutgere sutgeer sutgree sutgree sutgeer sutgere sutegre suteger suterge sutereg suteegr suteerg sutrgee sutrgee sutrege sutreeg sutrege sutreeg suteger sutegre suteegr suteerg suterge sutereg surgete surgeet surgtee surgtee surgeet surgete suregte sureget suretge sureteg sureegt sureetg surtgee surtgee surtege surteeg surtege surteeg sureget suregte sureegt sureetg suretge sureteg suegetr suegert suegter suegtre suegret suegrte sueegtr sueegrt sueetgr sueetrg sueergt sueertg suetger suetgre suetegr sueterg suetrge suetreg suerget suergte sueregt sueretg suertge suerteg srgetue srgeteu srgeute srgeuet srgeetu srgeeut srgteue srgteeu srgtuee srgtuee srgteeu srgteue srguete srgueet srgutee srgutee srgueet srguete srgeetu srgeeut srgeteu srgetue srgeuet srgeute sregtue sregteu sregute sreguet sregetu sregeut sretgue sretgeu sretuge sretueg sretegu sreteug sreugte sreuget sreutge sreuteg sreuegt sreuetg sreegtu sreegut sreetgu sreetug sreeugt sreeutg srtgeue srtgeeu srtguee srtguee srtgeeu srtgeue srtegue srtegeu srteuge srteueg srteegu srteeug srtugee srtugee srtuege srtueeg srtuege srtueeg srtegeu srtegue srteegu srteeug srteuge srteueg srugete srugeet srugtee srugtee srugeet srugete sruegte srueget sruetge srueteg srueegt srueetg srutgee srutgee srutege sruteeg srutege sruteeg srueget sruegte srueegt srueetg sruetge srueteg sregetu sregeut sregteu sregtue sreguet sregute sreegtu sreegut sreetgu sreetug sreeugt sreeutg sretgeu sretgue sretegu sreteug sretuge sretueg sreuget sreugte sreuegt sreuetg sreutge sreuteg segetur segetru segeutr segeurt segertu segerut segteur segteru segtuer segture segtreu segtrue seguetr seguert seguter segutre seguret segurte segretu segreut segrteu segrtue segruet segrute seegtur seegtru seegutr seegurt seegrtu seegrut seetgur seetgru seetugr seeturg seetrgu seetrug seeugtr seeugrt seeutgr seeutrg seeurgt seeurtg seergtu seergut seertgu seertug seerugt seerutg setgeur setgeru setguer setgure setgreu setgrue setegur setegru seteugr seteurg setergu seterug setuger setugre setuegr setuerg seturge setureg setrgeu setrgue setregu setreug setruge setrueg seugetr seugert seugter seugtre seugret seugrte seuegtr seuegrt seuetgr seuetrg seuergt seuertg seutger seutgre seutegr seuterg seutrge seutreg seurget seurgte seuregt seuretg seurtge seurteg sergetu sergeut sergteu sergtue serguet sergute seregtu seregut seretgu seretug sereugt sereutg sertgeu sertgue sertegu serteug sertuge sertueg seruget serugte seruegt seruetg serutge seruteg tgesure tgesuer tgesrue tgesreu tgeseur tgeseru tgeusre tgeuser tgeurse tgeures tgeuesr tgeuers tgersue tgerseu tgeruse tgerues tgeresu tgereus tgeesur tgeesru tgeeusr tgeeurs tgeersu tgeerus tgseure tgseuer tgserue tgsereu tgseeur tgseeru tgsuere tgsueer tgsuree tgsuree tgsueer tgsuere tgsreue tgsreeu tgsruee tgsruee tgsreeu tgsreue tgseeur tgseeru tgseuer tgseure tgsereu tgserue tguesre tgueser tguerse tgueres tgueesr tgueers tgusere tguseer tgusree tgusree tguseer tgusere tgurese tgurees tgursee tgursee tgurees tgurese tgueesr tgueers tgueser tguesre tgueres tguerse tgresue tgreseu tgreuse tgreues tgreesu tgreeus tgrseue tgrseeu tgrsuee tgrsuee tgrseeu tgrseue tgruese tgruees tgrusee tgrusee tgruees tgruese tgreesu tgreeus tgreseu tgresue tgreues tgreuse tgeesur tgeesru tgeeusr tgeeurs tgeersu tgeerus tgeseur tgeseru tgesuer tgesure tgesreu tgesrue tgeuesr tgeuers tgeuser tgeusre tgeures tgeurse tgeresu tgereus tgerseu tgersue tgerues tgeruse tegsure tegsuer tegsrue tegsreu tegseur tegseru tegusre teguser tegurse tegures teguesr teguers tegrsue tegrseu tegruse tegrues tegresu tegreus tegesur tegesru tegeusr tegeurs tegersu tegerus tesgure tesguer tesgrue tesgreu tesgeur tesgeru tesugre tesuger tesurge tesureg tesuegr tesuerg tesrgue tesrgeu tesruge tesrueg tesregu tesreug tesegur tesegru teseugr teseurg tesergu teserug teugsre teugser teugrse teugres teugesr teugers teusgre teusger teusrge teusreg teusegr teuserg teurgse teurges teursge teurseg teuregs teuresg teuegsr teuegrs teuesgr teuesrg teuergs teuersg tergsue tergseu terguse tergues tergesu tergeus tersgue tersgeu tersuge tersueg tersegu terseug terugse teruges terusge teruseg teruegs teruesg teregsu teregus teresgu teresug tereugs tereusg teegsur teegsru teegusr teegurs teegrsu teegrus teesgur teesgru teesugr teesurg teesrgu teesrug teeugsr teeugrs teeusgr teeusrg teeurgs teeursg teergsu teergus teersgu teersug teerugs teerusg tsgeure tsgeuer tsgerue tsgereu tsgeeur tsgeeru tsguere tsgueer tsguree tsguree tsgueer tsguere tsgreue tsgreeu tsgruee tsgruee tsgreeu tsgreue tsgeeur tsgeeru tsgeuer tsgeure tsgereu tsgerue tsegure tseguer tsegrue tsegreu tsegeur tsegeru tseugre tseuger tseurge tseureg tseuegr tseuerg tsergue tsergeu tseruge tserueg tseregu tsereug tseegur tseegru tseeugr tseeurg tseergu tseerug tsugere tsugeer tsugree tsugree tsugeer tsugere tsuegre tsueger tsuerge tsuereg tsueegr tsueerg tsurgee tsurgee tsurege tsureeg tsurege tsureeg tsueger tsuegre tsueegr tsueerg tsuerge tsuereg tsrgeue tsrgeeu tsrguee tsrguee tsrgeeu tsrgeue tsregue tsregeu tsreuge tsreueg tsreegu tsreeug tsrugee tsrugee tsruege tsrueeg tsruege tsrueeg tsregeu tsregue tsreegu tsreeug tsreuge tsreueg tsegeur tsegeru tseguer tsegure tsegreu tsegrue tseegur tseegru tseeugr tseeurg tseergu tseerug tseuger tseugre tseuegr tseuerg tseurge tseureg tsergeu tsergue tseregu tsereug tseruge tserueg tugesre tugeser tugerse tugeres tugeesr tugeers tugsere tugseer tugsree tugsree tugseer tugsere tugrese tugrees tugrsee tugrsee tugrees tugrese tugeesr tugeers tugeser tugesre tugeres tugerse tuegsre tuegser tuegrse tuegres tuegesr tuegers tuesgre tuesger tuesrge tuesreg tuesegr tueserg tuergse tuerges tuersge tuerseg tueregs tueresg tueegsr tueegrs tueesgr tueesrg tueergs tueersg tusgere tusgeer tusgree tusgree tusgeer tusgere tusegre tuseger tuserge tusereg tuseegr tuseerg tusrgee tusrgee tusrege tusreeg tusrege tusreeg tuseger tusegre tuseegr tuseerg tuserge tusereg turgese turgees turgsee turgsee turgees turgese turegse tureges turesge tureseg tureegs tureesg tursgee tursgee tursege turseeg tursege turseeg tureges turegse tureegs tureesg turesge tureseg tuegesr tuegers tuegser tuegsre tuegres tuegrse tueegsr tueegrs tueesgr tueesrg tueergs tueersg tuesger tuesgre tuesegr tueserg tuesrge tuesreg tuerges tuergse tueregs tueresg tuersge tuerseg trgesue trgeseu trgeuse trgeues trgeesu trgeeus trgseue trgseeu trgsuee trgsuee trgseeu trgseue trguese trguees trgusee trgusee trguees trguese trgeesu trgeeus trgeseu trgesue trgeues trgeuse tregsue tregseu treguse tregues tregesu tregeus tresgue tresgeu tresuge tresueg tresegu treseug treugse treuges treusge treuseg treuegs treuesg treegsu treegus treesgu treesug treeugs treeusg trsgeue trsgeeu trsguee trsguee trsgeeu trsgeue trsegue trsegeu trseuge trseueg trseegu trseeug trsugee trsugee trsuege trsueeg trsuege trsueeg trsegeu trsegue trseegu trseeug trseuge trseueg trugese trugees trugsee trugsee trugees trugese truegse trueges truesge trueseg trueegs trueesg trusgee trusgee trusege truseeg trusege truseeg trueges truegse trueegs trueesg truesge trueseg tregesu tregeus tregseu tregsue tregues treguse treegsu treegus treesgu treesug treeugs treeusg tresgeu tresgue tresegu treseug tresuge tresueg treuges treugse treuegs treuesg treusge treuseg tegesur tegesru tegeusr tegeurs tegersu tegerus tegseur tegseru tegsuer tegsure tegsreu tegsrue teguesr teguers teguser tegusre tegures tegurse tegresu tegreus tegrseu tegrsue tegrues tegruse teegsur teegsru teegusr teegurs teegrsu teegrus teesgur teesgru teesugr teesurg teesrgu teesrug teeugsr teeugrs teeusgr teeusrg teeurgs teeursg teergsu teergus teersgu teersug teerugs teerusg tesgeur tesgeru tesguer tesgure tesgreu tesgrue tesegur tesegru teseugr teseurg tesergu teserug tesuger tesugre tesuegr tesuerg tesurge tesureg tesrgeu tesrgue tesregu tesreug tesruge tesrueg teugesr teugers teugser teugsre teugres teugrse teuegsr teuegrs teuesgr teuesrg teuergs teuersg teusger teusgre teusegr teuserg teusrge teusreg teurges teurgse teuregs teuresg teursge teurseg tergesu tergeus tergseu tergsue tergues terguse teregsu teregus teresgu teresug tereugs tereusg tersgeu tersgue tersegu terseug tersuge tersueg teruges terugse teruegs teruesg terusge teruseg ugestre ugester ugesrte ugesret ugesetr ugesert ugetsre ugetser ugetrse ugetres ugetesr ugeters ugerste ugerset ugertse ugertes ugerest ugerets ugeestr ugeesrt ugeetsr ugeetrs ugeerst ugeerts ugsetre ugseter ugserte ugseret ugseetr ugseert ugstere ugsteer ugstree ugstree ugsteer ugstere ugsrete ugsreet ugsrtee ugsrtee ugsreet ugsrete ugseetr ugseert ugseter ugsetre ugseret ugserte ugtesre ugteser ugterse ugteres ugteesr ugteers ugtsere ugtseer ugtsree ugtsree ugtseer ugtsere ugtrese ugtrees ugtrsee ugtrsee ugtrees ugtrese ugteesr ugteers ugteser ugtesre ugteres ugterse ugreste ugreset ugretse ugretes ugreest ugreets ugrsete ugrseet ugrstee ugrstee ugrseet ugrsete ugrtese ugrtees ugrtsee ugrtsee ugrtees ugrtese ugreest ugreets ugreset ugreste ugretes ugretse ugeestr ugeesrt ugeetsr ugeetrs ugeerst ugeerts ugesetr ugesert ugester ugestre ugesret ugesrte ugetesr ugeters ugetser ugetsre ugetres ugetrse ugerest ugerets ugerset ugerste ugertes ugertse uegstre uegster uegsrte uegsret uegsetr uegsert uegtsre uegtser uegtrse uegtres uegtesr uegters uegrste uegrset uegrtse uegrtes uegrest uegrets uegestr uegesrt uegetsr uegetrs uegerst uegerts uesgtre uesgter uesgrte uesgret uesgetr uesgert uestgre uestger uestrge uestreg uestegr uesterg uesrgte uesrget uesrtge uesrteg uesregt uesretg uesegtr uesegrt uesetgr uesetrg uesergt uesertg uetgsre uetgser uetgrse uetgres uetgesr uetgers uetsgre uetsger uetsrge uetsreg uetsegr uetserg uetrgse uetrges uetrsge uetrseg uetregs uetresg uetegsr uetegrs uetesgr uetesrg uetergs uetersg uergste uergset uergtse uergtes uergest uergets uersgte uersget uerstge uersteg uersegt uersetg uertgse uertges uertsge uertseg uertegs uertesg ueregst ueregts ueresgt uerestg ueretgs ueretsg ueegstr ueegsrt ueegtsr ueegtrs ueegrst ueegrts ueesgtr ueesgrt ueestgr ueestrg ueesrgt ueesrtg ueetgsr ueetgrs ueetsgr ueetsrg ueetrgs ueetrsg ueergst ueergts ueersgt ueerstg ueertgs ueertsg usgetre usgeter usgerte usgeret usgeetr usgeert usgtere usgteer usgtree usgtree usgteer usgtere usgrete usgreet usgrtee usgrtee usgreet usgrete usgeetr usgeert usgeter usgetre usgeret usgerte usegtre usegter usegrte usegret usegetr usegert usetgre usetger usetrge usetreg usetegr useterg usergte userget usertge userteg useregt useretg useegtr useegrt useetgr useetrg useergt useertg ustgere ustgeer ustgree ustgree ustgeer ustgere ustegre usteger usterge ustereg usteegr usteerg ustrgee ustrgee ustrege ustreeg ustrege ustreeg usteger ustegre usteegr usteerg usterge ustereg usrgete usrgeet usrgtee usrgtee usrgeet usrgete usregte usreget usretge usreteg usreegt usreetg usrtgee usrtgee usrtege usrteeg usrtege usrteeg usreget usregte usreegt usreetg usretge usreteg usegetr usegert usegter usegtre usegret usegrte useegtr useegrt useetgr useetrg useergt useertg usetger usetgre usetegr useterg usetrge usetreg userget usergte useregt useretg usertge userteg utgesre utgeser utgerse utgeres utgeesr utgeers utgsere utgseer utgsree utgsree utgseer utgsere utgrese utgrees utgrsee utgrsee utgrees utgrese utgeesr utgeers utgeser utgesre utgeres utgerse utegsre utegser utegrse utegres utegesr utegers utesgre utesger utesrge utesreg utesegr uteserg utergse uterges utersge uterseg uteregs uteresg uteegsr uteegrs uteesgr uteesrg uteergs uteersg utsgere utsgeer utsgree utsgree utsgeer utsgere utsegre utseger utserge utsereg utseegr utseerg utsrgee utsrgee utsrege utsreeg utsrege utsreeg utseger utsegre utseegr utseerg utserge utsereg utrgese utrgees utrgsee utrgsee utrgees utrgese utregse utreges utresge utreseg utreegs utreesg utrsgee utrsgee utrsege utrseeg utrsege utrseeg utreges utregse utreegs utreesg utresge utreseg utegesr utegers utegser utegsre utegres utegrse uteegsr uteegrs uteesgr uteesrg uteergs uteersg utesger utesgre utesegr uteserg utesrge utesreg uterges utergse uteregs uteresg utersge uterseg urgeste urgeset urgetse urgetes urgeest urgeets urgsete urgseet urgstee urgstee urgseet urgsete urgtese urgtees urgtsee urgtsee urgtees urgtese urgeest urgeets urgeset urgeste urgetes urgetse uregste uregset uregtse uregtes uregest uregets uresgte uresget urestge uresteg uresegt uresetg uretgse uretges uretsge uretseg uretegs uretesg ureegst ureegts ureesgt ureestg ureetgs ureetsg ursgete ursgeet ursgtee ursgtee ursgeet ursgete ursegte urseget ursetge urseteg urseegt urseetg urstgee urstgee urstege ursteeg urstege ursteeg urseget ursegte urseegt urseetg ursetge urseteg urtgese urtgees urtgsee urtgsee urtgees urtgese urtegse urteges urtesge urteseg urteegs urteesg urtsgee urtsgee urtsege urtseeg urtsege urtseeg urteges urtegse urteegs urteesg urtesge urteseg uregest uregets uregset uregste uregtes uregtse ureegst ureegts ureesgt ureestg ureetgs ureetsg uresget uresgte uresegt uresetg urestge uresteg uretges uretgse uretegs uretesg uretsge uretseg uegestr uegesrt uegetsr uegetrs uegerst uegerts uegsetr uegsert uegster uegstre uegsret uegsrte uegtesr uegters uegtser uegtsre uegtres uegtrse uegrest uegrets uegrset uegrste uegrtes uegrtse ueegstr ueegsrt ueegtsr ueegtrs ueegrst ueegrts ueesgtr ueesgrt ueestgr ueestrg ueesrgt ueesrtg ueetgsr ueetgrs ueetsgr ueetsrg ueetrgs ueetrsg ueergst ueergts ueersgt ueerstg ueertgs ueertsg uesgetr uesgert uesgter uesgtre uesgret uesgrte uesegtr uesegrt uesetgr uesetrg uesergt uesertg uestger uestgre uestegr uesterg uestrge uestreg uesrget uesrgte uesregt uesretg uesrtge uesrteg uetgesr uetgers uetgser uetgsre uetgres uetgrse uetegsr uetegrs uetesgr uetesrg uetergs uetersg uetsger uetsgre uetsegr uetserg uetsrge uetsreg uetrges uetrgse uetregs uetresg uetrsge uetrseg uergest uergets uergset uergste uergtes uergtse ueregst ueregts ueresgt uerestg ueretgs ueretsg uersget uersgte uersegt uersetg uerstge uersteg uertges uertgse uertegs uertesg uertsge uertseg rgestue rgesteu rgesute rgesuet rgesetu rgeseut rgetsue rgetseu rgetuse rgetues rgetesu rgeteus rgeuste rgeuset rgeutse rgeutes rgeuest rgeuets rgeestu rgeesut rgeetsu rgeetus rgeeust rgeeuts rgsetue rgseteu rgseute rgseuet rgseetu rgseeut rgsteue rgsteeu rgstuee rgstuee rgsteeu rgsteue rgsuete rgsueet rgsutee rgsutee rgsueet rgsuete rgseetu rgseeut rgseteu rgsetue rgseuet rgseute rgtesue rgteseu rgteuse rgteues rgteesu rgteeus rgtseue rgtseeu rgtsuee rgtsuee rgtseeu rgtseue rgtuese rgtuees rgtusee rgtusee rgtuees rgtuese rgteesu rgteeus rgteseu rgtesue rgteues rgteuse rgueste rgueset rguetse rguetes rgueest rgueets rgusete rguseet rgustee rgustee rguseet rgusete rgutese rgutees rgutsee rgutsee rgutees rgutese rgueest rgueets rgueset rgueste rguetes rguetse rgeestu rgeesut rgeetsu rgeetus rgeeust rgeeuts rgesetu rgeseut rgesteu rgestue rgesuet rgesute rgetesu rgeteus rgetseu rgetsue rgetues rgetuse rgeuest rgeuets rgeuset rgeuste rgeutes rgeutse regstue regsteu regsute regsuet regsetu regseut regtsue regtseu regtuse regtues regtesu regteus reguste reguset regutse regutes reguest reguets regestu regesut regetsu regetus regeust regeuts resgtue resgteu resgute resguet resgetu resgeut restgue restgeu restuge restueg restegu resteug resugte resuget resutge resuteg resuegt resuetg resegtu resegut resetgu resetug reseugt reseutg retgsue retgseu retguse retgues retgesu retgeus retsgue retsgeu retsuge retsueg retsegu retseug retugse retuges retusge retuseg retuegs retuesg retegsu retegus retesgu retesug reteugs reteusg reugste reugset reugtse reugtes reugest reugets reusgte reusget reustge reusteg reusegt reusetg reutgse reutges reutsge reutseg reutegs reutesg reuegst reuegts reuesgt reuestg reuetgs reuetsg reegstu reegsut reegtsu reegtus reegust reeguts reesgtu reesgut reestgu reestug reesugt reesutg reetgsu reetgus reetsgu reetsug reetugs reetusg reeugst reeugts reeusgt reeustg reeutgs reeutsg rsgetue rsgeteu rsgeute rsgeuet rsgeetu rsgeeut rsgteue rsgteeu rsgtuee rsgtuee rsgteeu rsgteue rsguete rsgueet rsgutee rsgutee rsgueet rsguete rsgeetu rsgeeut rsgeteu rsgetue rsgeuet rsgeute rsegtue rsegteu rsegute rseguet rsegetu rsegeut rsetgue rsetgeu rsetuge rsetueg rsetegu rseteug rseugte rseuget rseutge rseuteg rseuegt rseuetg rseegtu rseegut rseetgu rseetug rseeugt rseeutg rstgeue rstgeeu rstguee rstguee rstgeeu rstgeue rstegue rstegeu rsteuge rsteueg rsteegu rsteeug rstugee rstugee rstuege rstueeg rstuege rstueeg rstegeu rstegue rsteegu rsteeug rsteuge rsteueg rsugete rsugeet rsugtee rsugtee rsugeet rsugete rsuegte rsueget rsuetge rsueteg rsueegt rsueetg rsutgee rsutgee rsutege rsuteeg rsutege rsuteeg rsueget rsuegte rsueegt rsueetg rsuetge rsueteg rsegetu rsegeut rsegteu rsegtue rseguet rsegute rseegtu rseegut rseetgu rseetug rseeugt rseeutg rsetgeu rsetgue rsetegu rseteug rsetuge rsetueg rseuget rseugte rseuegt rseuetg rseutge rseuteg rtgesue rtgeseu rtgeuse rtgeues rtgeesu rtgeeus rtgseue rtgseeu rtgsuee rtgsuee rtgseeu rtgseue rtguese rtguees rtgusee rtgusee rtguees rtguese rtgeesu rtgeeus rtgeseu rtgesue rtgeues rtgeuse rtegsue rtegseu rteguse rtegues rtegesu rtegeus rtesgue rtesgeu rtesuge rtesueg rtesegu rteseug rteugse rteuges rteusge rteuseg rteuegs rteuesg rteegsu rteegus rteesgu rteesug rteeugs rteeusg rtsgeue rtsgeeu rtsguee rtsguee rtsgeeu rtsgeue rtsegue rtsegeu rtseuge rtseueg rtseegu rtseeug rtsugee rtsugee rtsuege rtsueeg rtsuege rtsueeg rtsegeu rtsegue rtseegu rtseeug rtseuge rtseueg rtugese rtugees rtugsee rtugsee rtugees rtugese rtuegse rtueges rtuesge rtueseg rtueegs rtueesg rtusgee rtusgee rtusege rtuseeg rtusege rtuseeg rtueges rtuegse rtueegs rtueesg rtuesge rtueseg rtegesu rtegeus rtegseu rtegsue rtegues rteguse rteegsu rteegus rteesgu rteesug rteeugs rteeusg rtesgeu rtesgue rtesegu rteseug rtesuge rtesueg rteuges rteugse rteuegs rteuesg rteusge rteuseg rugeste rugeset rugetse rugetes rugeest rugeets rugsete rugseet rugstee rugstee rugseet rugsete rugtese rugtees rugtsee rugtsee rugtees rugtese rugeest rugeets rugeset rugeste rugetes rugetse ruegste ruegset ruegtse ruegtes ruegest ruegets ruesgte ruesget ruestge ruesteg ruesegt ruesetg ruetgse ruetges ruetsge ruetseg ruetegs ruetesg rueegst rueegts rueesgt rueestg rueetgs rueetsg rusgete rusgeet rusgtee rusgtee rusgeet rusgete rusegte ruseget rusetge ruseteg ruseegt ruseetg rustgee rustgee rustege rusteeg rustege rusteeg ruseget rusegte ruseegt ruseetg rusetge ruseteg rutgese rutgees rutgsee rutgsee rutgees rutgese rutegse ruteges rutesge ruteseg ruteegs ruteesg rutsgee rutsgee rutsege rutseeg rutsege rutseeg ruteges rutegse ruteegs ruteesg rutesge ruteseg ruegest ruegets ruegset ruegste ruegtes ruegtse rueegst rueegts rueesgt rueestg rueetgs rueetsg ruesget ruesgte ruesegt ruesetg ruestge ruesteg ruetges ruetgse ruetegs ruetesg ruetsge ruetseg regestu regesut regetsu regetus regeust regeuts regsetu regseut regsteu regstue regsuet regsute regtesu regteus regtseu regtsue regtues regtuse reguest reguets reguset reguste regutes regutse reegstu reegsut reegtsu reegtus reegust reeguts reesgtu reesgut reestgu reestug reesugt reesutg reetgsu reetgus reetsgu reetsug reetugs reetusg reeugst reeugts reeusgt reeustg reeutgs reeutsg resgetu resgeut resgteu resgtue resguet resgute resegtu resegut resetgu resetug reseugt reseutg restgeu restgue restegu resteug restuge restueg resuget resugte resuegt resuetg resutge resuteg retgesu retgeus retgseu retgsue retgues retguse retegsu retegus retesgu retesug reteugs reteusg retsgeu retsgue retsegu retseug retsuge retsueg retuges retugse retuegs retuesg retusge retuseg reugest reugets reugset reugste reugtes reugtse reuegst reuegts reuesgt reuestg reuetgs reuetsg reusget reusgte reusegt reusetg reustge reusteg reutges reutgse reutegs reutesg reutsge reutseg egestur egestru egesutr egesurt egesrtu egesrut egetsur egetsru egetusr egeturs egetrsu egetrus egeustr egeusrt egeutsr egeutrs egeurst egeurts egerstu egersut egertsu egertus egerust egeruts egsetur egsetru egseutr egseurt egsertu egserut egsteur egsteru egstuer egsture egstreu egstrue egsuetr egsuert egsuter egsutre egsuret egsurte egsretu egsreut egsrteu egsrtue egsruet egsrute egtesur egtesru egteusr egteurs egtersu egterus egtseur egtseru egtsuer egtsure egtsreu egtsrue egtuesr egtuers egtuser egtusre egtures egturse egtresu egtreus egtrseu egtrsue egtrues egtruse eguestr eguesrt eguetsr eguetrs eguerst eguerts egusetr egusert eguster egustre egusret egusrte egutesr eguters egutser egutsre egutres egutrse egurest egurets egurset egurste egurtes egurtse egrestu egresut egretsu egretus egreust egreuts egrsetu egrseut egrsteu egrstue egrsuet egrsute egrtesu egrteus egrtseu egrtsue egrtues egrtuse egruest egruets egruset egruste egrutes egrutse eegstur eegstru eegsutr eegsurt eegsrtu eegsrut eegtsur eegtsru eegtusr eegturs eegtrsu eegtrus eegustr eegusrt eegutsr eegutrs eegurst eegurts eegrstu eegrsut eegrtsu eegrtus eegrust eegruts eesgtur eesgtru eesgutr eesgurt eesgrtu eesgrut eestgur eestgru eestugr eesturg eestrgu eestrug eesugtr eesugrt eesutgr eesutrg eesurgt eesurtg eesrgtu eesrgut eesrtgu eesrtug eesrugt eesrutg eetgsur eetgsru eetgusr eetgurs eetgrsu eetgrus eetsgur eetsgru eetsugr eetsurg eetsrgu eetsrug eetugsr eetugrs eetusgr eetusrg eeturgs eetursg eetrgsu eetrgus eetrsgu eetrsug eetrugs eetrusg eeugstr eeugsrt eeugtsr eeugtrs eeugrst eeugrts eeusgtr eeusgrt eeustgr eeustrg eeusrgt eeusrtg eeutgsr eeutgrs eeutsgr eeutsrg eeutrgs eeutrsg eeurgst eeurgts eeursgt eeurstg eeurtgs eeurtsg eergstu eergsut eergtsu eergtus eergust eerguts eersgtu eersgut eerstgu eerstug eersugt eersutg eertgsu eertgus eertsgu eertsug eertugs eertusg eerugst eerugts eerusgt eerustg eerutgs eerutsg esgetur esgetru esgeutr esgeurt esgertu esgerut esgteur esgteru esgtuer esgture esgtreu esgtrue esguetr esguert esguter esgutre esguret esgurte esgretu esgreut esgrteu esgrtue esgruet esgrute esegtur esegtru esegutr esegurt esegrtu esegrut esetgur esetgru esetugr eseturg esetrgu esetrug eseugtr eseugrt eseutgr eseutrg eseurgt eseurtg esergtu esergut esertgu esertug eserugt eserutg estgeur estgeru estguer estgure estgreu estgrue estegur estegru esteugr esteurg estergu esterug estuger estugre estuegr estuerg esturge estureg estrgeu estrgue estregu estreug estruge estrueg esugetr esugert esugter esugtre esugret esugrte esuegtr esuegrt esuetgr esuetrg esuergt esuertg esutger esutgre esutegr esuterg esutrge esutreg esurget esurgte esuregt esuretg esurtge esurteg esrgetu esrgeut esrgteu esrgtue esrguet esrgute esregtu esregut esretgu esretug esreugt esreutg esrtgeu esrtgue esrtegu esrteug esrtuge esrtueg esruget esrugte esruegt esruetg esrutge esruteg etgesur etgesru etgeusr etgeurs etgersu etgerus etgseur etgseru etgsuer etgsure etgsreu etgsrue etguesr etguers etguser etgusre etgures etgurse etgresu etgreus etgrseu etgrsue etgrues etgruse etegsur etegsru etegusr etegurs etegrsu etegrus etesgur etesgru etesugr etesurg etesrgu etesrug eteugsr eteugrs eteusgr eteusrg eteurgs eteursg etergsu etergus etersgu etersug eterugs eterusg etsgeur etsgeru etsguer etsgure etsgreu etsgrue etsegur etsegru etseugr etseurg etsergu etserug etsuger etsugre etsuegr etsuerg etsurge etsureg etsrgeu etsrgue etsregu etsreug etsruge etsrueg etugesr etugers etugser etugsre etugres etugrse etuegsr etuegrs etuesgr etuesrg etuergs etuersg etusger etusgre etusegr etuserg etusrge etusreg eturges eturgse eturegs eturesg etursge eturseg etrgesu etrgeus etrgseu etrgsue etrgues etrguse etregsu etregus etresgu etresug etreugs etreusg etrsgeu etrsgue etrsegu etrseug etrsuge etrsueg etruges etrugse etruegs etruesg etrusge etruseg eugestr eugesrt eugetsr eugetrs eugerst eugerts eugsetr eugsert eugster eugstre eugsret eugsrte eugtesr eugters eugtser eugtsre eugtres eugtrse eugrest eugrets eugrset eugrste eugrtes eugrtse euegstr euegsrt euegtsr euegtrs euegrst euegrts euesgtr euesgrt euestgr euestrg euesrgt euesrtg euetgsr euetgrs euetsgr euetsrg euetrgs euetrsg euergst euergts euersgt euerstg euertgs euertsg eusgetr eusgert eusgter eusgtre eusgret eusgrte eusegtr eusegrt eusetgr eusetrg eusergt eusertg eustger eustgre eustegr eusterg eustrge eustreg eusrget eusrgte eusregt eusretg eusrtge eusrteg eutgesr eutgers eutgser eutgsre eutgres eutgrse eutegsr eutegrs eutesgr eutesrg eutergs eutersg eutsger eutsgre eutsegr eutserg eutsrge eutsreg eutrges eutrgse eutregs eutresg eutrsge eutrseg eurgest eurgets eurgset eurgste eurgtes eurgtse euregst euregts euresgt eurestg euretgs euretsg eursget eursgte eursegt eursetg eurstge eursteg eurtges eurtgse eurtegs eurtesg eurtsge eurtseg ergestu ergesut ergetsu ergetus ergeust ergeuts ergsetu ergseut ergsteu ergstue ergsuet ergsute ergtesu ergteus ergtseu ergtsue ergtues ergtuse erguest erguets erguset erguste ergutes ergutse eregstu eregsut eregtsu eregtus eregust ereguts eresgtu eresgut erestgu erestug eresugt eresutg eretgsu eretgus eretsgu eretsug eretugs eretusg ereugst ereugts ereusgt ereustg ereutgs ereutsg ersgetu ersgeut ersgteu ersgtue ersguet ersgute ersegtu ersegut ersetgu ersetug erseugt erseutg erstgeu erstgue erstegu ersteug erstuge erstueg ersuget ersugte ersuegt ersuetg ersutge ersuteg ertgesu ertgeus ertgseu ertgsue ertgues ertguse ertegsu ertegus ertesgu ertesug erteugs erteusg ertsgeu ertsgue ertsegu ertseug ertsuge ertsueg ertuges ertugse ertuegs ertuesg ertusge ertuseg erugest erugets erugset erugste erugtes erugtse eruegst eruegts eruesgt eruestg eruetgs eruetsg erusget erusgte erusegt erusetg erustge erusteg erutges erutgse erutegs erutesg erutsge erutseg.</p>
+  </div>
+</div>
+
+
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <hr/>
+          <p class="text-justify">
+            Unscramble Words is registered trademark.
+          </p>
+          <div class="text-muted my-2 text-center" style="font-size: .8rem;">
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script async src="./static/bootstrap.min.js"></script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    var adreq = { params: { google_ad_client: "ca-pub-3302383181316413"} };
+    var ln=document.querySelectorAll('.adsbygoogle').length;
+    console.log(ln);
+    for(var i=0;i<ln;i++){
+        (adsbygoogle = window.adsbygoogle || []).push(adreq);
+    }
+    </script>
+  </body>
+</html>
